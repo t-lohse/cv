@@ -8,6 +8,7 @@
 \usepackage{hyperref}
 \usepackage{fontawesome5}
 \usepackage{multirow}
+%\usepackage{multicolumn}
 \usepackage{array}
 \usepackage[export]{adjustbox}
 \usepackage{marvosym}
@@ -26,32 +27,41 @@
     \href{https://gitlab.com/LohseBoi}{\faIcon{gitlab}~\footnotesize\faIcon{at}\large \texttt{LohseBoi}} \\\\[-4pt]%[8pt]
     %\href{mailto:thomas.k.lohse@gmail.com}{\faIcon{envelope}~\large thomas.k.lohse\normalsize\MVAt\large gmail.com} \\\\[7pt]%[-4pt]%[8pt]
     \href{mailto:thomas.k.lohse@gmail.com}{\faIcon{envelope}~\large thomas.k.lohse\normalsize\MVAt\large gmail.com} \\\\[-4pt]%[8pt]
-    \href{https://linkedin.com/in/thomas-lohse}{\faIcon{linkedin}~\large LinkedIn}\\\\[-14pt]
+    \href{https://linkedin.com/in/thomas-lohse}{\faIcon{linkedin}~\large thomas-lohse}\\\\[-14pt]
     \bottomrule
 \end{tabular}
 %\par\noindent\rule{\textwidth}{1pt}
 
     \section*{Uddannelse}
     %\lipsum[4]\\[0.5cm]
-    \begin{tabular}{r|p{.82\linewidth}} 
-        2007--2016 & \textbf{Folkeskole}\\
+    \begin{tabular}{p{.1\textwidth}|p{.847\textwidth}} 
+    \multicolumn{1}{r|}{2007--2016} & \textbf{Folkeskole}\\
     &   Elev på Vodskov Skole til og med ottende klasse.
         \\\\
-        2016--2017 & \textbf{Efterskole}\\
+    \multicolumn{1}{r|}{2016--2017} & \textbf{Efterskole}\\
     &   Elev på Ingstrup Efterskole i niende klasse.
         \\\\
-        2017--2020 & \textbf{Gymnasie}\\
+    \multicolumn{1}{r|}{2017--2020} & \textbf{Gymnasie}\\
     &   Elev på Aalborg Techcollege (AATG), hvor jeg tog den tekniske studentereksamen (HTX),
         med profilfagende \textit{Kommunikation \& IT} A og \textit{Programmering} B, samt teknikfag i \textit{Elektronisk Udvikling og Produktion} A.
         \\\\
-        2020--Nu & \textbf{Universitet}\\
-    &   Software Ingeniør, Bachelor studerende på Aalborg Universitet.
+    \multicolumn{1}{r|}{2020--Nu} & \textbf{Universitet}\\
+    &   Software Ingeniør, Bachelor studerende på Aalborg Universitet. I min tid har jeg arbejdet
+        med følgende projekter:
+        \begin{itemize}
+            \item[] \textbf{1. Semester --- } Udviklede et vagtplanlægningssystem for Siemens Gamesas
+                produktionsarbejderhold (Udviklet i C).
+            \item[] \textbf{2. Semester --- } Implementerede Signal Protokollen i et IoT-miljø
+                (Udviklet i JavaScript).
+            \item[] \textbf{3. Semester (Nuværende) --- } Udviklede et program til bedre håndtering
+                af Siemens Gamesas vindturbinevingers lokation og produktion (Udviklet i C\#).
+        \end{itemize}
     \end{tabular}
  
     \section*{Beskæftigelse \& Anden Erfaring}
     \subsection*{Beskæftigelse}
-    \begin{tabular}{r|p{.82\linewidth}}%TODO
-        2018--2019 & \textbf{Føtex Nørresundby}\\
+    \begin{tabular}{p{.1\textwidth}|p{.847\textwidth}}
+        \multicolumn{1}{r|}{2018--2019} & \textbf{Føtex Nørresundby}\\
     &   I løbet af min ansættelse hos Føtex Nørresundby, havde jeg en mindre mængde af stillinger:
         \begin{itemize}\setlength\itemsep{0em}
             \item[] \textbf{Servicemedarbejder --- } Min første kontrakt var under stillingen 
@@ -66,21 +76,21 @@
     \end{tabular}
 
     \subsection*{Anden Erfaring}
-    \begin{tabular}{r|p{.82\linewidth}}
-        2021--Nu & \textbf{UNF Game Development Camp}\\
-    &   Jeg er frivillig medarbedjer hos UNFs Game Development Camp, hvor jeg har haft de følgdende roller:
+    \begin{tabular}{p{.1\textwidth}|p{.847\textwidth}}
+        \multicolumn{1}{r|}{2021--Nu} & \textbf{UNF Game Development Camp}\\
+    &   Jeg er frivillig medarbedjer hos UNFs Game Development Camp, hvor jeg har haft de følgende roller:
         \begin{itemize}\setlength\itemsep{0em}
-            \item[2021] \textbf{Programmingsassistent ---} Assistere programmeringslæren, samt hjælp
-                med deltagernes programmeringsrelateret problemer.
-            \item[2021] \textbf{Logistisk Ansvarlig ---} Ansvarlig for håndtering af det logistiken
-                vedrørende de frivilliges anmodninger om vare, samt anskaffelsen.
-            \item[2021] \textbf{Teknisk Ansvarlig ---} Ansvarlig for alt udstyret til campen, samt
-                introduktionen af \verb|git| for deltagerne, og håndtering af alle problemer de
-                måtte have med al det tekniske.
+            \item[2021] \textbf{Programmingsassistent ---} Assisterer programmeringslæreren, samt
+                hjælp med deltagernes programmeringsrelateret problemer.
+            \item[2021] \textbf{Logistisk Ansvarlig ---} Ansvarlig for håndtering af logistiken
+                vedrørende de frivilliges anmodninger om varer, samt anskaffelsen.
+            \item[2021] \textbf{Teknisk Ansvarlig ---} Ansvarlig for opsætningen af alt det teknsike
+                udstyrtil campen, samt introduktionen af \verb|git| for deltagerne, og håndtering
+                af alle problemer de måtte have med al det tekniske.
         \end{itemize}
         \\
-        2021 & \textbf{Tutor}\\
-    &   Jeg var frivillig tutor for de nye Software, Bachelor studerende på Aalborg Universitet.
+        \multicolumn{1}{r|}{2021} & \textbf{Tutor}\\
+    &   Jeg var frivillig tutor for de nye Software Ingeniør, Bachelor studerende på Aalborg Universitet.
     \end{tabular}
 
     \section*{Fritidsaktiviter/Hobbies}
@@ -89,10 +99,10 @@
             Jeg laver mine egne små programmingsprojekter/-opgaver, samt configurering og fumleri
             med mit Linux-system, og firmware design til mit tastatur.
         \item[] \textbf{Programmingsungdomsklub}\\
-            Om tirsdagem er jeg i en programmingsungdomsklub kaldet GameLab, som er styret af
+            Om tirsdagen er jeg i en programmingsungdomsklub kaldet GameLab, som er styret af
             UngAalborg.
         \item[] \textbf{Fysisk Aktivitet}\\
-            Jeg sørger for at være fysisk aktiv, primært i formen af styektræning i et fitness center.
+            Jeg sørger for at være fysisk aktiv, primært i formen af styrketræning i et fitness center.
     \end{itemize}
 
     \section*{Referencer}
@@ -118,4 +128,5 @@
 \fi
 
 \end{document}
+
 
