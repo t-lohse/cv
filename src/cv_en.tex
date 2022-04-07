@@ -11,57 +11,78 @@
 \usepackage{array}
 \usepackage[export]{adjustbox}
 \usepackage{marvosym}
+\usepackage{tabularx}
+%\usepackage{ltablex}
+\usepackage{tabu}
+\usepackage{longtable}[=v4.13]
+\usepackage{enumitem}
 
 \title{\bfseries\Huge CV}
 \begin{document}
 \section*{\Huge CV}
 \subsection*{Thomas Krogh Lohse}
-
-%\par\noindent\rule{\textwidth}{1pt}
-\begin{tabular}{m{0.4735\textwidth}m{.4735\textwidth}}
+\begin{tabularx}{\textwidth}{lX}
     \toprule%\\[-10pt]
-    \href{https://goo.gl/maps/SZ6nwvdFf59X1VvR7}{\faIcon{map-marker-alt}\large~Thulevej 8 3th, Aalborg SØ 9210} & \multirow{6}{*}{\includegraphics[width=3cm, right]{./Portrait.jpg}} \\\\[-4pt]%[8pt]
-    \href{tel:+4551164199}{\faIcon{mobile-alt}~\large~+45 51 16 41 99} \\\\[-4pt]%[8pt] 
-    \href{https://github.com/LohseBoi}{\faIcon{github}~\footnotesize\faIcon{at}\large \texttt{LohseBoi}} \\\\[-4pt]%[8pt]
-    \href{https://gitlab.com/LohseBoi}{\faIcon{gitlab}~\footnotesize\faIcon{at}\large \texttt{LohseBoi}} \\\\[-4pt]%[8pt]
-    %\href{mailto:thomas.k.lohse@gmail.com}{\faIcon{envelope}~\large thomas.k.lohse\normalsize\MVAt\large gmail.com} \\\\[7pt]%[-4pt]%[8pt]
-    \href{mailto:thomas.k.lohse@gmail.com}{\faIcon{envelope}~\large thomas.k.lohse\normalsize\MVAt\large gmail.com} \\\\[-4pt]%[8pt]
-    \href{https://linkedin.com/in/thomas-lohse}{\faIcon{linkedin}~\large thomas-lohse}\\\\[-14pt]
+    \href{https://goo.gl/maps/SZ6nwvdFf59X1VvR7}{\faIcon{map-marker-alt}~Sigrid Undsets Vej 156A, Aalborg Ø 9220}& 
+    \multirow[t]{7}{=}{I am a 20 year ol Software, Bachelor student at Aalbog University (AAU), where I also live.
+    In my spare time I enjoy learning new programming relate subjects, either by reading, or working on my own, small projects or on online learning platforms such as LeetCode.
+    Examples of these could be firmware developement for my keyboard (QMK), tinkering with my Linux-environment, and optimizing upon that by creating shell-scripts mainly for automatation of tasks.
+    Beyond that I also spend my spare time working.
+    I have been programming since I was 16 years old.}\\\\[-4pt]
+    \href{tel:+4551164199}{\faIcon{mobile-alt}~+45 51 16 41 99} \\\\[-4pt]%[8pt] 
+    \href{https://github.com/LohseBoi}{\faIcon{github}~\footnotesize\faIcon{at}\normalsize\texttt{LohseBoi}} \\\\[-4pt]%[8pt]
+    \href{https://gitlab.com/tlohse}{\faIcon{gitlab}~\footnotesize\faIcon{at}\normalsize\texttt{tlohse}} \\\\[-4pt]%[8pt]
+    \href{mailto:mail@tlohse.dk}{\faIcon{envelope}~mail\normalsize\MVAt tlohse.dk} \\\\[-4pt]%[8pt]
+    \href{https://linkedin.com/in/thomas-lohse}{\faIcon{linkedin}~thomas-lohse}\\\\[-4pt]
+    \href{https://tlohse.dk}{\faIcon{link}~tlohse.dk}\\\\[-14pt]
     \bottomrule
-\end{tabular}
+\end{tabularx}%\\[8pt]
 %\par\noindent\rule{\textwidth}{1pt}
+\section*{Technical Competencies}
+\hrule width5cm
+\setlength{\tabcolsep}{7pt}
+\begin{longtabu} to \textwidth {@{}llll}
+    \centering
+    \large\textbf{Software Development} & \large\textbf{git} & \large\textbf{Project Development} & \large\textbf{Linux Maintanence} \\
+    \normalsize 5+ years                & 3+ years           & 4+ years                           & 2+ years \\\\
+    \multicolumn{4}{@{}p{\textwidth}}{\textbf{Known Programming Languages:} Rust ($\sim$1 year),
+    C\# (5+ years), C (2 years), Bash (2 years), Web (JavaScript, HTML, CSS --- 1 year), }\\[4pt]
+    \multicolumn{4}{@{}p{\textwidth}}{\textbf{Known Tools:} Cargo ($\sim$1 year), \@.NET (5+ years),
+    Unity (5+ years), CMake (2 years), Node.js (1 year), Electron (1 year),
+    Docker ($\sim\frac{1}{2}$ year), QMK ($\sim1\frac{1}{2}$ year), GitHub (4+ years)}
+\end{longtabu}
+\setlength{\tabcolsep}{6pt}
 
-    \section*{Education}
-    %\lipsum[4]\\[0.5cm]
-    \begin{tabular}{p{.1\textwidth}|p{.847\textwidth}} 
-    \multicolumn{1}{r|}{2007--2016} & \textbf{Public School}\\
-    &   Attendee at the public school in 9310 Vodskov (Vodskov Skole) from grade one to grade eight.
-        \\\\
-    \multicolumn{1}{r|}{2016--2017} & \textbf{Continuation School}\\
-    &   Attendee at Ingstrup Efterskole in grade 9.
-        \\\\
-    \multicolumn{1}{r|}{2017--2020} & \textbf{High School}\\
-    &   High school attendee for three years at Aalborg Techcollege (AATG), and recieved the Higher
-            Techincal Exam (HTX), with a specialised Study Area in \textit{Communication \& IT} A,
-            \textit{Programming} B, and tecnical study in \textit{Technical Science} A.
-        \\\\
-    \multicolumn{1}{r|}{2020--Now} & \textbf{University}\\
-    &   Attendee at Aalborg University, studying Software Engineer, Bachelor.
-        \begin{itemize}
-            \item[] \textbf{1st Semester --- } Developed a workscheduling system for the production
-                teams at Siemens Gamesa (Developed in C).
-            \item[] \textbf{2nd Semester --- } Implemented the Signal Protocol in an IoT environment
-                (Developed in JavaScript).
-            \item[] \textbf{3rd Semester (Current) --- } Developed a program for better handling of
-                Siemens Gamesas turbine blades' location and production (Developed in C\#).
-        \end{itemize}
-    \end{tabular}
+\section*{Education}
+\hrule width5cm
+\begin{longtabu} to \textwidth {r|X}
+2007--2016 & \textbf{Public School}\\
+&   Attendee at the public school in 9310 Vodskov (Vodskov Skole) from grade one to grade eight.
+    \\\\
+2016--2017 & \textbf{Continuation School}\\
+&   Attendee at Ingstrup Efterskole in grade 9.
+    \\\\
+2017--2020 & \textbf{High School}\\
+&   High school attendee for three years at Aalborg Techcollege (AATG), and recieved the Higher
+        Techincal Exam (HTX), with a specialised Study Area in \textit{Communication \& IT} A,
+        \textit{Programming} B, and tecnical study in \textit{Technical Science} A. \\\\
+2020--Now & \textbf{University}\\
+&   Attendee at Aalborg University, studying Software Engineer, Bachelor.
+    \begin{itemize}
+        \item[] \textbf{1st Semester --- } Developed a workscheduling system for the production
+            teams at Siemens Gamesa (Developed in C).
+        \item[] \textbf{2nd Semester --- } Implemented the Signal Protocol in an IoT environment
+            (Developed in JavaScript).
+        \item[] \textbf{3rd Semester (Current) --- } Developed a program for better handling of
+            Siemens Gamesas turbine blades' location and production (Developed in C\#).
+    \end{itemize}
+\end{longtabu}
  
-    \section*{Employment \& Other Experience}
-    \subsection*{Employment}
-    \begin{tabular}{p{.1\textwidth}|p{.847\textwidth}}
-    \multicolumn{1}{r|}{2018--2019} & \textbf{Føtex Nørresundby}\\
-    &   Over the time of my employment at Føtex Nørresundby, I had a selection of roles:
+\section*{Employment}
+\hrule width5cm
+\begin{longtabu} to \textwidth {r|X}
+2018--2019 & \textbf{Føtex Nørresundby}\\
+&   Over the time of my employment at Føtex Nørresundby, I had a selection of roles:
         \begin{itemize}\setlength\itemsep{0em}
             \item[] \textbf{Service employee --- } My first contract was as a Service employee,
                 with a variety of tasks, primarily the operation of the bottle recycle machine.
@@ -70,44 +91,32 @@
             \item[] \textbf{Bake-Off Sale --- } When I turned 18 years old, and my contract
                 terminated, I was offered a new position as Bake-Off Salesperson, which was my
                 position up until my resignation.
-
         \end{itemize}
-    \end{tabular}
+\end{longtabu}
 
-    \subsection*{Other}
-    \begin{tabular}{p{.1\textwidth}|p{.847\textwidth}}
-        \multicolumn{1}{r|}{2021--Now} & \textbf{UNF Game Development Camp}\\
-    &   I am a volunteer at UNFs Game Development Camp, where I have had the following roles:
-        \begin{itemize}\setlength\itemsep{0em}
-            \item[2021] \textbf{Programmings Assistant ---} Assisting the programming teacher, and
-                helping the campers with any programming related issues they might have.
-            \item[2021] \textbf{Logistics Responsible ---} In charge of handling the logistical
-                requests of the other volunteers, and acquiring said logistics.
-            \item[2021] \textbf{Technical Manager ---} In charge of making sure the campers'
-                technical equipment is operational and set up correctly,
-                along with introducing them to \verb|git|, and managing
-                the problems they might have with the technalities.
-        \end{itemize}
-        \\
-    \multicolumn{1}{r|}{2021} & \textbf{Tutor}\\
-    &   I volunteered as a tutor for the students in 2021, studying Software at Aalborg University. 
-    \end{tabular}
-
-    \section*{Sparetime Hobbies/Activities}
-    \begin{itemize}\setlength\itemsep{0.5em}
-        \item[] \textbf{IT}\\
-            I do my own programming projects/exercises, along with tinkering
-            with my Linux-system on my laptop and the firmware on my keyboard.
-        \item[] \textbf{Programming youth club}\\
-            On tuesdays I attend a programming youth club called GameLab, which is managed by
-            UngAalborg.
-        \item[] \textbf{Physical Activity}\\
-            I make sure to stay physically active, mainly in the form of strengh training in the
-            gym.
+\section*{Other Experience}
+\hrule width5cm
+\begin{longtabu} to \textwidth {r|X}
+2021--Now & \textbf{UNF Game Development Camp}\\
+&   I am a volunteer at UNFs Game Development Camp, where I have had the following roles:
+    \begin{itemize}\setlength\itemsep{0em}
+        \item[2021] \textbf{Programmings Assistant ---} Assisting the programming teacher, and
+            helping the campers with any programming related issues they might have.
+        \item[2021] \textbf{Logistics Responsible ---} In charge of handling the logistical
+            requests of the other volunteers, and acquiring said logistics.
+        \item[2021] \textbf{Technical Manager ---} In charge of making sure the campers'
+            technical equipment is operational and set up correctly,
+            along with introducing them to \texttt{git}, and managing
+            the problems they might have with the technalities.
     \end{itemize}
+    \\
+2021 & \textbf{Tutor}\\
+&   I volunteered as a tutor for the students in 2021, studying Software at Aalborg University. 
+\end{longtabu}
 
-    \section*{References}
-    Provided upon request.
+\section*{References}
+\hrule width5cm \ \\
+Provided upon request.
 
 \end{document}
 

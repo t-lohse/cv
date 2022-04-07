@@ -8,10 +8,14 @@
 \usepackage{hyperref}
 \usepackage{fontawesome5}
 \usepackage{multirow}
-%\usepackage{multicolumn}
 \usepackage{array}
 \usepackage[export]{adjustbox}
 \usepackage{marvosym}
+\usepackage{tabularx}
+%\usepackage{ltablex}
+\usepackage{tabu}
+\usepackage{longtable}[=v4.13]
+\usepackage{enumitem}
 
 \title{\bfseries\Huge CV}
 \begin{document}
@@ -19,92 +23,112 @@
 \subsection*{Thomas Krogh Lohse}
 
 %\par\noindent\rule{\textwidth}{1pt}
-\begin{tabular}{m{0.4735\textwidth}m{.4735\textwidth}}
+\begin{tabularx}{\textwidth}{lX}
     \toprule%\\[-10pt]
-    \href{https://goo.gl/maps/SZ6nwvdFf59X1VvR7}{\faIcon{map-marker-alt}\large~Thulevej 8 3th, Aalborg SØ 9210} & \multirow{6}{*}{\includegraphics[width=3cm, right]{./Portrait.jpg}} \\\\[-4pt]%[8pt]
-    \href{tel:+4551164199}{\faIcon{mobile-alt}~\large~+45 51 16 41 99} \\\\[-4pt]%[8pt] 
-    \href{https://github.com/LohseBoi}{\faIcon{github}~\footnotesize\faIcon{at}\large \texttt{LohseBoi}} \\\\[-4pt]%[8pt]
-    \href{https://gitlab.com/LohseBoi}{\faIcon{gitlab}~\footnotesize\faIcon{at}\large \texttt{LohseBoi}} \\\\[-4pt]%[8pt]
-    \href{mailto:thomas.k.lohse@gmail.com}{\faIcon{envelope}~\large thomas.k.lohse\normalsize\MVAt\large gmail.com} \\\\[-4pt]%[8pt]
-    \href{https://linkedin.com/in/thomas-lohse}{\faIcon{linkedin}~\large thomas-lohse}\\\\[-14pt]
+    \href{https://goo.gl/maps/SZ6nwvdFf59X1VvR7}{\faIcon{map-marker-alt}~Sigrid Undsets Vej 156A, Aalborg Ø 9220} & 
+    \multirow[t]{7}{=}{Jeg er en 20 årig Software, Bachelor studerende på Aalborg Universitet (AAU) i Aalborg, hvor jeg også bor.
+    I min fritid interesserer jeg mig for at lære om nye software relateret emner/teknologier, enten ved at læse eller arbejde på egne små projekter eller på online lærings platforme som LeetCode.
+    Jeg har blandt andet arbejdet med keyboard firmware (QMK), samt med configuration på mit linux system (primært i form af shell scripts, og automatisering af opgaver).
+    Derudover bruger jeg også min fritid på at arbjede.
+    Jeg har programmeret siden jeg var 16 år.} \\\\[-4pt]%[8pt]
+    \href{tel:+4551164199}{\faIcon{mobile-alt}~+45 51 16 41 99} \\\\[-4pt]%[8pt] 
+    \href{https://github.com/LohseBoi}{\faIcon{github}~\footnotesize\faIcon{at}\normalsize\texttt{LohseBoi}} \\\\[-4pt]%[8pt]
+    \href{https://gitlab.com/tlohse}{\faIcon{gitlab}~\footnotesize\faIcon{at}\normalsize\texttt{tlohse}} \\\\[-4pt]%[8pt]
+    \href{mailto:mail@tlohse.dk}{\faIcon{envelope}~mail\normalsize\MVAt tlohse.dk} \\\\[-4pt]%[8pt]
+    \href{https://linkedin.com/in/thomas-lohse}{\faIcon{linkedin}~thomas-lohse}\\\\[-4pt]
+    \href{https://tlohse.dk}{\faIcon{link}~tlohse.dk}\\\\[-14pt]
     \bottomrule
-\end{tabular}
-%\par\noindent\rule{\textwidth}{1pt}
-
-    \section*{Uddannelse}
-    \begin{tabular}{p{.1\textwidth}|p{.847\textwidth}} 
-    \multicolumn{1}{r|}{2007--2016} & \textbf{Folkeskole}\\
-    &   Elev på Vodskov Skole til og med ottende klasse.
-        \\\\
-    \multicolumn{1}{r|}{2016--2017} & \textbf{Efterskole}\\
-    &   Elev på Ingstrup Efterskole i niende klasse.
-        \\\\
-    \multicolumn{1}{r|}{2017--2020} & \textbf{Gymnasium}\\
-    &   Elev på Aalborg Techcollege (AATG), hvor jeg tog den tekniske studentereksamen (HTX),
-        med profilfagende \textit{Kommunikation \& IT} A og \textit{Programmering} B, samt teknikfag i \textit{Elektronisk Udvikling og Produktion} A.
-        \\\\
-    \multicolumn{1}{r|}{2020--Nu} & \textbf{Universitet}\\
-    &   Software Ingeniør, Bachelor studerende på Aalborg Universitet. I min tid har jeg arbejdet
-        med følgende projekter:
-        \begin{itemize}
-            \item[] \textbf{1. Semester --- } Udviklede et vagtplanlægningssystem for Siemens Gamesas
-                produktionsarbejderhold (Udviklet i C).
-            \item[] \textbf{2. Semester --- } Implementerede Signal Protokollen i et IoT-miljø
-                (Udviklet i JavaScript).
-            \item[] \textbf{3. Semester (Nuværende) --- } Udviklede et program til bedre håndtering
-                af Siemens Gamesas vindturbinevingers lokation og produktion (Udviklet i C\#).
-        \end{itemize}
-    \end{tabular}
- 
-    \section*{Beskæftigelse \& Anden Erfaring}
-    \subsection*{Beskæftigelse}
-    \begin{tabular}{p{.1\textwidth}|p{.847\textwidth}}
-        \multicolumn{1}{r|}{2018--2019} & \textbf{Føtex Nørresundby}\\
-    &   I løbet af min ansættelse hos Føtex Nørresundby, havde jeg en mindre mængde af stillinger:
-        \begin{itemize}\setlength\itemsep{0em}
-            \item[] \textbf{Servicemedarbejder --- } Min første kontrakt var under stillingen 
-                Servicemedarbejder, som havde et udvalg af opgaver, hvor den primære var at
-                opretholde pantflaskemaskinerne.
-            \item[] \textbf{Kasse Assistent --- } Omkring et halvt år efter min ansættelse, bliver
-                jeg tilbudt en oplæring og ny tilhørende stilling som Kasse Assistent.
-            \item[] \textbf{Bake-Off Sal --- } Da jeg fylder 18 år, og min kontrakt opsiges,
-                tilbyder de mig en ny kontrakt med stillingen Bake-Off Salsperson, som var min stilling
-                op til min opsigelse.
-        \end{itemize}
-    \end{tabular}
-
-    \subsection*{Anden Erfaring}
-    \begin{tabular}{p{.1\textwidth}|p{.847\textwidth}}
-        \multicolumn{1}{r|}{2021--Nu} & \textbf{UNF Game Development Camp}\\
-    &   Jeg er frivillig medarbedjer hos UNFs Game Development Camp, hvor jeg har haft de følgende roller:
-        \begin{itemize}\setlength\itemsep{0em}
-            \item[2021] \textbf{Programmingsassistent ---} Assisterer programmeringslæreren, samt
-                hjælp med deltagernes programmeringsrelateret problemer.
-            \item[2021] \textbf{Logistisk Ansvarlig ---} Ansvarlig for håndtering af logistiken
-                vedrørende de frivilliges anmodninger om varer, samt anskaffelsen.
-            \item[2021] \textbf{Teknisk Ansvarlig ---} Ansvarlig for opsætningen af alt det teknsike
-                udstyrtil campen, samt introduktionen af \verb|git| for deltagerne, og håndtering
-                af alle problemer de måtte have med al det tekniske.
-        \end{itemize}
-        \\
-        \multicolumn{1}{r|}{2021} & \textbf{Tutor}\\
-    &   Jeg var frivillig tutor for de nye Software Ingeniør, Bachelor studerende på Aalborg Universitet.
-    \end{tabular}
-
-    \section*{Fritidsaktiviter/Hobbies}
-    \begin{itemize}\setlength\itemsep{0.5em}
-        \item[] \textbf{IT}\\
-            Jeg laver mine egne små programmingsprojekter/-opgaver, samt configurering og fumleri
-            med mit Linux-system, og firmware design til mit tastatur.
-        \item[] \textbf{Programmingsungdomsklub}\\
-            Om tirsdagen er jeg i en programmingsungdomsklub kaldet GameLab, som er styret af
-            UngAalborg.
-        \item[] \textbf{Fysisk Aktivitet}\\
-            Jeg sørger for at være fysisk aktiv, primært i formen af styrketræning i et fitness center.
+\end{tabularx}%\\[8pt]
+\section*{Tekniske Kompetencer}
+\hrule width5cm
+\setlength{\tabcolsep}{7pt}
+\begin{longtabu} to \textwidth {@{}llll}
+    \centering
+    \large\textbf{Software Udvikling} & \large\textbf{git} & \large\textbf{Projekt Udvikling} & \large\textbf{Linux Vedligeholdelse} \\
+    \normalsize 5+ års erfaring       & 3+ års erfaring    & 4+ års erfaring     & 2+ års erfaring \\\\
+    \multicolumn{4}{@{}p{\textwidth}}{\textbf{Kendte programmeringssporg:} Rust ($\sim$1 år),
+    C\# (5+ år), C (2 år), Bash (2 år), Web (JavaScript, HTML, CSS --- 1 år), }\\[4pt]
+    \multicolumn{4}{@{}p{\textwidth}}{\textbf{Kendte værktøjer:} Cargo ($\sim$1 år), \@.NET (5+ år),
+    Unity (5+ år), CMake (2 år), Node.js (1 år), Electron (1 år), Docker ($\sim\frac{1}{2}$ år),
+    QMK ($\sim1\frac{1}{2}$ år), GitHub (4+ år)}
+\end{longtabu}
+\setlength{\tabcolsep}{6pt}
+\section*{Uddannelse}
+\hrule width5cm
+\begin{longtabu} to \textwidth {r|X}
+%\begin{tabularx}{\textwidth}{r|X}
+2007--2016 & \textbf{Folkeskole}\\
+&   Elev på Vodskov Skole til og med ottende klasse.
+    \\\\
+2016--2017 & \textbf{Efterskole}\\
+&   Elev på Ingstrup Efterskole i niende klasse.
+    \\\\
+2017--2020 & \textbf{Gymnasium}\\
+&   Elev på Aalborg Techcollege (AATG), hvor jeg tog den tekniske studentereksamen (HTX),
+    med profilfagende \textit{Kommunikation \& IT} A og \textit{Programmering} B, samt teknikfag i \textit{Elektronisk Udvikling og Produktion} A.
+    \\\\
+2020--Nu & \textbf{Universitet}\\
+&   Software Ingeniør, Bachelor studerende på Aalborg Universitet. I min tid har jeg arbejdet
+    med følgende projekter:
+    \begin{itemize}\setlength\itemsep{0em}
+        \item[] \textbf{1. Semester --- } Udviklede et vagtplanlægningssystem for Siemens Gamesas
+            produktionsarbejderhold (Udviklet i C).
+        \item[] \textbf{2. Semester --- } Implementerede Signal Protokollen i et IoT-miljø
+            (Udviklet i JavaScript).
+        \item[] \textbf{3. Semester --- } Udviklede et program til bedre håndtering
+            af Siemens Gamesas vindturbinevingers lokation og produktion (Udviklet i C\#).
+        \item[] \textbf{4. Semester (Nuværende) --- } Udviklede et programmingssprog som erstatning
+            af Bash shell scripting (Udviklet i C\#)
     \end{itemize}
+%\end{tabularx}
+\end{longtabu}
 
-    \section*{Referencer}
-    Fremsendes efter anmodning.
+\section*{Beskæftigelse}
+\hrule width5cm
+%\begin{tabular}{p{.1\textwidth}|p{.847\textwidth}}
+\begin{longtabu} to \textwidth {r|X}
+2018--2019 & \textbf{Føtex Nørresundby}\\
+&   I løbet af min ansættelse hos Føtex Nørresundby, havde jeg en mindre mængde af stillinger:
+    \begin{itemize}\setlength\itemsep{0em}
+        \item[] \textbf{Servicemedarbejder --- } Min første kontrakt var under stillingen 
+            Servicemedarbejder, som havde et udvalg af opgaver, hvor den primære var at
+            opretholde pantflaskemaskinerne.
+        \item[] \textbf{Kasse Assistent --- } Omkring et halvt år efter min ansættelse, bliver
+            jeg tilbudt en oplæring og ny tilhørende stilling som Kasse Assistent.
+        \item[] \textbf{Bake-Off Sal --- } Da jeg fylder 18 år, og min kontrakt opsiges,
+            tilbyder de mig en ny kontrakt med stillingen Bake-Off Salsperson, som var min stilling
+            op til min opsigelse.
+    \end{itemize} \\
+2020--Nu & \textbf{RTX A/S}\\
+&   Arbejder som Studenter Medhjælper ved RTX A/S, Nørresundby med både hardware og software
+    arbejdsopgaver som bestod i at lodde og samle udstyr, samt udvikle platforme til at
+    monitorere og teste diverse større komponenter. 
+%\end{tabular}
+\end{longtabu}
+
+\section*{Anden Erfaring}
+\hrule width5cm
+\begin{longtabu} to \textwidth {r|X}
+%\begin{tabular}{p{.1\textwidth}|p{.847\textwidth}}
+2021--Nu & \textbf{UNF Game Development Camp}\\
+&   Jeg er frivillig medarbedjer hos UNFs Game Development Camp, hvor jeg har haft de følgende roller:
+    \begin{itemize}\setlength\itemsep{0em}
+        \item[2021] \textbf{Programmingsassistent ---} Assisterer programmeringslæreren, samt
+            hjælp med deltagernes programmeringsrelateret problemer.
+        \item[2021] \textbf{Logistisk Ansvarlig ---} Ansvarlig for håndtering af logistiken
+            vedrørende de frivilliges anmodninger om varer, samt anskaffelsen.
+        \item[2022] \textbf{Teknisk Ansvarlig ---} Ansvarlig for opsætningen af alt det teknsike
+            udstyrtil campen, samt introduktionen af \texttt{git} for deltagerne, og håndtering
+            af alle problemer de måtte have med al det tekniske.
+    \end{itemize}\\
+2021 & \textbf{Tutor}\\
+&   Jeg var frivillig tutor for de nye Software Ingeniør, Bachelor studerende på Aalborg Universitet.
+%\end{tabular}
+\end{longtabu}
+
+\section*{Referencer}
+\hrule width5cm \ \\
+Fremsendes efter anmodning.
 
 \end{document}
 
