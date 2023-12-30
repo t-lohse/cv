@@ -64,7 +64,7 @@ library
 
     -- Other library packages from which modules are imported.
     build-depends:
-        base ^>=4.16.4.0,
+        base >=4.16.4.0,
         json,
 
 
@@ -86,7 +86,7 @@ executable reshume
 
     -- Other library packages from which modules are imported.
     build-depends:
-        base ^>=4.16.4.0,
+        base >=4.16.4.0,
         reshume,
         directory,
         text,
@@ -113,4 +113,4 @@ test-suite reshume-test
     main-is:          MyLibTest.hs
 
     -- Test dependencies.
-    build-depends:    base ^>=4.16.4.0
+    build-depends:    base >=4.16.4.0
