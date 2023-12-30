@@ -19,7 +19,7 @@ library
     other-modules:    Types
     default-language: Haskell2010
     build-depends:
-        base >=4.16 && <5,
+        base ^>=4.16 && <5,
         json
 
 executable reshume
@@ -27,7 +27,7 @@ executable reshume
     hs-source-dirs:   app
     default-language: Haskell2010
     build-depends:
-        base >=4.16 && <5,
+        base ^>=4.16 && <5,
         reshume,
         directory,
         text,
@@ -38,4 +38,4 @@ test-suite reshume-test
     main-is:          MyLibTest.hs
     hs-source-dirs:   test
     default-language: Haskell2010
-    build-depends:    base >=4.16 && <5
+    build-depends:    base ^>=4.16 && <5
