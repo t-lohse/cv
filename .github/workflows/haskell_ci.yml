@@ -38,6 +38,7 @@ jobs:
     - name: Install dependencies
       run: |
         cabal update
+        cabal install
         cabal install hlint
         cabal build --only-dependencies --enable-tests --enable-benchmarks
     - name: Build
@@ -70,6 +71,7 @@ jobs:
     - name: Install dependencies
       run: |
         cabal update
+        cabal install
         cabal install hlint
     - name: Lint
       run: |
