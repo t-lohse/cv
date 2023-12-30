@@ -23,9 +23,6 @@ main = do
     putStrLn $ show $ replaceKeys (lines testPhrase) "#!" conf
     let pruned = unlines $ replaceKeys (lines a) "#!" conf
     putStrLn "replaced file"
-    -- TODO: OVERWRITE FILE
-    --(Just stdin, _, _, ph) <- createProcess (proc "pdflatex" []){ std_in = CreatePipe } --TODO: Args?
-    --(Just stdin, _, _, ph) <- createProcess (proc ("echo \"" ++ a ++ "\"") [])
     withCreateProcess (proc "pdflatex" []){ std_in = CreatePipe, std_out = NoStream } $ \(Just stdin) _ _ ph -> do -- TODO: ARGS (output and others)
                                                                                                                 hPutStr stdin pruned
                                                                                                                 hFlush stdin

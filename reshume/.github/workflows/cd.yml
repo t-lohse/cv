@@ -1,0 +1,26 @@
+name: Tag and Release Workflow
+
+on:
+  workflow_run:
+    workflows: ["Haskell CI"]
+    types:
+      - completed
+  workflow_dispatch:
+
+jobs:
+  release:
+    name: Create Release
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+      - name: Create Release
+        id: create_release
+        uses: "marvinpinto/action-automatic-releases@latest"
+        with:
+          repo_token: "${{ secrets.GITHUB_TOKEN }}"
+          automatic_release_tag: "latest"
+          prerelease: ${{ github.event_name == 'pull_request' }}
+          title: "Development Build"
+          files: *.pdf
+            
