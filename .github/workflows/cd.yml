@@ -5,7 +5,6 @@ on:
     workflows: ["Haskell CI"]
     types:
       - completed
-  workflow_dispatch:
 
 jobs:
   release:
