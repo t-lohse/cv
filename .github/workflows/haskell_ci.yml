@@ -66,8 +66,7 @@ jobs:
   on-success:
     name: "Release"
 
-    permissions:
-      packages: write-all
+    permissions: write-all
     runs-on: "ubuntu-latest"
     steps:
       - uses: "marvinpinto/action-automatic-releases@latest"
