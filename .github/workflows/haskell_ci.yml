@@ -65,6 +65,7 @@ jobs:
 
   on-success:
     name: "Release"
+
     permissions:
       packages: write
     runs-on: "ubuntu-latest"
