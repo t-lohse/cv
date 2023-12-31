@@ -63,3 +63,14 @@ jobs:
       run: |
         hlint **/*.hs --cross -q
 
+  on-success:
+    name: "Release"
+    runs-on: "ubuntu-latest"
+    steps:
+      - uses: "marvinpinto/action-automatic-releases@latest"
+        with:
+          repo_token: "${{ secrets.GITHUB_TOKEN }}"
+          automatic_release_tag: "latest"
+          prerelease: ${{ github.event_name == 'pull_request' }}
+          title: "Development Build"
+          files: "*.pdf"
