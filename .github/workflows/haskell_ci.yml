@@ -78,7 +78,7 @@ jobs:
       run: |
         cabal install
         cabal update
-        apt-get install texlive-binaries
+        sudo apt-get install texlive-binaries
     - name: Compile PDFs
       run: cabal run reshume -- example/cv_en.tex example/conf.json
     - uses: "marvinpinto/action-automatic-releases@latest"
