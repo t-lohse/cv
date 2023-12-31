@@ -73,7 +73,7 @@ jobs:
         with:
           repo_token: "${{ secrets.GITHUB_TOKEN }}"
           automatic_release_tag: "latest"
-          prerelease: ${{ github.event_name == 'pull_request' }}
+          prerelease: ${{ github.event_name != 'pull_request' }}
           title: "Development Build"
           files: |
             app/Main.hs
