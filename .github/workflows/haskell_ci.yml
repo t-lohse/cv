@@ -69,12 +69,23 @@ jobs:
     permissions: write-all
     runs-on: "ubuntu-latest"
     steps:
-      - uses: "marvinpinto/action-automatic-releases@latest"
-        with:
-          repo_token: "${{ secrets.GITHUB_TOKEN }}"
-          automatic_release_tag: "latest"
-          prerelease: ${{ github.event_name != 'pull_request' }}
-          title: "Development Build"
-          files: |
-            app/Main.hs
+    - uses: actions/checkout@v3
+    - uses: haskell-actions/setup@v2
+      with:
+        ghc-version: ${{ matrix.ghc }}
+        cabal-version: ${{ matrix.cabal }}
+    - name: Install dependencies
+      run: |
+        cabal install
+        cabal update
+    - name: Run
+      run: cabal run reshume -- example/cv_en.tex example/conf.json
+    - uses: "marvinpinto/action-automatic-releases@latest"
+      with:
+        repo_token: "${{ secrets.GITHUB_TOKEN }}"
+        automatic_release_tag: "latest"
+        prerelease: ${{ github.event_name == 'pull_request' }}
+        title: "Development Build"
+        files: |
+          *.pdf
 

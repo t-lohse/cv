@@ -1,0 +1,1068 @@
+
+*(/usr/share/texmf-dist/tex/latex/base/article.cls
+Document Class: article 2022/07/02 v1.4n Standard LaTeX document class
+(/usr/share/texmf-dist/tex/latex/base/size10.clo))
+*(/usr/share/texmf-dist/tex/latex/geometry/geometry.sty
+(/usr/share/texmf-dist/tex/latex/graphics/keyval.sty)
+(/usr/share/texmf-dist/tex/generic/iftex/ifvtex.sty
+(/usr/share/texmf-dist/tex/generic/iftex/iftex.sty)))
+*(/usr/share/texmf-dist/tex/latex/base/inputenc.sty)
+*(/usr/share/texmf-dist/tex/latex/float/float.sty)
+*(/usr/share/texmf-dist/tex/latex/graphics/graphicx.sty
+(/usr/share/texmf-dist/tex/latex/graphics/graphics.sty
+(/usr/share/texmf-dist/tex/latex/graphics/trig.sty)
+(/usr/share/texmf-dist/tex/latex/graphics-cfg/graphics.cfg)
+(/usr/share/texmf-dist/tex/latex/graphics-def/pdftex.def)))
+*(/usr/share/texmf-dist/tex/latex/anysize/anysize.sty
+document style option `anysize' loaded
+Michael Salzenberg, Thomas Esser, Dirk Hillbrecht
+Version 1.0, Aug 13, 1994
+)
+*(/usr/share/texmf-dist/tex/latex/booktabs/booktabs.sty)
+*(/usr/share/texmf-dist/tex/latex/hyperref/hyperref.sty
+(/usr/share/texmf-dist/tex/generic/ltxcmds/ltxcmds.sty)
+(/usr/share/texmf-dist/tex/generic/pdftexcmds/pdftexcmds.styThis is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Arch Linux) (preloaded format=pdflatex 2023.12.21)  31 DEC 2023 02:09
+entering extended mode
+ restricted \write18 enabled.
+ %&-line parsing enabled.
+**\documentclass{article}
+
+*\usepackage[margin=3cm]{geometry}
+(/usr/share/texmf-dist/tex/latex/base/article.cls
+Document Class: article 2022/07/02 v1.4n Standard LaTeX document class
+(/usr/share/texmf-dist/tex/latex/base/size10.clo
+File: size10.clo 2022/07/02 v1.4n Standard LaTeX file (size option)
+)
+\c@part=\count185
+\c@section=\count186
+\c@subsection=\count187
+\c@subsubsection=\count188
+\c@paragraph=\count189
+\c@subparagraph=\count190
+\c@figure=\count191
+\c@table=\count192
+\abovecaptionskip=\skip48
+\belowcaptionskip=\skip49
+\bibindent=\dimen140
+)
+*\usepackage[utf8]{inputenc}
+(/usr/share/texmf-dist/tex/latex/geometry/geometry.sty
+Package: geometry 2020/01/02 v5.9 Page Geometry
+
+(/usr/share/texmf-dist/tex/latex/graphics/keyval.sty
+Package: keyval 2022/05/29 v1.15 key=value parser (DPC)
+\KV@toks@=\toks16
+)
+(/usr/share/texmf-dist/tex/generic/iftex/ifvtex.sty
+Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
+
+(/usr/share/texmf-dist/tex/generic/iftex/iftex.sty
+Package: iftex 2022/02/03 v1.0f TeX engine tests
+))
+\Gm@cnth=\count193
+\Gm@cntv=\count194
+\c@Gm@tempcnt=\count195
+\Gm@bindingoffset=\dimen141
+\Gm@wd@mp=\dimen142
+\Gm@odd@mp=\dimen143
+\Gm@even@mp=\dimen144
+\Gm@layoutwidth=\dimen145
+\Gm@layoutheight=\dimen146
+\Gm@layouthoffset=\dimen147
+\Gm@layoutvoffset=\dimen148
+\Gm@dimlist=\toks17
+)
+*\usepackage{float}
+(/usr/share/texmf-dist/tex/latex/base/inputenc.sty
+Package: inputenc 2021/02/14 v1.3d Input encoding file
+\inpenc@prehook=\toks18
+\inpenc@posthook=\toks19
+)
+*\usepackage{graphicx} % Required for figures
+(/usr/share/texmf-dist/tex/latex/float/float.sty
+Package: float 2001/11/08 v1.3d Float enhancements (AL)
+\c@float@type=\count196
+\float@exts=\toks20
+\float@box=\box51
+\@float@everytoks=\toks21
+\@floatcapt=\box52
+)
+*\usepackage{anysize}
+(/usr/share/texmf-dist/tex/latex/graphics/graphicx.sty
+Package: graphicx 2021/09/16 v1.2d Enhanced LaTeX Graphics (DPC,SPQR)
+
+(/usr/share/texmf-dist/tex/latex/graphics/graphics.sty
+Package: graphics 2022/03/10 v1.4e Standard LaTeX Graphics (DPC,SPQR)
+
+(/usr/share/texmf-dist/tex/latex/graphics/trig.sty
+Package: trig 2021/08/11 v1.11 sin cos tan (DPC)
+)
+(/usr/share/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
+File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
+)
+Package graphics Info: Driver file: pdftex.def on input line 107.
+
+(/usr/share/texmf-dist/tex/latex/graphics-def/pdftex.def
+File: pdftex.def 2022/09/22 v1.2b Graphics/color driver for pdftex
+))
+\Gin@req@height=\dimen149
+\Gin@req@width=\dimen150
+)
+*\usepackage{booktabs}
+(/usr/share/texmf-dist/tex/latex/anysize/anysize.sty
+Package: anysize 1994/08/13 setting margin sizes
+
+document style option `anysize' loaded
+Michael Salzenberg, Thomas Esser, Dirk Hillbrecht
+Version 1.0, Aug 13, 1994
+\@Leftmargin=\dimen151
+\@Rightmargin=\dimen152
+\@Topmargin=\dimen153
+\@Bottommargin=\dimen154
+)
+*\usepackage{hyperref}
+(/usr/share/texmf-dist/tex/latex/booktabs/booktabs.sty
+Package: booktabs 2020/01/12 v1.61803398 Publication quality tables
+\heavyrulewidth=\dimen155
+\lightrulewidth=\dimen156
+\cmidrulewidth=\dimen157
+\belowrulesep=\dimen158
+\belowbottomsep=\dimen159
+\aboverulesep=\dimen160
+\abovetopsep=\dimen161
+\cmidrulesep=\dimen162
+\cmidrulekern=\dimen163
+\defaultaddspace=\dimen164
+\@cmidla=\count197
+\@cmidlb=\count198
+\@aboverulesep=\dimen165
+\@belowrulesep=\dimen166
+\@thisruleclass=\count199
+\@lastruleclass=\count266
+\@thisrulewidth=\dimen167
+)
+*\usepackage{fontawesome5}
+(/usr/share/texmf-dist/tex/latex/hyperref/hyperref.sty
+Package: hyperref 2023-02-07 v7.00v Hypertext links for LaTeX
+
+(/usr/share/texmf-dist/tex/generic/ltxcmds/ltxcmds.sty
+Package: ltxcmds 2020-05-10 v1.25 LaTeX kernel commands for general use (HO)
+)
+(/usr/share/texmf-dist/tex/generic/pdftexcmds/pdftexcmds.sty
+Package: pdftexcmds 2020-06-27 v0.33 Utility functions of pdfTeX for LuaTeX (HO
+)
+
+(/usr/share/texmf-dist/tex/generic/infwarerr
+(/usr/share/texmf-dist/tex/generic/infwarerr/infwarerr.sty))
+(/usr/share/texmf-dist/tex/latex/kvsetkeys/kvsetkeys.sty)
+(/usr/share/texmf-dist/tex/generic/kvdefinekeys/kvdefinekeys.sty)
+(/usr/share/texmf-dist/tex/generic/pdfescape/pdfescape.sty)
+(/usr/share/texmf-dist/tex/latex/hycolor/hycolor.sty)
+(/usr/share/texmf-dist/tex/latex/letltxmacro/letltxmacro.sty)
+(/usr/share/texmf-dist/tex/latex/auxhook/auxhook.sty)
+(/usr/share/texmf-dist/tex/latex/hyperref/nameref.sty
+(/usr/share/texmf-dist/tex/latex/refcount/refcount.sty)
+(/usr/share/texmf-dist/tex/generic/gettitlestring/gettitlestring.sty
+(/usr/share/texmf-dist/tex/latex/kvoptions/kvoptions.sty)))
+(/usr/share/texmf-dist/tex/latex/hyperref/pd1enc.def)
+(/usr/share/texmf-dist/tex/generic/intcalc/intcalc.sty)
+(/usr/share/texmf-dist/tex/generic/etexcmds/etexcmds.sty)
+(/usr/share/texmf-dist/tex/latex/hyperref/puenc.def)
+(/usr/share/texmf-dist/tex/latex/url/url.sty)
+(/usr/share/texmf-dist/tex/generic/bitset/bitset.sty
+(/usr/share/texmf-dist/tex/generic/bigintcalc/bigintcalc.sty))
+(/usr/share/texmf-dist/tex/latex/base/atbegshi-ltx.sty))/infwarerr.sty
+Package: infwarerr 2019/12/03 v1.5 Providing info/warning/error messages (HO)
+)
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+Package pdftexcmds Info: \pdfdraftmode found.
+)
+(/usr/share/texmf-dist/tex/latex/kvsetkeys/kvsetkeys.sty
+Package: kvsetkeys 2022-10-05 v1.19 Key value parser (HO)
+)
+(/usr/share/texmf-dist/tex/generic/kvdefinekeys/kvdefinekeys.sty
+Package: kvdefinekeys 2019-12-19 v1.6 Define keys (HO)
+)
+(/usr/share/texmf-dist/tex/generic/pdfescape/pdfescape.sty
+Package: pdfescape 2019/12/09 v1.15 Implements pdfTeX's escape features (HO)
+)
+(/usr/share/texmf-dist/tex/latex/hycolor/hycolor.sty
+Package: hycolor 2020-01-27 v1.10 Color options for hyperref/bookmark (HO)
+)
+(/usr/share/texmf-dist/tex/latex/letltxmacro/letltxmacro.sty
+Package: letltxmacro 2019/12/03 v1.6 Let assignment for LaTeX macros (HO)
+)
+(/usr/share/texmf-dist/tex/latex/auxhook/auxhook.sty
+Package: auxhook 2019-12-17 v1.6 Hooks for auxiliary files (HO)
+)
+(/usr/share/texmf-dist/tex/latex/hyperref/nameref.sty
+Package: nameref 2022-05-17 v2.50 Cross-referencing by name of section
+
+(/usr/share/texmf-dist/tex/latex/refcount/refcount.sty
+Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
+)
+(/usr/share/texmf-dist/tex/generic/gettitlestring/gettitlestring.sty
+Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
+
+(/usr/share/texmf-dist/tex/latex/kvoptions/kvoptions.sty
+Package: kvoptions 2022-06-15 v3.15 Key value format for package options (HO)
+))
+\c@section@level=\count267
+)
+\@linkdim=\dimen168
+\Hy@linkcounter=\count268
+\Hy@pagecounter=\count269
+
+(/usr/share/texmf-dist/tex/latex/hyperref/pd1enc.def
+File: pd1enc.def 2023-02-07 v7.00v Hyperref: PDFDocEncoding definition (HO)
+Now handling font encoding PD1 ...
+... no UTF-8 mapping file for font encoding PD1
+)
+(/usr/share/texmf-dist/tex/generic/intcalc/intcalc.sty
+Package: intcalc 2019/12/15 v1.3 Expandable calculations with integers (HO)
+)
+(/usr/share/texmf-dist/tex/generic/etexcmds/etexcmds.sty
+Package: etexcmds 2019/12/15 v1.7 Avoid name clashes with e-TeX commands (HO)
+)
+\Hy@SavedSpaceFactor=\count270
+
+(/usr/share/texmf-dist/tex/latex/hyperref/puenc.def
+File: puenc.def 2023-02-07 v7.00v Hyperref: PDF Unicode definition (HO)
+Now handling font encoding PU ...
+... no UTF-8 mapping file for font encoding PU
+)
+Package hyperref Info: Hyper figures OFF on input line 4177.
+Package hyperref Info: Link nesting OFF on input line 4182.
+Package hyperref Info: Hyper index ON on input line 4185.
+Package hyperref Info: Plain pages OFF on input line 4192.
+Package hyperref Info: Backreferencing OFF on input line 4197.
+Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
+Package hyperref Info: Bookmarks ON on input line 4425.
+\c@Hy@tempcnt=\count271
+
+(/usr/share/texmf-dist/tex/latex/url/url.sty
+\Urlmuskip=\muskip16
+Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
+)
+LaTeX Info: Redefining \url on input line 4763.
+\XeTeXLinkMargin=\dimen169
+
+(/usr/share/texmf-dist/tex/generic/bitset/bitset.sty
+Package: bitset 2019/12/09 v1.3 Handle bit-vector datatype (HO)
+
+(/usr/share/texmf-dist/tex/generic/bigintcalc/bigintcalc.sty
+Package: bigintcalc 2019/12/15 v1.5 Expandable calculations on big integers (HO
+)
+))
+\Fld@menulength=\count272
+\Field@Width=\dimen170
+\Fld@charsize=\dimen171
+Package hyperref Info: Hyper figures OFF on input line 6042.
+Package hyperref Info: Link nesting OFF on input line 6047.
+Package hyperref Info: Hyper index ON on input line 6050.
+Package hyperref Info: backreferencing OFF on input line 6057.
+Package hyperref Info: Link coloring OFF on input line 6062.
+Package hyperref Info: Link coloring with OCG OFF on input line 6067.
+Package hyperref Info: PDF/A mode OFF on input line 6072.
+
+(/usr/share/texmf-dist/tex/latex/base/atbegshi-ltx.sty
+Package: atbegshi-ltx 2021/01/10 v1.0c Emulation of the original atbegshi
+package with kernel methods
+)
+\Hy@abspage=\count273
+\c@Item=\count274
+\c@Hfootnote=\count275
+)
+Package hyperref Info: Driver (autodetected): hpdftex.
+
+(/usr/share/tex
+(/usr/share/texmf-dist/tex/latex/hyperref/hpdftex.def
+(/usr/share/texmf-dist/tex/latex/base/atveryend-ltx.sty)
+(/usr/share/texmf-dist/tex/latex/rerunfilecheck/rerunfilecheck.sty
+(/usr/share/texmf-dist/tex/generic/uniquecounter/uniquecounter.sty)))
+*(/usr/share/texmf-dist/tex/latex/fontawesome5/fontawesome5.sty
+(/usr/share/texmf-dist/tex/latex/l3kernel/expl3.sty
+(/usr/share/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def))
+(/usr/share/texmf-dist/tex/latex/l3packages/l3keys2e/l3keys2e.sty)
+(/usr/share/texmf-dist/tex/latex/l3packages/xparse/xparse.sty)
+(/usr/share/texmf-dist/tex/latex/fontawesome5/fontawesome5-generic-helper.sty
+(/usr/share/texmf-dist/tex/latex/fontawesome5/fontawesome5-mapping.def)))
+*(/usr/share/texmf-dist/tex/latex/multirow/multirow.sty)
+*(/usr/share/texmf-dist/tex/latex/tools/array.sty)
+*(/usr/share/texmf-dist/tex/latex/adjustbox/adjustbox.sty
+(/usr/share/texmf-dist/tex/latex/xkeyval/xkeyval.sty
+(/usr/share/texmf-dist/tex/generic/xkeyval/xkeyval.tex
+(/usr/share/texmf-dist/tex/generic/xkeyval/xkvutils.tex)))
+(/usr/share/texmf-dist/tex/latex/adjustbox/adjcalc.sty)
+(/usr/share/texmf-dist/tex/latex/adjustbox/trimclip.sty
+(/usr/share/texmf-dist/tex/latex/collectbox/collectbox.sty)
+(/usr/share/texmf-dist/tex/latex/adjustbox/tc-pdftex.def))
+(/usr/share/texmf-dist/tex/latex/ifoddpage/ifoddpage.sty)
+(/usr/share/texmf-dist/tex/latex/varwidth/varwidth.sty))
+*mf-dist/tex/latex/hyperref/hpdftex.def
+File: hpdftex.def 2023-02-07 v7.00v Hyperref driver for pdfTeX
+
+(/usr/share/texmf-dist/tex/latex/base/atveryend-ltx.sty
+Package: atveryend-ltx 2020/08/19 v1.0a Emulation of the original atveryend pac
+kage
+with kernel methods
+)
+\Fld@listcount=\count276
+\c@bookmark@seq@number=\count277
+
+(/usr/share/texmf-dist/tex/latex/rerunfilecheck/rerunfilecheck.sty
+Package: rerunfilecheck 2022-07-10 v1.10 Rerun checks for auxiliary files (HO)
+
+(/usr/share/texmf-dist/tex/generic/uniquecounter/uniquecounter.sty
+Package: uniquecounter 2019/12/15 v1.4 Provide unlimited unique counter (HO)
+)
+Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
+85.
+)
+\Hy@SectionHShift=\skip50
+)
+*\usepackage{multirow}
+(/usr/share/texmf-dist/tex/latex/fontawesome5/fontawesome5.sty
+(/usr/share/texmf-dist/tex/latex/l3kernel/expl3.sty
+Package: expl3 2023-02-22 L3 programming layer (loader) 
+
+(/usr/share/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
+File: l3backend-pdftex.def 2023-01-16 L3 backend support: PDF output (pdfTeX)
+\l__color_backend_stack_int=\count278
+\l__pdf_internal_box=\box53
+))
+Package: fontawesome5 2022/05/02 v5.15.4 Font Awesome 5
+
+(/usr/share/texmf-dist/tex/latex/l3packages/l3keys2e/l3keys2e.sty
+Package: l3keys2e 2023-02-02 LaTeX2e option processing using LaTeX3 keys
+)
+(/usr/share/texmf-dist/tex/latex/l3packages/xparse/xparse.sty
+Package: xparse 2023-02-02 L3 Experimental document command parser
+)
+(/usr/share/texmf-dist/tex/latex/fontawesome5/fontawesome5-generic-helper.sty
+Package: fontawesome5-generic-helper 2022/05/02 v5.15.4 non-uTeX helper for fon
+tawesome5
+
+(/usr/share/texmf-dist/tex/latex/fontawesome5/fontawesome5-mapping.def)))
+*\usepackage{array}
+(/usr/share/texmf-dist/tex/latex/multirow/multirow.sty
+Package: multirow 2021/03/15 v2.8 Span multiple rows of a table
+\multirow@colwidth=\skip51
+\multirow@cntb=\count279
+\multirow@dima=\skip52
+\bigstrutjot=\dimen172
+)
+*\usepackage[export]{adjustbox}
+(/usr/share/texmf-dist/tex/latex/tools/array.sty
+Package: array 2022/09/04 v2.5g Tabular extension package (FMi)
+\col@sep=\dimen173
+\ar@mcellbox=\box54
+\extrarowheight=\dimen174
+\NC@list=\toks22
+\extratabsurround=\skip53
+\backup@length=\skip54
+\ar@cellbox=\box55
+)
+*\usepackage{marvosym}
+(/usr/share/texmf-dist/tex/latex/adjustbox/adjustbox.sty
+Package: adjustbox 2022/10/17 v1.3a Adjusting TeX boxes (trim, clip, ...)
+
+(/usr/share/texmf-dist/tex/latex/xkeyval/xkeyval.sty
+Package: xkeyval 2022/06/16 v2.9 package option processing (HA)
+
+(/usr/share/texmf-dist/tex/generic/xkeyval/xkeyval.tex
+(/usr/share/texmf-dist/tex/generic/xkeyval/xkvutils.tex
+\XKV@toks=\toks23
+\XKV@tempa@toks=\toks24
+)
+\XKV@depth=\count280
+File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
+))
+(/usr/share/texmf-dist/tex/latex/adjustbox/adjcalc.sty
+Package: adjcalc 2012/05/16 v1.1 Provides advanced setlength with multiple back
+-ends (calc, etex, pgfmath)
+)
+(/usr/share/texmf-dist/tex/latex/adjustbox/trimclip.sty
+Package: trimclip 2020/08/19 v1.2 Trim and clip general TeX material
+
+(/usr/share/texmf-dist/tex/latex/collectbox/collectbox.sty
+Package: collectbox 2022/10/17 v0.4c Collect macro arguments as boxes
+\collectedbox=\box56
+)
+\tc@llx=\dimen175
+\tc@lly=\dimen176
+\tc@urx=\dimen177
+\tc@ury=\dimen178
+Package trimclip Info: Using driver 'tc-pdftex.def'.
+
+(/usr/share/texmf-dist/tex/latex/adjustbox/tc-pdftex.def
+File: tc-pdftex.def 2019/01/04 v2.2 Clipping driver for pdftex
+))
+\adjbox@Width=\dimen179
+\adjbox@Height=\dimen180
+\adjbox@Depth=\dimen181
+\adjbox@Totalheight=\dimen182
+\adjbox@pwidth=\dimen183
+\adjbox@pheight=\dimen184
+\adjbox@pdepth=\dimen185
+\adjbox@ptotalheight=\dimen186
+
+(/usr/share/texmf-dist/tex/latex/ifoddpage/ifoddpage.sty
+Package: ifoddpage 2022/10/18 v1.2 Conditionals for odd/even page detection
+\c@checkoddpage=\count281
+)
+(/usr/share/texmf-dist/tex/latex/varwidth/varwidth.sty
+Package: varwidth 2009/03/30 ver 0.92;  Variable-width minipages
+\@vwid@box=\box57
+\sift@deathcycles=\count282
+\@vwid@loff=\dimen187
+\@vwid@roff=\dimen188
+))
+*\usepackage{tabularx}
+(/usr/share/texmf-dist/tex/latex/marvosy(/usr/share/texmf-dist/tex/latex/marvosym/marvosym.sty)
+*
+*(/usr/share/texmf-dist/tex/latex/tools/tabularx.sty)
+*(/usr/share/texmf-dist/tex/latex/tabu/tabu.sty)
+(/usr/share/texmf-dist/tex/latex/tools/longtable.sty
+(/usr/share/texmf-dist/tex/latex/tools/longtable-2020-01-07.sty))
+*
+*(/usr/share/texmf-dist/tex/latex/enumitem/enumitem.sty)
+(Please type a command or say `\end')
+*
+*No file texput.aux.
+*geometry* driver: auto-detecting
+*geometry* detected driver: pdftex
+(/usr/share/texmf-dist/tex/context/base/mkii/supp-pdf.mkiim/marvosym.sty
+Package: marvosym 2011/07/20 v2.2 Martin Vogel's Symbols font definitions
+)
+*%\usepackage{ltablex}
+
+*\usepackage{tabu}
+(/usr/share/texmf-dist/tex/latex/tools/tabularx.sty
+Package: tabularx 2020/01/15 v2.11c `tabularx' package (DPC)
+\TX@col@width=\dimen189
+\TX@old@table=\dimen190
+\TX@old@col=\dimen191
+\TX@target=\dimen192
+\TX@delta=\dimen193
+\TX@cols=\count283
+\TX@ftn=\toks25
+)
+*\usepackage{longtable}[=v4.13]
+(/usr/share/texmf-dist/tex/latex/tabu/tabu.sty
+Package: tabu 2019/01/11 v2.9 - flexible LaTeX tabulars (FC+tabu-fixed)
+\c@taburow=\count284
+\tabu@nbcols=\count285
+\tabu@cnt=\count286
+\tabu@Xcol=\count287
+\tabu@alloc=\count288
+\tabu@nested=\count289
+\tabu@target=\dimen194
+\tabu@spreadtarget=\dimen195
+\tabu@naturalX=\dimen196
+\tabucolX=\dimen197
+\tabu@Xsum=\dimen198
+\extrarowdepth=\dimen199
+\abovetabulinesep=\dimen256
+\belowtabulinesep=\dimen257
+\tabustrutrule=\dimen258
+\tabu@thebody=\toks26
+\tabu@footnotes=\toks27
+\tabu@box=\box58
+\tabu@arstrutbox=\box59
+\tabu@hleads=\box60
+\tabu@vleads=\box61
+\tabu@cellskip=\skip55
+)
+(/usr/share/texmf-dist/tex/latex/tools/longtable.sty
+Rollback for package 'longtable' requested -> version 'v4.13'.
+         This corresponds to the release introduced on 2020-01-02.
+
+(/usr/share/texmf-dist/tex/latex/tools/longtable-2020-01-07.sty
+Package: longtable 2020/01/07 v4.13 Multi-page Table package (DPC)
+\LTleft=\skip56
+\LTright=\skip57
+\LTpre=\skip58
+\LTpost=\skip59
+\LTchunksize=\count290
+\LTcapwidth=\dimen259
+\LT@head=\box62
+\LT@firsthead=\box63
+\LT@foot=\box64
+\LT@lastfoot=\box65
+\LT@cols=\count291
+\LT@rows=\count292
+\c@LT@tables=\count293
+\c@LT@chunks=\count294
+\LT@p@ftn=\toks28
+))
+*\usepackage{enumitem}
+
+*
+(/usr/share/texmf-dist/tex/latex/enumitem/enumitem.sty
+Package: enumitem 2019/06/20 v3.9 Customized lists
+\labelindent=\skip60
+\enit@outerparindent=\dimen260
+\enit@toks=\toks29
+\enit@inbox=\box66
+\enit@count@id=\count295
+\enitdp@description=\count296
+)
+(Please type a command or say `\end')
+*\title{\bfseries\Huge CV}
+
+*\begin{document}
+No file texput.aux.
+\openout1 = `texput.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 0.
+LaTeX Font Info:    ... okay on input line 0.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 0.
+LaTeX Font Info:    ... okay on input line 0.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 0.
+LaTeX Font Info:    ... okay on input line 0.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 0.
+LaTeX Font Info:    ... okay on input line 0.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 0.
+LaTeX Font Info:    ... okay on input line 0.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 0.
+LaTeX Font Info:    ... okay on input line 0.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 0.
+LaTeX Font Info:    ... okay on input line 0.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 0.
+LaTeX Font Info:    ... okay on input line 0.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 0.
+LaTeX Font Info:    ... okay on input line 0.
+*geometry* driver: auto-detecting
+*geometry* detected driver: pdftex
+*geometry* verbose mode - [ preamble ] result:
+* driver: pdftex
+* paper: <default>
+* layout: <same size as paper>
+* layoutoffset:(h,v)=(0.0pt,0.0pt)
+* modes: 
+* h-part:(L,W,R)=(85.35826pt, 443.57848pt, 85.35826pt)
+* v-part:(T,H,B)=(85.35826pt, 624.25346pt, 85.35826pt)
+* \paperwidth=597.50787pt
+* \paperheight=845.04684pt
+* \textwidth=455.24411pt
+* \textheight=664.23584pt
+* \oddsidemargin=13.08827pt
+* \evensidemargin=-15.36449pt
+* \topmargin=-15.36449pt
+* \headheight=12.0pt
+* \headsep=25.0pt
+* \topskip=10.0pt
+* \footskip=30.0pt
+* \marginparwidth=65.0pt
+* \marginparsep=11.0pt
+* \columnsep=10.0pt
+* \skip\footins=9.0pt plus 4.0pt minus 2.0pt
+* \hoffset=0.0pt
+* \voffset=0.0pt
+* \mag=1000
+* \@twocolumnfalse
+* \@twosidefalse
+* \@mparswitchfalse
+* \@reversemarginfalse
+* (1in=72.27pt=25.4mm, 1cm=28.453pt)
+
+(/usr/share/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.
+[Loading MPS to PDF converter (version 2006.09.02).]
+) (/usr/share/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
+(/usr/share/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg))
+*
+*
+*
+*
+*
+*
+*
+*
+*
+*
+*
+*
+*
+*
+*
+*
+*
+*(/usr/share/texmf-dist/tex/latex/fontawesome5/ufontawesomefree2.fd)
+(/usr/share/texmf-dist/tex/latex/fontawesome5/ufontawesomebrands0.fd)
+(/usr/share/texmf-dist/tex/latex/fontawesome5/ufontawesomefree0.fd)
+(/usr/share/texmf-dist/tex/latex/fontawesome5/ufontawesomefree1.fd)
+(/usr/share/texmf-dist/tex/latex/marvosym/umvs.fd)
+Overfull \vbox (48.0pt too high) detected at line 0
+
+Overfull \vbox (48.0pt too high) detected at line 0
+
+*
+*
+*
+*
+*
+*
+*
+*
+*
+*
+*
+*
+*
+*
+Overfull \hbox (7.0pt too wide) detected at line 0
+ [] [] [] [] 
+
+*
+*(Please type a command or say `\end')
+*
+*
+*
+*
+*
+*
+*
+*09.02).]
+\scratchcounter=\count297
+\scratchdimen=\dimen261
+\scratchbox=\box67
+\nofMPsegments=\count298
+\nofMParguments=\count299
+\everyMPshowfont=\toks30
+\MPscratchCnt=\count300
+\MPscratchDim=\dimen262
+\MPnumerator=\count301
+\makeMPintoPDFobject=\count302
+\everyMPtoPDFconversion=\toks31
+) (/usr/share/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
+Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
+Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
+85.
+
+(/usr/share/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
+e
+))
+Package hyperref Info: Link coloring OFF on input line 0.
+\@outlinefile=\write3
+\openout3 = `texput.out'.
+
+
+*\section*{\Huge CV}
+
+*\subsection*{Thomas Krogh Lohse}
+
+*\begin{tabularx}{\textwidth}{lX}
+
+*    \toprule%\\[-10pt]
+
+*    \href{https://goo.gl/maps/SZ6nwvdFf59X1VvR7}{\faIcon{map-marker-alt}~Sigri
+d Undsets Vej 156A, Aalborg Ø 9220}&
+
+*    \multirow[t]{7}{=}{I am a 21 year old Software, Bachelor student at Aalbog
+ University (AAU), where I also live.
+
+*    In my spare time I enjoy learning new programming relate subjects, either 
+by reading, or working on my own, small projects or on online learning platform
+s such as LeetCode.
+
+*    Examples of these could be firmware developement for my keyboard (QMK), ti
+nkering with my Linux-environment, and optimizing upon that by creating shell-s
+cripts mainly for automatation of tasks.
+
+*    Beyond that I also spend my spare time working.
+
+*    I have been programming since I was 16 years old.}\\\\[-4pt]
+
+*    \href{tel:+4551164199}{\faIcon{mobile-alt}~+45 51 16 41 99} \\\\[-4pt]%[8p
+t]
+
+*    \href{https://github.com/t-lohse}{\faIcon{github}~\footnotesize\faIcon{at}
+\normalsize\texttt{LohseBoi}} \\\\[-4pt]%[8pt]
+
+*    \href{https://gitlab.com/tlohse}{\faIcon{gitlab}~\footnotesize\faIcon{at}\
+normalsize\texttt{tlohse}} \\\\[-4pt]%[8pt]
+
+*    \href{mailto:mail@tlohse.dk}{\faIcon{envelope}~mail\normalsize\MVAt tlohse
+.dk} \\\\[-4pt]%[8pt]
+
+*    \href{https://linkedin.com/in/thomas-lohse}{\faIcon{linkedin}~thomas-lohse
+}\\\\[-4pt]
+
+*    \href{https://tlohse.dk}{\faIcon{link}~tlohse.dk}\\\\[-14pt]
+
+*    \bottomrule
+
+*\end{tabularx}%\\[8pt]
+(/usr/share/texmf-dist/tex/latex/fontawesome5/ufontawesomefree2.fd)
+(/usr/share/texmf-dist/tex/latex/fontawesome5/ufontawesomebrands0.fd)
+(/usr/share/texmf-dist/tex/latex/fontawesome5/ufontawesomefree0.fd)
+(/usr/share/texmf-dist/tex/latex/fontawesome5/ufontawesomefree1.fd)
+(/usr/share/texmf-dist/tex/latex/marvosym/umvs.fd)
+Overfull \vbox (48.0pt too high) detected at line 0
+ []
+
+
+Overfull \vbox (48.0pt too high) detected at line 0
+ []
+
+
+*%\par\noindent\rule{\textwidth}{1pt}
+
+*\section*{Technical Competencies}
+
+*\hrule width5cm
+
+*\setlength{\tabcolsep}{7pt}
+
+*\begin{longtabu} to \textwidth {@{}llll}
+
+*    \centering
+
+*    \large\textbf{Software Development} & \large\textbf{git} & \large\textbf{P
+roject Development} & \large\textbf{Linux Maintanence} \\
+
+*    \normalsize 5+ years                & 4+ years           & 4+ years       
+                    & 2+ years \\\\
+
+*    \multicolumn{4}{@{}p{\textwidth}}{\textbf{Known Programming Languages:} Ru
+st ($\sim\frac{3}{4}$ year),
+
+*    C\# (5+ years), C (2 years), Bash (2 years), Web (JavaScript, HTML, CSS --
+- 1 year), }\\[4pt]
+
+*    \multicolumn{4}{@{}p{\textwidth}}{\textbf{Known Tools:} Cargo ($\sim\frac{
+3}{4}$ year), \@.NET (5+ years),
+
+*    Unity (5+ years), CMake (2 years), Node.js (1 year), Electron (1 year),
+
+*    Docker ($\sim\frac{1}{2}$ year), QMK ($\sim1\frac{1}{2}$ year), GitHub (4+
+ years)}
+
+*\end{longtabu}
+
+Overfull \hbox (7.0pt too wide) detected at line 0
+ [] [] [] [] 
+ []
+
+
+*\setlength{\tabcolsep}{6pt}
+
+*
+(Please type a command or say `\end')
+*\section*{Education}
+
+*\hrule width5cm
+
+*\begin{longtabu} to \textwidth {r|X}
+
+*2007--2016 & \textbf{Public School}\\
+
+*&   Attendee at the public school in 9310 Vodskov (Vodskov Skole) from grade o
+ne to grade eight.
+
+*    \\\\
+
+*2016--2017 & \textbf{Continuation School}\\
+
+*&   Attendee at Ingst
+*
+*
+*
+*
+*
+*
+*
+*
+*
+*
+*
+*
+*
+*
+*
+*
+*
+Overfull \vbox (2.24377pt too high) has occurred while \output is active
+[1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}{/usr/share/texmf-dist/fon
+ts/enc/dvips/fontawesome5/fa5free2.enc}{/usr/share/texmf-dist/fonts/enc/dvips/f
+ontawesome5/fa5brands0.enc}{/usr/share/texmf-dist/fonts/enc/dvips/fontawesome5/
+fa5free0.enc}{/usr/share/texmf-dist/fonts/enc/dvips/fontawesome5/fa5free1.enc}]
+
+*(Please type a command or say `\end')
+*
+*
+*
+*
+*
+*
+*
+*
+*
+*
+*
+*
+*
+*
+*
+*
+*
+*
+*
+*
+*
+*(Please type a command or say `\end')
+*
+*(Please type a command or say `\end')
+*
+*
+*
+*
+*
+*
+*
+*
+*
+*
+*
+*
+*rup Efterskole in grade 9.
+
+*    \\\\
+
+*2017--2020 & \textbf{High School}\\
+
+*&   High school attendee for three years at Aalborg Techcollege (AATG), and re
+cieved the Higher
+
+*        Techincal Exam (HTX), with a specialised Study Area in \textit{Communi
+cation \& IT} A,
+
+*        \textit{Programming} B, and tecnical study in \textit{Technical Scienc
+e} A. \\\\
+
+*2020--Now & \textbf{University}\\
+
+*&   Attendee at Aalborg University, studying Software Engineer, Bachelor.
+
+*    \begin{itemize}
+
+*        \item[] \textbf{1st Semester --- } Developed a workscheduling system f
+or the production
+
+*            teams at Siemens Gamesa (Developed in C).
+
+*        \item[] \textbf{2nd Semester --- } Implemented the Signal Protocol in 
+an IoT environment
+
+*            (Developed in JavaScript).
+
+*        \item[] \textbf{3rd Semester --- } Developed a program for better hand
+ling of
+
+*            Siemens Gamesas turbine blades' location and production (Developed
+ in C\#).
+
+*        \item[] \textbf{4. Semester --- } Developed a programminglanguage as a
+ replacement to the shell scripting language Bash (Developed in C\#).
+
+*    \end{itemize}
+
+*\end{longtabu}
+
+Overfull \vbox (2.24377pt too high) has occurred while \output is active []
+
+
+[1
+
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}{/usr/share/texmf-dist/fonts
+/enc/dvips/fontawesome5/fa5free2.enc}{/usr/share/texmf-dist/fonts/enc/dvips/fon
+tawesome5/fa5brands0.enc}{/usr/share/texmf-dist/fonts/enc/dvips/fontawesome5/fa
+5free0.enc}{/usr/share/texmf-dist/fonts/enc/dvips/fontawesome5/fa5free1.enc}]
+*
+(Please type a command or say `\end')
+*\section*{Employment}
+
+*\hrule width5cm
+
+*\begin{longtabu} to \textwidth {r|X}
+
+*2018--2019 & \textbf{Føtex Nørresundby}\\
+
+*&   Over the time of my employment at Føtex Nørresundby, I had a selection o
+f roles:
+
+*        \begin{itemize}\setlength\itemsep{0em}
+
+*            \item[] \textbf{Service employee --- } My first contract was as a 
+Service employee,
+
+*                with a variety of tasks, primarily the operation of the bottle
+ recycle machine.
+
+*            \item[] \textbf{Cashier Assistant --- } About a half year after my
+ employment,
+
+*                I was asked to be trained and reloacated to a new position, Ca
+hsier Assistant.
+
+*            \item[] \textbf{Bake-Off Sale --- } When I turned 18 years old, an
+d my contract
+
+*                terminated, I was offered a new position as Bake-Off Salespers
+on, which was my
+
+*                position up until my resignation.
+
+*        \end{itemize} \\
+
+*    2022 & \textbf{RTX A/S}\\
+
+*    &   I worked as a student assistant at RTX A/S in Nørresundby, with both 
+hardware and software tasks,
+
+*        consisting of soldering og assembling equipment, along with developing
+ platforms monitoring for and testing of larger devices/components. \\\\
+
+*2022--Now & \textbf{Aalborg University, DEIS}\\
+
+*    &   I work as a Student Software developer at DEIS on the \href{https://gi
+thub.com/Ecdar}{Ecdar} project
+
+*    where I develop mainly in Rust in the backend engine for model checking
+
+*    (\href{https://github.com/Ecdar/Reveaal}{Reveaal}), but also contribute to
+ the other parts of the project.
+
+*
+(Please type a command or say `\end')
+*\end{longtabu}
+
+*
+(Please type a command or say `\end')
+*\section*{Other Experience}
+
+*\hrule width5cm
+
+*\begin{longtabu} to \textwidth {r|X}
+
+*2021--Now & \textbf{UNF Game Development Camp}\\
+
+*&   I am a volunteer at UNFs Game Development Camp, where I have had the follo
+wing roles:
+
+*    \begin{itemize}\setlength\itemsep{0em}
+
+*        \item[2021] \textbf{Programmings Assistant ---} Assisting the programm
+ing teacher, and
+
+*            helping the campers with any programming related issues they might
+ have.
+
+*        \item[2021] \textbf{Logistics Responsible ---} In charge of handling t
+he logistical
+
+*            requests of the other volunteers, and acquiring said logistics.
+
+*        \item[2022] \textbf{Technical Manager ---} In charge of making sure th
+e campers'
+
+*            technical equipment is operational and set up correctly,
+
+*            along 
+*
+*
+*
+*
+*
+*
+*
+*
+*(Please type a command or say `\end')
+*
+*
+*
+*(Please type a command or say `\end')
+*[2] (./texput.aux)
+
+Package rerunfilecheck Warning: File `texput.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+(see the transcript file for additional information)</usr/share/texmf-dist/font
+s/type1/public/fontawesome5/FontAwesome5Brands-Regular.pfb></usr/share/texmf-di
+st/fonts/type1/public/fontawesome5/FontAwesome5Free-Solid.pfb></usr/share/texmf
+-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texmf-dist/fonts/ty
+pe1/public/amsfonts/cm/cmbx12.pfb></usr/share/texmf-dist/fonts/type1/public/ams
+fonts/cm/cmr10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.p
+fb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share
+/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/share/texmf-dist/fo
+nts/type1/public/amsfonts/cm/cmtt10.pfb></usr/share/texmf-dist/fonts/type1/publ
+ic/marvosym/marvosym.pfb>with introducing them to \texttt{git}, and managing
+
+*            the problems they might have with the technalities.
+
+*    \end{itemize}
+
+*    \\
+
+*2021 & \textbf{Tutor}\\
+
+*&   I volunteered as a tutor for the students in 2021, studying Software at Aa
+lborg University.\\
+
+*2022 & \textbf{Tutor-Planner}\\
+
+*&   I am a volunteer as a tutor-planner for the students in 2022, studying Sof
+tware at Aalborg University.
+
+*\end{longtabu}
+
+*
+(Please type a command or say `\end')
+*\section*{References}
+
+*\hrule width5cm \ \\
+
+*Provided upon request.
+
+*
+(Please type a command or say `\end')
+*\end{document}
+[2] (./texput.aux)
+
+Package rerunfilecheck Warning: File `texput.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `texput.out':
+(rerunfilecheck)             Before: <no file>
+(rerunfilecheck)             After:  D41D8CD98F00B204E9800998ECF8427E;0.
+ 
+Here is how much of TeX's memory you used:
+ 14746 strings out of 477985
+ 254899 string characters out of 5840057
+ 1871388 words of memory out of 5000000
+ 34750 multiletter control sequences out of 15000+600000
+ 516591 words of font info for 46 fonts, out of 8000000 for 9000
+ 14 hyphenation exceptions out of 8191
+ 74i,11n,76p,288b,567s stack positions out of 10000i,1000n,20000p,200000b,200000s
+</usr/share/texmf-dist/fonts/type1/public/fontawesome5/FontAwesome5Brands-Regul
+ar.pfb></usr/share/texmf-dist/fonts/type1/public/fontawesome5/FontAwesome5Free-
+Solid.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></us
+r/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texmf-
+dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texmf-dist/fonts/type
+1/public/amsfonts/cm/cmr7.pfb></usr/share/texmf-dist/fonts/type1/public/amsfont
+s/cm/cmsy10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pf
+b></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/share/
+texmf-dist/fonts/type1/public/marvosym/marvosym.pfb>
+Output written on texput.pdf (2 pages, 168253 bytes).
+PDF statistics:
+ 118 PDF objects out of 1000 (max. 8388607)
+ 73 compressed objects within 1 object stream
+ 14 named destinations out of 1000 (max. 500000)
+ 1 words of extra memory for PDF output out of 10000 (max. 10000000)
+
