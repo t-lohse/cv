@@ -3,11 +3,11 @@ name: "Release"
 on:
   workflow_run:
     workflows: ["Haskell CI"]
-    types:
-      - completed
+    types: [completed]
 
 jobs:
-  release:
+  #release:
+  on-success:
     name: "Release"
     runs-on: "ubuntu-latest"
     steps:
