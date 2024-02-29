@@ -1,0 +1,41 @@
+cabal-version:      2.4
+name:               reshume
+version:            0.1.0.0
+license:            MIT
+license-file:       LICENSE
+maintainer:         mail@tlohse.dk
+author:             Thomas Lohse
+homepage:           https://github.com/t-lohse/cv
+synopsis:           Replace keys in documents with given values
+extra-source-files: CHANGELOG.md
+
+source-repository head
+    type:     git
+    location: https://github.com/t-lohse/cv
+
+library
+    exposed-modules:  Reshume
+    hs-source-dirs:   src
+    other-modules:    Types
+    default-language: Haskell2010
+    build-depends:
+        base >=4.16 && <5,
+        json
+
+executable reshume
+    main-is:          Main.hs
+    hs-source-dirs:   app
+    default-language: Haskell2010
+    build-depends:
+        base >=4.16 && <5,
+        reshume,
+        directory,
+        text,
+        process
+
+test-suite reshume-test
+    type:             exitcode-stdio-1.0
+    main-is:          MyLibTest.hs
+    hs-source-dirs:   test
+    default-language: Haskell2010
+    build-depends:    base >=4.16 && <5

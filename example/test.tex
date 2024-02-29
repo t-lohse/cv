@@ -23,64 +23,46 @@
 \subsection*{Thomas Krogh Lohse}
 \begin{tabularx}{\textwidth}{lX}
     \toprule%\\[-10pt]
-    \href{https://goo.gl/maps/SZ6nwvdFf59X1VvR7}{\faIcon{map-marker-alt}~Sigrid Undsets Vej 156A, Aalborg Ø 9220}& 
-    \multirow[t]{7}{=}{I am a 21 year old Software, Bachelor student at Aalbog University (AAU), where I also live.
-    In my spare time I enjoy learning new programming relate subjects, either by reading, or working on my own, small projects or on online learning platforms such as LeetCode.
-    Examples of these could be firmware developement for my keyboard (QMK), tinkering with my Linux-environment, and optimizing upon that by creating shell-scripts mainly for automatation of tasks.
-    Beyond that I also spend my spare time working.
-    I have been programming since I was 16 years old.}\\\\[-4pt]
+    \href{https://maps.app.goo.gl/mtFWbUVz1f8x7saS8}{\faIcon{map-marker-alt}~Aalborg Øst 9220, Denmark}& 
+    \multirow[t]{7}{=}{@!InfoText}\\\\[-4pt]
     \href{tel:+4551164199}{\faIcon{mobile-alt}~+45 51 16 41 99} \\\\[-4pt]%[8pt] 
-    \href{https://github.com/t-lohse}{\faIcon{github}~\footnotesize\faIcon{at}\normalsize\texttt{LohseBoi}} \\\\[-4pt]%[8pt]
+    \href{https://github.com/t-lohse}{\faIcon{github}~\footnotesize\faIcon{at}\normalsize\texttt{t-lohse}} \\\\[-4pt]%[8pt]
     \href{https://gitlab.com/tlohse}{\faIcon{gitlab}~\footnotesize\faIcon{at}\normalsize\texttt{tlohse}} \\\\[-4pt]%[8pt]
     \href{mailto:mail@tlohse.dk}{\faIcon{envelope}~mail\normalsize\MVAt tlohse.dk} \\\\[-4pt]%[8pt]
     \href{https://linkedin.com/in/thomas-lohse}{\faIcon{linkedin}~thomas-lohse}\\\\[-4pt]
-    \href{https://tlohse.dk}{\faIcon{link}~tlohse.dk}\\\\[-14pt]
+    \href{https://tlohse.dk}{\faIcon{link}~tlohse.dk}\\\\[-10pt]
     \bottomrule
 \end{tabularx}%\\[8pt]
 %\par\noindent\rule{\textwidth}{1pt}
-\section*{Technical Competencies}
+\section*{@!TechSec}
 \hrule width5cm
+
 \setlength{\tabcolsep}{7pt}
-\begin{longtabu} to \textwidth {@{}llll}
-    \centering
-    \large\textbf{Software Development} & \large\textbf{git} & \large\textbf{Project Development} & \large\textbf{Linux Maintanence} \\
-    \normalsize 5+ years                & 4+ years           & 4+ years                           & 2+ years \\\\
-    \multicolumn{4}{@{}p{\textwidth}}{\textbf{Known Programming Languages:} Rust ($\sim\frac{3}{4}$ year),
-    C\# (5+ years), C (2 years), Bash (2 years), Web (JavaScript, HTML, CSS --- 1 year), }\\[4pt]
-    \multicolumn{4}{@{}p{\textwidth}}{\textbf{Known Tools:} Cargo ($\sim\frac{3}{4}$ year), \@.NET (5+ years),
-    Unity (5+ years), CMake (2 years), Node.js (1 year), Electron (1 year),
-    Docker ($\sim\frac{1}{2}$ year), QMK ($\sim1\frac{1}{2}$ year), GitHub (4+ years)}
+\newcolumntype{Y}{>{\centering\arraybackslash}X}
+\begin{longtabu} to \textwidth {YYY}
+    \large%
+    \textbf{@!SkillMain} & %
+    \\\normalsize%
+    @!SkillMainTime &%
+    \\\\
+    \multicolumn{3}{@{}p{\textwidth}}{\textbf{@!KnownLangTitle}
+        @!KnownLangList,
+    }\\[4pt]
+    \multicolumn{3}{@{}p{\textwidth}}{\textbf{@!KnownToolTitle}
+        @!KnownToolList,
+    }
 \end{longtabu}
 \setlength{\tabcolsep}{6pt}
 
-\section*{Education}
-\hrule width5cm
+\section*{@!EduSec}
+\hrule width5cm%
 \begin{longtabu} to \textwidth {r|X}
-2007--2016 & \textbf{Public School}\\
-&   Attendee at the public school in 9310 Vodskov (Vodskov Skole) from grade one to grade eight.
-    \\\\
-2016--2017 & \textbf{Continuation School}\\
-&   Attendee at Ingstrup Efterskole in grade 9.
-    \\\\
-2017--2020 & \textbf{High School}\\
-&   High school attendee for three years at Aalborg Techcollege (AATG), and recieved the Higher
-        Techincal Exam (HTX), with a specialised Study Area in \textit{Communication \& IT} A,
-        \textit{Programming} B, and tecnical study in \textit{Technical Science} A. \\\\
-2020--Now & \textbf{University}\\
-&   Attendee at Aalborg University, studying Software Engineer, Bachelor.
-    \begin{itemize}
-        \item[] \textbf{1st Semester --- } Developed a workscheduling system for the production
-            teams at Siemens Gamesa (Developed in C).
-        \item[] \textbf{2nd Semester --- } Implemented the Signal Protocol in an IoT environment
-            (Developed in JavaScript).
-        \item[] \textbf{3rd Semester --- } Developed a program for better handling of
-            Siemens Gamesas turbine blades' location and production (Developed in C\#).
-        \item[] \textbf{4. Semester --- } Developed a programminglanguage as a replacement to the shell scripting language Bash (Developed in C\#).
-    \end{itemize}
+@!EduStart1--@!EduEnd1 & \textbf{@!EduPlace1} \\ & @!EduDesc1 \\\\
 \end{longtabu}
  
 \section*{Employment}
 \hrule width5cm
+
 \begin{longtabu} to \textwidth {r|X}
 2018--2019 & \textbf{Føtex Nørresundby}\\
 &   Over the time of my employment at Føtex Nørresundby, I had a selection of roles:
@@ -99,10 +81,15 @@
 2022--Now & \textbf{Aalborg University, DEIS}\\
     &   I work as a Student Software developer at DEIS on the \href{https://github.com/Ecdar}{Ecdar} project
     where I develop mainly in Rust in the backend engine for model checking
-    (\href{https://github.com/Ecdar/Reveaal}{Reveaal}), but also contribute to the other parts of the project.
-
+    (\href{https://github.com/Ecdar/Reveaal}{Reveaal}), but also contribute to the other parts of the project.\\\\
+Fall 2022 & \textbf{Teaching Assistant} \\
+          & I was a Teaching Assistant in the Imperative Programming course on the first semester of Software and Computer Science at AAU.
+            This is the first programming course you have on the educations. I had to help students during exercise sessions, provide feedback on their hand-in assignments, and collaborate with the course lecturer regarding the exercises, platform, and hand-ins.\\\\
+Fall 2023 & \textbf{Product Owner for 5th semester Software multiproject} \\
+          & I was the overall product owner for the multiproject on 5th semester Software, consisting of six groups with about six members in each group. The project was 15 ECTS points.
+            My responsibility included creating the tasks that should be implemented by them, answering questions regarding the code base and tasks, and generally acting as a guidance on the project, and as a PO.
 \end{longtabu}
-
+\newpage
 \section*{Other Experience}
 \hrule width5cm
 \begin{longtabu} to \textwidth {r|X}
@@ -117,17 +104,26 @@
             technical equipment is operational and set up correctly,
             along with introducing them to \texttt{git}, and managing
             the problems they might have with the technalities.
+        \item[2023] \textbf{Trustee ---} One of the few contact persons regarding the weathfare of campers.
+        \item[2024] \textbf{Lecture Assistant ---} Asisting in finding and acquiring lecturers to present for the campers, along with the judges for evaluating the games that are made throughout the camp.
+        \item[2024] \textbf{Printing and Morning Paper Assistant ---} Assisting in acquiring permissions from game studios for artwork desiplys, and creating the morning paper for the campers.
     \end{itemize}
     \\
-2021 & \textbf{Tutor}\\
-&   I volunteered as a tutor for the students in 2021, studying Software at Aalborg University.\\
-2022 & \textbf{Tutor-Planner}\\
-&   I am a volunteer as a tutor-planner for the students in 2022, studying Software at Aalborg University.
+Fall 2021 & \textbf{Tutor}\\
+&           I volunteered as a tutor for the students in 2021, studying Software at Aalborg University.\\\\
+Fall 2022 & \textbf{Tutor Planner}\\
+&           I volunteered as a tutor planner for the students in 2022, studying Software at Aalborg University.
+            I was responsible for planning, fundraise, and execute the event, where I had to coordinate a handful of tutors to execute the event properly.\\\\
+Fall 2023 & \textbf{Tutor Coordinator}\\
+&           I volunteered as a tutor coordinator for the students in 2023, studying Software at Aalborg University.
+            I was responsible for planning and organizing the tutor planners, making sure that they were on track with planning, fundraising, and executing their events, along with a few events I had to plan as well.
+            I was also responsible for handling the finances of the orginazation, which included sending and paying invoices and budgetting.
 \end{longtabu}
-
+\iffalse
 \section*{References}
 \hrule width5cm \ \\
 Provided upon request.
+\fi
 
 \end{document}
 
