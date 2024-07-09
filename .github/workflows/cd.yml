@@ -33,6 +33,8 @@ jobs:
       run: |
         find src -name 'cv_*.tex' -exec pdflatex {} \;
         mv cv_*.pdf .build
+        cd .build
+        rename cv_ "" cv_*
     - name: Upload artifact
       uses: actions/upload-pages-artifact@v3
       with:
