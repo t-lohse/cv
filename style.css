@@ -38,7 +38,7 @@ ul {
 }
 li::before {
     color: white;
-    content: "HH";
+    content: "\27A4";
     display: inline-block;
     width: 2em;
 }
