@@ -5,14 +5,14 @@ html, body {
 }
 body {
     background-color: #1a1a1a;
-    margin: 1em;
+    margin: 0;
     padding: 0;
     text-align: left;
 }
 h1, h2, h3, h4, h5, p {
     color: white;
     font-family: Console, sans-serif;
-    margin: 0;
+    margin: 1em;
     padding: 0;
 }
 h1 {
@@ -31,6 +31,7 @@ h4 {
     font-size: 1.25vmax;
 }
 ul {
+    margin-left: 1em;
     padding-left: 3em;
     color: white;
     font-size: 1.75vmax;
