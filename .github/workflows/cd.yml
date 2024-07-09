@@ -15,11 +15,14 @@ jobs:
     runs-on: "ubuntu-latest"
     steps:
     - uses: actions/checkout@v3
-    - name: Install pdflatex
+    - name: Install deps
       run: |
         sudo apt update
         sudo apt upgrade
-        sudo apt install texlive-full
+        sudo apt install texlive-latex-base
+     # sudo apt install texlive-fonts-recommended
+     # sudo apt install texlive-fonts-extra
+     # sudo apt install texlive-latex-extra
     - name: Create directory
       run: mkdir .build
     - name: Build pdfs
