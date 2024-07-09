@@ -1,6 +1,11 @@
 name: "Release"
 
 on: push
+on:
+  push:
+    branches:
+      - main
+
 
 permissions:
   contents: read
@@ -32,7 +37,9 @@ jobs:
         mv cv_*.pdf .build
         cp index.html .build
         cd .build
-        rename cv_ "" cv_*
+        rename 's/cv_//' cv_*
+    #rename cv_ "" cv_*
+        find . -name '*.pdf' -exec echo "<a href=\"{}\">{}</a> \; >> index.html
     - name: Upload artifact
       uses: actions/upload-pages-artifact@v3
       with:
