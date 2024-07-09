@@ -42,6 +42,11 @@ a:hover {
     transform: scale3d(1,1,1);                                                        
     text-decoration: underline;
 }                                                                                         
+ul.a {
+    color: white;
+
+    list-style-type: disc;
+}
 em {
     text-decoration: none;
     font-style: normal;
