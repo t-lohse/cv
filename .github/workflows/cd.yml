@@ -31,8 +31,8 @@ jobs:
         find src -name '*.tex' -exec pdflatex {} \;
         mv *.pdf .build
     - name: Deploy to GitHub Pages
-        id: deployment
-        uses: actions/deploy-pages@v4
+      id: deployment
+      uses: actions/deploy-pages@v4
         #- name: Commit report
         #  run: |
         #    git config --global user.name 'Thomas Lohse'
