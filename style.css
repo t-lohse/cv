@@ -30,30 +30,15 @@ h3 {
 h4 {
     font-size: 1.25vmax;
 }
-a {
-    font-size: 1.75vmax;
-    width: auto;
-    font-weight: bold;
-    color: white;
-    margin: 0em .1em;
-    text-decoration: none;
-    transform: scale3d(.7,.7,.7);                                                        
-    transition: transform;
-    transition-duration: .5s;
-}
-a:hover {                                                                            
-    transform: scale3d(1,1,1);                                                        
-    text-decoration: underline;
-}                                                                                         
 ul {
-    content: "LLLL";
     padding-left: 1em;
     color: white;
     font-size: 1.75vmax;
-    list-style-type: disc;
+    list-style: none;
 }
-ul::before {
+li::before {
     color: white;
+    content: "HH";
 }
 em {
     text-decoration: none;
@@ -72,6 +57,21 @@ i {
     padding: 0em .25em;
     font-size: 1.5vmax;
 }
+a {
+    font-size: 1.75vmax;
+    width: auto;
+    font-weight: bold;
+    color: white;
+    margin: 0em .1em;
+    text-decoration: none;
+    transform: scale3d(.7,.7,.7);                                                        
+    transition: transform;
+    transition-duration: .5s;
+}
+a:hover {                                                                            
+    transform: scale3d(1,1,1);                                                 
+    text-decoration: underline;
+}                                                                                         
 
 @keyframes enter_top {                                                                    
     0% {                                                                          
