@@ -1,7 +1,12 @@
 name: "Release"
 
+<<<<<<< HEAD
 on:
   workflow_run:
+=======
+on: push
+  #workflow_run:
+>>>>>>> 3baf2b2 (upd)
     #workflows: ["Tex format CI"]
     #types: [completed]
     #branches: "main"
