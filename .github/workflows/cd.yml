@@ -20,11 +20,13 @@ jobs:
         sudo apt update
         sudo apt upgrade
         sudo apt install texlive-latex-base
-        sudo apt install texlive-latex-extra
         sudo apt install texlive-fonts-recommended
-     # sudo apt install texlive-fonts-extra
+        sudo apt install texlive-fonts-extra
+        sudo apt install texlive-latex-extra
     - name: Create directory
-      run: mkdir .build
+      run: |
+        rm -rf .build
+        mkdir .build
     - name: Build pdfs
       run: |
         find src -name '*.tex' -exec pdflatex {} \;
