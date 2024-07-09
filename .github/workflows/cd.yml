@@ -19,10 +19,7 @@ jobs:
       run: |
         sudo apt update
         sudo apt upgrade
-        sudo apt install texlive-latex-base
-        sudo apt install texlive-fonts-recommended
-        sudo apt install texlive-fonts-extra
-        sudo apt install texlive-latex-extra
+        sudo apt install texlive-latex-base texlive-fonts-recommende texlive-fonts-extra texlive-latex-extrad
     - name: Create directory
       run: |
         rm -rf .build
