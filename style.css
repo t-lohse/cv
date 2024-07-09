@@ -41,6 +41,8 @@ a {
 a:hover {                                                                            
     transform: scale3d(1,1,1);                                                        
     text-decoration: underline;
+    transition: transform;
+    transition-duration: .5s;
 }                                                                                         
 ul {
     color: white;
