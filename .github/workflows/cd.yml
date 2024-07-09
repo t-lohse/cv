@@ -1,11 +1,9 @@
-name: "Release"
+name: "Deploy"
 
-on: push
-#on:
-#  push:
-#    branches:
-#      - main
-
+on:
+  push:
+    branches:
+      - main
 
 permissions:
   contents: read
@@ -33,7 +31,8 @@ jobs:
       run: |
         find src -name 'cv_*.tex' -exec pdflatex {} \;
         mv cv_*.pdf .build
-        cp index.html .build
+        mv index.html .build
+        mv style.css .build
         cd .build
         rename 's/cv_//' cv_*
         echo "<ul>" >> index.html
@@ -42,16 +41,8 @@ jobs:
     - name: Upload artifact
       uses: actions/upload-pages-artifact@v3
       with:
-        # Upload entire repository
         path: '.build'
     - name: Deploy to GitHub Pages
       id: deployment
       uses: actions/deploy-pages@v4
-      #- name: Commit report
-      #  run: |
-      #    git config --global user.name 'Thomas Lohse'
-      #    git config --global user.email 't-lohse@users.noreply.github.com'
-      #    git add .build 
-      #    git commit -m ".build"
-      #    git push
 
