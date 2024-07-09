@@ -1,352 +1,356 @@
 html, body {
-            height: 100%;
-                width: 100%;
-                    overflow: hidden;
-            }
-            body {
-                        background-color: #1a1a1a;
-                            margin: 0;
-                                padding: 0;
-                                    text-align: center;
-                            }
-                            h1, h2, h3, h4, h5, p {
-                                        color: white;
-                                            font-family: Console, sans-serif;
-                                                margin: 0;
-                                                    padding: 0;
-                                            }
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+body {
+    background-color: #1a1a1a;
+    margin: 0;
+    padding: 0;
+    text-align: left;
+}
+h1, h2, h3, h4, h5, p {
+    color: white;
+    font-family: Console, sans-serif;
+    margin: 0;
+    padding: 0;
+}
 
-                                            h1 {
-                                                        font-family: Console, monospace;
-                                                            font-size: 5vmax;
-                                                    }
-                                                    h2 {
-                                                                font-size: 2.5vmax;
-                                                                    padding-bottom: .25em;
-                                                            }
-                                                            h3 {
-                                                                        font-size: 1.75vmax;
-                                                                }
-                                                                h4 {
-                                                                            font-size: 1.25vmax;
-                                                                    }
-                                                                    a {
-                                                                                font-size: 1.75vmax;
-                                                                                    width: auto;
-                                                                                        font-weight: bold;
-                                                                                            color: white;
-                                                                                                margin: 0em .1em;
-                                                                                                    text-decoration: none;
-                                                                                            }
-                                                                                            em {
-                                                                                                        text-decoration: none;
-                                                                                                            font-style: normal;
-                                                                                                                color: #D20000;
-                                                                                                        }
+h1 {
+    font-family: Console, monospace;
+    font-size: 5vmax;
+}
+h2 {
+    font-size: 2.5vmax;
+    padding-bottom: .25em;
+}
+h3 {
+    font-size: 1.75vmax;
+}
+h4 {
+    font-size: 1.25vmax;
+}
+a {
+    font-size: 1.75vmax;
+    width: auto;
+    font-weight: bold;
+    color: white;
+    margin: 0em .1em;
+    text-decoration: none;
+}
+a:hover {                                                                            
+    transform: scale3d(1,1,1);                                                        
+    text-decoration: underline;
+}                                                                                         
+em {
+    text-decoration: none;
+    font-style: normal;
+    color: #D20000;
+}
 
-                                                                                                        div {
-                                                                                                                    display: inline-block;
-                                                                                                                        width: auto;
-                                                                                                                            height: auto;
-                                                                                                                                margin: -5px 0em;
-                                                                                                                                    vertical-align: top;
-                                                                                                                            }
-                                                                                                                            i {
-                                                                                                                                        color: white;
-                                                                                                                                            padding: 0em .25em;
-                                                                                                                                                font-size: 1.5vmax;
-                                                                                                                                        }
+div {
+    display: inline-block;
+    width: auto;
+    height: auto;
+    margin: -5px 0em;
+    vertical-align: top;
+}
+i {
+    color: white;
+    padding: 0em .25em;
+    font-size: 1.5vmax;
+}
 
-                                                                                                                                        #socials i { 
-                                                                                                                                            font-size: 3.25vmax;                                                                              
-                                                                                                                                                        transform: scale3d(.7,.7,.7);                                                                 
-                                                                                                                                                            transition: transform;                                                                    
-                                                                                                                                                                transition-duration: .5s;                                                             
-                                                                                                                                                        }                                                                                             
-                                                                                                                                                        #socials i:hover {                                                                            
-                                                                                                                                                                    transform: scale3d(1,1,1);                                                        
-                                                                                                                                                            }                                                                                         
-                                                                                                                                                                                                                                                      
-                                                                                                                                                            @keyframes enter_top {                                                                    
-                                                                                                                                                                        0% {                                                                          
-                                                                                                                                                                                        transform: translateY(-100vh);                                
-                                                                                                                                                                                            }                                                         
-                                                                                                                                                                                                100% {                                                
-                                                                                                                                                                                                                transform: initial;                   
-                                                                                                                                                                                                                    }                                 
-                                                                                                                                                                                                            }                                         
-                                                                                                                                                                                                                                                      
-                                                                                                                                                                                                            #title {                                  
-                                                                                                                                                                                                                        position: relative;           
-                                                                                                                                                                                                                            transform: translateY(-100vh);
-                                                                                                                                                                                                                                animation-name: enter_top;
-                                                                                                                                                                                                                                    animation-delay: 0s;
-                                                                                                                                                                                                                                        animation-duration: 1s;
-                                                                                                                                                                                                                                            animation-fill-mode: forwards;
-                                                                                                                                                                                                                                                animation-timing-function: ease-o
-ut;
-                                                                                                                                                                                                                                        }             
-                                                                                                                                                                                                                                        #sub {        
-                                                                                                                                                                                                                                                    position: relative;
-                                                                                                                                                                                                                                                        transform: translateY(-10
-0vh);
-                                                                                                                                                                                                                                                            animation-name: enter
-_top;
-                                                                                                                                                                                                                                                                animation-delay:
-.8s;
-                                                                                                                                                                                                                                                                    animation-dur
-ation: 1.2s;
-                                                                                                                                                                                                                                                                        animation
--fill-mode: forwards;
-                                                                                                                                                                                                                                                                            anima
-tion-timing-function: ease-out;
-                                                                                                                                                                                                                                                                    }
-                                                                                                                                                                                                                                                                    #info {
-                                                                                                                                                                                                                                                                                p
-osition: relative;
-                                                                                                                                                                                                                                                                                
-   margin-top: .1em;
-                                                                                                                                                                                                                                                                                
-       padding: 0em 1em;
-                                                                                                                                                                                                                                                                                
-           transform: translateY(-100vh);
-             animation-name: enter_top;                                                                                                                                                                                                             
+#socials i { 
+    font-size: 3.25vmax;                                                                              
+    transform: scale3d(.7,.7,.7);                                                                 
+    transition: transform;                                                                    
+    transition-duration: .5s;                                                             
+}                                                                                             
+#socials i:hover {                                                                            
+    transform: scale3d(1,1,1);                                                        
+}                                                                                         
 
-                   animation-delay: 2s;
-                                                                                                                                                                                                                                                                                
-                       animation-duration: 1.2s;
-                                                                                                                                                                                                                                                                                
-                           animation-fill-mode: forwards;
-                                                                                                                                                                                                                                                                                
-                               animation-timing-function: ease-out;
-                                                                                                                                                                                                                                                                                
-                       }
-                                                                                                                                                                                                                                                                                
-                       #contact {
-                                                                                                                                                                                                                                                                                
-                                   position: relative;
-                                                                                                                                                                                                                                                                                
-                                       margin-top: 2em;
-                                                                                                                                                                                                                                                                                
-                                           font-size: 1.75vmax;
-                                                                                                                                                                                                                                                                                
-                                               transform: translateY(-100vh);
-                                                                                                                                                                                                                                                                                
-                                                   animation-name: enter_top;
-                                                                                                                                                                                                                                                                                
-                                                       animation-delay: 3.2s;
-                                                                                                                                                                                                                                                                                
-                                                           animation-duration: 1.2s;
-                                                                                                                                                                                                                                                                                
-                                                               animation-fill-mode: forwards;
-                                                                                                                                                                                                                                                                                
-                                                                   animation-timing-function: ease-out;
-                                                                                                                                                                                                                                                                                
-                                                           }
+@keyframes enter_top {                                                                    
+    0% {                                                                          
+        transform: translateY(-100vh);                                
+    }                                                         
+    100% {                                                
+        transform: initial;                   
+    }                                 
+}                                         
 
-                                                                                                                                                                                                                                                                                
-                                                           @keyframes enter_bot {
-                                                                                                                                                                                                                                                                                
-                                                                       0% {
-   
-                                                                                       transform: translateY(100vh);                                                                                                                                  
+#title {                                  
+    position: relative;           
+    transform: translateY(-100vh);
+    animation-name: enter_top;
+    animation-delay: 0s;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-o
+    ut;
+}             
+#sub {        
+    position: relative;
+    transform: translateY(-10
+    0vh);
+    animation-name: enter
+    _top;
+    animation-delay:
+    .8s;
+    animation-dur
+    ation: 1.2s;
+    animation
+    -fill-mode: forwards;
+    anima
+    tion-timing-function: ease-out;
+}
+#info {
+    p
+    osition: relative;
 
-                                                                                           }
-   
-                                                                                               100% {                                                                                                                                                 
+    margin-top: .1em;
 
-                                                                                                               transform: initial;
-   
-                                                                                                                   }                                                                                                                                  
+    padding: 0em 1em;
 
-                                                                                                           }
-                                                                                                                                                                                                                                                                                
-                                                                                                           #socials {
-   
-                                                                                                                       position: fixed;                                                                                                               
+    transform: translateY(-100vh);
+    animation-name: enter_top;                                                                                                                                                                                                             
 
-                                                                                                                           bottom: 5vmax;
+    animation-delay: 2s;
 
-                                                                                                                                   justify-content: center; align-items: center; text-align: center;
-   
-                                                                                                                                       vertical-align: top;                                                                                           
+    animation-duration: 1.2s;
 
-                                                                                                                                           transform: translateY(100vh);
-   
-                                                                                                                                               animation-name: enter_bot;                                                                             
+    animation-fill-mode: forwards;
 
-                                                                                                                                                   animation-delay: 4.5s;
-   
-                                                                                                                                                       animation-duration: 1s;                                                                        
+    animation-timing-function: ease-out;
 
-                                                                                                                                                           animation-fill-mode: forwards;
-   
-                                                                                                                                                               animation-timing-function: ease-out;                                                   
+}
 
-                                                                                                                                                       }
-   
-                                                                                                                                                       #socials > h4 {                                                                                
+#contact {
 
-                                                                                                                                                                   font-size: 1.75vmax;
-   
-                                                                                                                                                           }                                                                                          
+    position: relative;
 
-                                                                                                                                                                                                                                                                                
-                                                                                                                                                           @keyframes slide_from_left {
-                                                                                                                                                                                                                                                                                
-                                                                                                                                                                       0% {
-                                                                                                                                                                                                                                                                                
-                                                                                                                                                                                       transform: translateX(-100vw);
-                                                                                                                                                                                                                                                                                
-                                                                                                                                                                                           }
-                                                                                                                                                                                                                                                                                
-                                                                                                                                                                                               100% {
-                                                                                                                                                                                                                                                                                
-                                                                                                                                                                                                               transform: translate(0vw);
-   
-                                                                                                                                                                                                                   }                                  
+    margin-top: 2em;
 
-                                                                                                                                                                                                           }
-   
-                                                                                                                                                                                                           @keyframes slide_from_right {              
+    font-size: 1.75vmax;
 
-                                                                                                                                                                                                                       0% {
-   
-                                                                                                                                                                                                                                       transform: translateX(100vw);
+    transform: translateY(-100vh);
 
-                                                                                                                                                                                                                                           }
-      100% { 
+    animation-name: enter_top;
 
-                                                                                                                                                                                                                                                               transform: transla
-te(0vw);
-                                                                                                                                                                                                                                                                                
-                                                                                                                                                                                                                                                                   }
-                                                                                                                                                                                                                                                                                
-                                                                                                                                                                                                                                                           }
+    animation-delay: 3.2s;
 
-   
-                                                                                                                                                                                                                                                           .right {
-   
-                                                                                                                                                                                                                                                                       position:
-relative;
-                                                                                                                                                                                                                                                                                
-                                                                                                                                                                                                                                                                           transf
-orm: translateX(100vw);
-   
-                                                                                                                                                                                                                                                                               an
-imation-name: slide_from_right;
-                                                                                                                                                                                                                                                                                
+    animation-duration: 1.2s;
 
-  animation-delay: 4s;
-   
-                                                                                                                                                                                                                                                                                
-      animation-duration: 1.2s;
-                                                                                                                                                                                                                                                                                
+    animation-fill-mode: forwards;
 
-          animation-fill-mode: both;
-   
-                                                                                                                                                                                                                                                                                
-              animation-timing-function: ease-out;
-                                                                                                                                                                                                                                                                                
+    animation-timing-function: ease-out;
 
-      }
-                                                                                                                                                                                                                                                                                
-
-      .right .container {
-   
-                                                                                                                                                                                                                                                                                
-                  transform: scale3d(.8,.8,.8);
-                                                                                                                                                                                                                                                                                
-
-                      width: fit-content;
-   
-                                                                                                                                                                                                                                                                                
-                          transition: transform;
-                                                                                                                                                                                                                                                                                
-
-                              transition-duration: .5s;
-   
-                                                                                                                                                                                                                                                                                
-                      }
- .right:hover .container {
-   
-                                                                                                                                                                                                                                                                                
-                                  transform: scale3d(1,1,1);
-                                                                                                                                                                                                                                                                                
-
-                          }
-
-   
-                          .right:hover .container a {                                                                                                                                                                                                 
+}
 
 
-                                      text-decoration: underline;
-                                                                                                                                                                                                                                                                                
+@keyframes enter_bot {
 
-                              }
-                                                                                                                                                                                                                                                      
+    0% {
 
+        transform: translateY(100vh);                                                                                                                                  
 
-                              .left {
+    }
 
-   
-                                          position: relative;                                                                                                                                                                                         
+    100% {                                                                                                                                                 
 
+        transform: initial;
 
-                                              transform: translateX(-100vw);
+    }                                                                                                                                  
 
-   
-                                                  animation-name: slide_from_left;                                                                                                                                                                    
+}
 
+#socials {
 
-                                                      animation-delay: 4s;
+    position: fixed;                                                                                                               
 
-   
-                                                          animation-duration: 1.2s;                                                                                                                                                                   
+    bottom: 5vmax;
 
+    justify-content: center; align-items: center; text-align: center;
 
-                                                              animation-fill-mode: forwards;
+    vertical-align: top;                                                                                           
 
-   
-                                                                  animation-timing-function: ease-out;                                                                                                                                                
+    transform: translateY(100vh);
 
+    animation-name: enter_bot;                                                                             
 
-                                                          }
+    animation-delay: 4.5s;
 
-   
-                                                          .left .container {                                                                                                                                                                          
+    animation-duration: 1s;                                                                        
 
+    animation-fill-mode: forwards;
 
-                                                                      transform: scale3d(.8,.8,.8);
+    animation-timing-function: ease-out;                                                   
 
-   
-                                                                          width: auto;                                                                                                                                                                
+}
 
+#socials > h4 {                                                                                
 
-                                                                              transition: transform;
-          transition-duration: .5s;                                                                                                                                           
+    font-size: 1.75vmax;
 
-
-                                                                          }
-
-   
-                                                                          .left:hover .container {                                                                                                                                                    
+}                                                                                          
 
 
-                                                                                      transform: scale3d(1,1,1);
+@keyframes slide_from_left {
 
-   
-                                                                              }                                                                                                                                                                       
+    0% {
+
+        transform: translateX(-100vw);
+
+    }
+
+    100% {
+
+        transform: translate(0vw);
+
+    }                                  
+
+}
+
+@keyframes slide_from_right {              
+
+    0% {
+
+        transform: translateX(100vw);
+
+    }
+    100% { 
+
+        transform: transla
+        te(0vw);
+
+    }
+
+}
 
 
-                                                                              .left:hover .container a {
+.right {
 
-   
-                                                                                          text-decoration: underline;                                                                                                                                 
+    position:
+    relative;
+
+    transf
+    orm: translateX(100vw);
+
+    an
+    imation-name: slide_from_right;
 
 
-                                                                                  }
-                                                                                                                                                                                                                                                      
+    animation-delay: 4s;
+
+
+    animation-duration: 1.2s;
+
+
+    animation-fill-mode: both;
+
+
+    animation-timing-function: ease-out;
+
+
+}
+
+
+.right .container {
+
+
+    transform: scale3d(.8,.8,.8);
+
+
+    width: fit-content;
+
+
+    transition: transform;
+
+
+    transition-duration: .5s;
+
+
+}
+.right:hover .container {
+
+
+    transform: scale3d(1,1,1);
+
+
+}
+
+
+.right:hover .container a {                                                                                                                                                                                                 
+
+
+    text-decoration: underline;
+
+
+}
+
+
+
+.left {
+
+
+    position: relative;                                                                                                                                                                                         
+
+
+    transform: translateX(-100vw);
+
+
+    animation-name: slide_from_left;                                                                                                                                                                    
+
+
+    animation-delay: 4s;
+
+
+    animation-duration: 1.2s;                                                                                                                                                                   
+
+
+    animation-fill-mode: forwards;
+
+
+    animation-timing-function: ease-out;                                                                                                                                                
+
+
+}
+
+
+.left .container {                                                                                                                                                                          
+
+
+    transform: scale3d(.8,.8,.8);
+
+
+    width: auto;                                                                                                                                                                
+
+
+    transition: transform;
+    transition-duration: .5s;                                                                                                                                           
+
+
+}
+
+
+.left:hover .container {                                                                                                                                                    
+
+
+    transform: scale3d(1,1,1);
+
+
+}                                                                                                                                                                       
+
+
+.left:hover .container a {
+
+
+    text-decoration: underline;                                                                                                                                 
+
+
+}
+
 
 
 
