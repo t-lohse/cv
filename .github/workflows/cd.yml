@@ -1,0 +1,36 @@
+name: "Release"
+
+on:
+  workflow_run:
+    #workflows: ["Tex format CI"]
+    #types: [completed]
+    #branches: "main"
+permissions:
+  contents: write
+
+jobs:
+  #release:
+  on-success:
+    name: "Release"
+    runs-on: "ubuntu-latest"
+    steps:
+    - uses: actions/checkout@v3
+    - name: Install pdflatex
+      run: |
+        apt update
+        apt upgrade
+        apt install texlive-full
+    - name: Create directory
+      run: mkdir .build
+    - name: Build pdfs
+      run: |
+        find src -name '*.tex' -exec pdflatex {} \;
+        mv *.pdf .build
+    - name: Commit report
+      run: |
+        git config --global user.name 'Thomas Lohse'
+        git config --global user.email 'your-username@users.noreply.github.com'
+        git commit add .build 
+        git commit -m ".build"
+        git push
+
