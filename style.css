@@ -31,8 +31,8 @@ h4 {
     font-size: 1.25vmax;
 }
 ul {
-    margin-left: 1em;
-    padding-left: 3em;
+    margin-left: 0em;
+    padding-left: -3em;
     color: white;
     font-size: 1.75vmax;
     list-style: none;
