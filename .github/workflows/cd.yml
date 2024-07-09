@@ -35,8 +35,8 @@ jobs:
         mv cv_*.pdf .build
         cp index.html .build
         cd .build
-        for f in cv_*; do mv "$f" "${f#cv_}"; done
-        find . -name '*.pdf' -exec echo "<a href=\"{}\">{}</a> \; >> index.html
+        rename 's/cv_//' cv_*
+        find . -name '*.pdf' -exec echo "<a href=\"{}\">{}</a>" \; >> index.html
   # rename 's/cv_//' cv_*
   # rename cv_ "" cv_*
     - name: Upload artifact
