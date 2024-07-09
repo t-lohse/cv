@@ -13,11 +13,9 @@ permissions:
   id-token: write
 
 jobs:
-  #release:
   deploy:
     runs-on: "ubuntu-latest"
     steps:
-      #- uses: actions/checkout@v3
     - name: Checkout
       uses: actions/checkout@v4
     - name: Setup Pages
@@ -38,7 +36,7 @@ jobs:
         cp index.html .build
         cd .build
         rename 's/cv_//' cv_*
-    #rename cv_ "" cv_*
+        #rename cv_ "" cv_*
         find . -name '*.pdf' -exec echo "<a href=\"{}\">{}</a> \; >> index.html
     - name: Upload artifact
       uses: actions/upload-pages-artifact@v3
@@ -48,11 +46,11 @@ jobs:
     - name: Deploy to GitHub Pages
       id: deployment
       uses: actions/deploy-pages@v4
-        #- name: Commit report
-        #  run: |
-        #    git config --global user.name 'Thomas Lohse'
-        #    git config --global user.email 't-lohse@users.noreply.github.com'
-        #    git add .build 
-        #    git commit -m ".build"
-        #    git push
+      #- name: Commit report
+      #  run: |
+      #    git config --global user.name 'Thomas Lohse'
+      #    git config --global user.email 't-lohse@users.noreply.github.com'
+      #    git add .build 
+      #    git commit -m ".build"
+      #    git push
 
