@@ -33,6 +33,7 @@ jobs:
       run: |
         find src -name 'cv_*.tex' -exec pdflatex {} \;
         mv cv_*.pdf .build
+        cp index.html .build
         cd .build
         rename cv_ "" cv_*
     - name: Upload artifact
