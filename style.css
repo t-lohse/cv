@@ -78,12 +78,20 @@ i {
     100% {                                                
         transform: initial;                   
     }                                 
-}                                         
+}                
+@keyframes enter_left {                                                                    
+    0% {                                                                          
+        transform: translateX(-100vw);  
+    }                                                         
+    100% {                                                
+        transform: initial;                   
+    }                                 
+}                             
 
 #title {                                  
     position: relative;           
     transform: translateY(-100vh);
-    animation-name: enter_top;
+    animation-name: enter_left;
     animation-delay: 0s;
     animation-duration: 1s;
     animation-fill-mode: forwards;
