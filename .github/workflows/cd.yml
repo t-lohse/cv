@@ -22,7 +22,7 @@ jobs:
         sudo apt install texlive-latex-base
      # sudo apt install texlive-fonts-recommended
      # sudo apt install texlive-fonts-extra
-     # sudo apt install texlive-latex-extra
+        sudo apt install texlive-latex-extra
     - name: Create directory
       run: mkdir .build
     - name: Build pdfs
@@ -33,7 +33,7 @@ jobs:
       run: |
         git config --global user.name 'Thomas Lohse'
         git config --global user.email 't-lohse@users.noreply.github.com'
-        git commit add .build 
+        git add .build 
         git commit -m ".build"
         git push
 
