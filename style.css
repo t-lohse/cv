@@ -90,14 +90,23 @@ i {
 
 #title {                                  
     position: relative;           
-    transform: translateY(-100vh);
+    transform: translateX(-100vw);
     animation-name: enter_left;
     animation-delay: 0s;
     animation-duration: 1s;
     animation-fill-mode: forwards;
-    animation-timing-function: ease-o
-    ut;
+    animation-timing-function: ease-out;
 }             
+#list {        
+    position: relative;
+    transform: translateX(-10
+    0vw);
+    animation-name: enter_left;
+    animation-delay: .8s;
+    animation-duration: 1.2s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-out;
+}
 #sub {        
     position: relative;
     transform: translateY(-10
@@ -114,8 +123,7 @@ i {
     tion-timing-function: ease-out;
 }
 #info {
-    p
-    osition: relative;
+    position: relative;
 
     margin-top: .1em;
 
@@ -133,232 +141,3 @@ i {
     animation-timing-function: ease-out;
 
 }
-
-#contact {
-
-    position: relative;
-
-    margin-top: 2em;
-
-    font-size: 1.75vmax;
-
-    transform: translateY(-100vh);
-
-    animation-name: enter_top;
-
-    animation-delay: 3.2s;
-
-    animation-duration: 1.2s;
-
-    animation-fill-mode: forwards;
-
-    animation-timing-function: ease-out;
-
-}
-
-
-@keyframes enter_bot {
-
-    0% {
-
-        transform: translateY(100vh);                                                                                                                                  
-
-    }
-
-    100% {                                                                                                                                                 
-
-        transform: initial;
-
-    }                                                                                                                                  
-
-}
-
-#socials {
-
-    position: fixed;                                                                                                               
-
-    bottom: 5vmax;
-
-    justify-content: center; align-items: center; text-align: center;
-
-    vertical-align: top;                                                                                           
-
-    transform: translateY(100vh);
-
-    animation-name: enter_bot;                                                                             
-
-    animation-delay: 4.5s;
-
-    animation-duration: 1s;                                                                        
-
-    animation-fill-mode: forwards;
-
-    animation-timing-function: ease-out;                                                   
-
-}
-
-#socials > h4 {                                                                                
-
-    font-size: 1.75vmax;
-
-}                                                                                          
-
-
-@keyframes slide_from_left {
-
-    0% {
-
-        transform: translateX(-100vw);
-
-    }
-
-    100% {
-
-        transform: translate(0vw);
-
-    }                                  
-
-}
-
-@keyframes slide_from_right {              
-
-    0% {
-
-        transform: translateX(100vw);
-
-    }
-    100% { 
-
-        transform: transla
-        te(0vw);
-
-    }
-
-}
-
-
-.right {
-
-    position:
-    relative;
-
-    transf
-    orm: translateX(100vw);
-
-    an
-    imation-name: slide_from_right;
-
-
-    animation-delay: 4s;
-
-
-    animation-duration: 1.2s;
-
-
-    animation-fill-mode: both;
-
-
-    animation-timing-function: ease-out;
-
-
-}
-
-
-.right .container {
-
-
-    transform: scale3d(.8,.8,.8);
-
-
-    width: fit-content;
-
-
-    transition: transform;
-
-
-    transition-duration: .5s;
-
-
-}
-.right:hover .container {
-
-
-    transform: scale3d(1,1,1);
-
-
-}
-
-
-.right:hover .container a {                                                                                                                                                                                                 
-
-
-    text-decoration: underline;
-
-
-}
-
-
-
-.left {
-
-
-    position: relative;                                                                                                                                                                                         
-
-
-    transform: translateX(-100vw);
-
-
-    animation-name: slide_from_left;                                                                                                                                                                    
-
-
-    animation-delay: 4s;
-
-
-    animation-duration: 1.2s;                                                                                                                                                                   
-
-
-    animation-fill-mode: forwards;
-
-
-    animation-timing-function: ease-out;                                                                                                                                                
-
-
-}
-
-
-.left .container {                                                                                                                                                                          
-
-
-    transform: scale3d(.8,.8,.8);
-
-
-    width: auto;                                                                                                                                                                
-
-
-    transition: transform;
-    transition-duration: .5s;                                                                                                                                           
-
-
-}
-
-
-.left:hover .container {                                                                                                                                                    
-
-
-    transform: scale3d(1,1,1);
-
-
-}                                                                                                                                                                       
-
-
-.left:hover .container a {
-
-
-    text-decoration: underline;                                                                                                                                 
-
-
-}
-
-
-
-
