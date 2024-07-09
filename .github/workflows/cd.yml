@@ -40,6 +40,7 @@ jobs:
         find . -name '*.pdf' -exec echo "<li><a href=\"{}\">{}</a></li>" \; >> index.html
         echo "</ul>" >> index.html
         echo "</body>" >> index.html
+        echo "</html>" >> index.html
     - name: Upload artifact
       uses: actions/upload-pages-artifact@v3
       with:
