@@ -50,23 +50,6 @@ li {
     display: list-item;
     transition: transform 0.3s ease-out;
 }
-em {
-    text-decoration: none;
-    font-style: normal;
-    color: #D20000;
-}
-div {
-    display: inline-block;
-    width: auto;
-    height: auto;
-    margin: -5px 0em;
-    vertical-align: top;
-}
-i {
-    color: white;
-    padding: 0em .25em;
-    font-size: 1.5vmax;
-}
 a {
     font-size: 1.75vmax;
     width: auto;
@@ -74,24 +57,14 @@ a {
     color: white;
     margin: 0em .1em;
     text-decoration: none;
-    transition: transform 0.3s ease-out;
 }
 a:hover {                                                                            
-    transform: scale(1.5);                                                 
     text-decoration: underline;
 }                                                                             
 li:hover {
     transform: scale(1.2) translateX(.5em);
 }
 
-@keyframes enter_top {                                                                    
-    0% {                                                                          
-        transform: translateY(-100vh);                                
-    }                                                         
-    100% {                                                
-        transform: initial;                   
-    }                                 
-}                
 @keyframes enter_left {                                                                    
     0% {                                                                          
         transform: translateX(-100vw);  
