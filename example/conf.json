@@ -1,0 +1,38 @@
+{
+    "InfoText": "I am a Software Engineering Master's student at Aalborg University (AAU) with a fervor for backend and system development. Since the age of 16, my journey in programming has been marked by a commitment to independent learning, particularly in the realms of software development theory. I specialize in backend development, with practical experience in firmware development and task automation using shell-scripts. Beyond this, my passion extends to exploring various programming languages and their intricacies. This blend of theoretical knowledge and hands-on skills positions me to excel in the intricate landscape of software engineering.",
+    "TechSec": "Technical Competencies",
+    "SkillMain": ["Software Development", "Git", "Project Development"],
+    "SkillMainTime": ["Since 2016", "Since 2017", "Since 2017"],
+    "KnownLangTitle": "Known Programming Languages:",
+    "KnownLangList": [
+        "Rust (Since 2021)",
+        "C\\# (Since 2016)",
+        "C (Since 2020)",
+        "Bash (Since 2020)", 
+        "Haskell (Since 2023)"
+    ],
+    "KnownToolTitle": "Known Tools:",
+    "KnownToolList": [
+        "GitHub (Since 2017)",
+        "Cargo (Since 2021)",
+        "Docker (Since 2021)",
+        ".NET (Since 2017)",
+        "Unity (Since 2017)",
+        "QMK (Since 2020)"
+    ],
+    "EduSec": "Education",
+    "EduStart1": ["2017"],
+    "EduEnd1": ["2020"],
+    "EduPlace1": ["High School"],
+    "EduDesc1": [
+        "High school attendee for three years at Aalborg Techcollege (AATG), and recieved the Higher Techincal Exam (HTX), with a specialised Study Area in \\textit{Communication \\& IT} A,\\textit{Programming} B, and tecnical study in \\textit{Technical Science} A."
+    ],
+    "EduStart": ["2017", "2020", "2023"],
+    "EduEnd": ["2020", "2023", "Now"],
+    "EduPlace": ["High School", "University (Bachelor)", "University (Master)"],
+    "EduDesc": [
+        "High school attendee for three years at Aalborg Techcollege (AATG), and recieved the Higher Techincal Exam (HTX), with a specialised Study Area in \\textit{Communication \\& IT} A,\\textit{Programming} B, and tecnical study in \\textit{Technical Science} A.",
+        "Attendee at Aalborg University, studying Software, Bachelor. \\begin{itemize} \\item[] \\textbf{1st Semester --- } Developed a workscheduling system for the production teams at Siemens Gamesa (Developed in C). \\item[] \\textbf{2nd Semester --- } Implemented the Signal Protocol in an IoT environment (Developed in JavaScript). \\item[] \\textbf{3rd Semester --- } Developed a program for better handling of Siemens Gamesas turbine blades' location and production (Developed in C\\#).\\item[] \\textbf{4th Semester --- } Developed a programming language as a replacement to the shell scripting language Bash (Developed in C\\#). \\item[] \\textbf{5th Semester --- } A multiproject, where six groups collaborated on the same code base, written in Rust. \\item[] \\textbf{6th Semester (Bachelor project) --- } Developed a model learning tool to reverse engineer the codebase from PLCs in ladder programming (Written in Java and C\\#).\\end{itemize}",
+        "Attendee at Aalborg University, studying Software Engineer, Master. \\begin{itemize} \\item[] \\textbf{1st Semester (Current) --- } Engineered an online learning platform for introductionary programming, with multiple services and Docker Swarm deployment (Developed in TypeScript).   \\end{itemize}"
+    ]
+}
