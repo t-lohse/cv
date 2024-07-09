@@ -99,8 +99,7 @@ i {
 }             
 #list {        
     position: relative;
-    transform: translateX(-10
-    0vw);
+    transform: translateX(-100vw);
     animation-name: enter_left;
     animation-delay: .8s;
     animation-duration: 1.2s;
@@ -124,20 +123,13 @@ i {
 }
 #info {
     position: relative;
-
     margin-top: .1em;
-
     padding: 0em 1em;
-
     transform: translateY(-100vh);
     animation-name: enter_top;                                                                                                                                                                                                             
-
     animation-delay: 2s;
-
     animation-duration: 1.2s;
-
     animation-fill-mode: forwards;
-
     animation-timing-function: ease-out;
-
 }
+
