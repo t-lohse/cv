@@ -37,12 +37,12 @@ a {
     margin: 0em .1em;
     text-decoration: none;
     transform: scale3d(.9,.9,.9);                                                        
+    transition: transform;
+    transition-duration: .5s;
 }
 a:hover {                                                                            
     transform: scale3d(1,1,1);                                                        
     text-decoration: underline;
-    transition: transform;
-    transition-duration: .5s;
 }                                                                                         
 ul {
     color: white;
