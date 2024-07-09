@@ -41,6 +41,8 @@ jobs:
         echo "</ul>" >> index.html
         echo "</body>" >> index.html
         echo "</html>" >> index.html
+        cat index.html
+        ls
     - name: Upload artifact
       uses: actions/upload-pages-artifact@v3
       with:
