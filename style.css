@@ -12,7 +12,8 @@ body {
 h1, h2, h3, h4, h5, p {
     color: white;
     font-family: Console, sans-serif;
-    margin: 1em;
+    margin-left: 1em;
+    margin-top: 1em;
     padding: 0;
 }
 h1 {
@@ -31,8 +32,8 @@ h4 {
     font-size: 1.25vmax;
 }
 ul {
-    margin-left: 0em;
-    padding-left: -3em;
+    margin-left: 1em;
+    margin-top: -.75em;
     color: white;
     font-size: 1.75vmax;
     list-style: none;
@@ -42,6 +43,12 @@ li::before {
     content: "\27A4";
     display: inline-block;
     width: 2em;
+}
+li {
+    color: white;
+    content: "\27A4";
+    display: inline-block;
+    transition: transform 0.3s ease-out;
 }
 em {
     text-decoration: none;
@@ -67,14 +74,15 @@ a {
     color: white;
     margin: 0em .1em;
     text-decoration: none;
-    transform: scale3d(.7,.7,.7);                                                        
-    transition: transform;
-    transition-duration: .5s;
+    transition: transform 0.3s ease-out;
 }
 a:hover {                                                                            
-    transform: scale3d(1,1,1);                                                 
+    transform: scale(1.5);                                                 
     text-decoration: underline;
-}                                                                                         
+}                                                                             
+li:hover {
+    transform: scale(1.2) translate(1em, 0);
+}
 
 @keyframes enter_top {                                                                    
     0% {                                                                          
