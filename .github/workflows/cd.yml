@@ -6,7 +6,9 @@ on: push
     #types: [completed]
     #branches: "main"
 permissions:
-  contents: write
+  contents: read
+  pages: write
+  id-token: write
 
 jobs:
   #release:
@@ -28,10 +30,9 @@ jobs:
       run: |
         find src -name '*.tex' -exec pdflatex {} \;
         mv *.pdf .build
-    - name: Deploy
-      uses: JamesIves/github-pages-deploy-action@v4
-      with:
-        folder: .build # The folder the action should deploy.
+    - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
         #- name: Commit report
         #  run: |
         #    git config --global user.name 'Thomas Lohse'
