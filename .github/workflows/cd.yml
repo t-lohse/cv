@@ -29,7 +29,7 @@ jobs:
     - name: Commit report
       run: |
         git config --global user.name 'Thomas Lohse'
-        git config --global user.email 'your-username@users.noreply.github.com'
+        git config --global user.email 't-lohse@users.noreply.github.com'
         git commit add .build 
         git commit -m ".build"
         git push
