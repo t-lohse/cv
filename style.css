@@ -37,7 +37,7 @@ a {
     color: white;
     margin: 0em .1em;
     text-decoration: none;
-    transform: scale3d(.9,.9,.9);                                                        
+    transform: scale3d(.7,.7,.7);                                                        
     transition: transform;
     transition-duration: .5s;
 }
