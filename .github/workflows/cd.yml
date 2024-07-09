@@ -4,7 +4,7 @@ on:
   workflow_run:
     workflows: ["Haskell CI"]
     types: [completed]
-    branches: "*"
+    branches: "main"
 
 jobs:
   #release:

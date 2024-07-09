@@ -21,9 +21,10 @@ main = do
     putStrLn $ f "erstat"
     Nothing <- return $ findPhrase "hejsa du er mega #! cringe" "##!"
     print $ replaceKeys (lines testPhrase) "#!" conf
-    let pruned = unlines $ replaceKeys (lines a) "#!" conf
+    let pruned = unlines $ replaceKeys (lines a) "@!" conf
     putStrLn "replaced file"
-    withCreateProcess (proc "pdflatex" []) {std_in = CreatePipe, std_out = CreatePipe} $ \(Just stdin) _ _ ph -- TODO: ARGS (output and others)
+    putStrLn pruned
+    withCreateProcess (proc "pdflatex" ["-interaction=nonstopmode"]) {std_in = CreatePipe} $ \(Just stdin) _ _ ph -- TODO: ARGS (output and others)
      -> do
         hPutStr stdin pruned
         hFlush stdin
