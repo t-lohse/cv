@@ -24,7 +24,7 @@ jobs:
       run: |
         sudo apt update
         sudo apt upgrade
-        sudo apt install util-linux texlive-latex-base texlive-fonts-recommended texlive-fonts-extra texlive-latex-extra
+        sudo apt install rename texlive-latex-base texlive-fonts-recommended texlive-fonts-extra texlive-latex-extra
     - name: Create directory
       run: |
         rm -rf .build
@@ -35,9 +35,9 @@ jobs:
         mv cv_*.pdf .build
         cp index.html .build
         cd .build
-        rename 's/cv_//' cv_*
-        #rename cv_ "" cv_*
+        rename cv_ "" cv_*
         find . -name '*.pdf' -exec echo "<a href=\"{}\">{}</a> \; >> index.html
+  # rename 's/cv_//' cv_*
     - name: Upload artifact
       uses: actions/upload-pages-artifact@v3
       with:
