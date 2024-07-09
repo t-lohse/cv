@@ -12,10 +12,9 @@ body {
 h1, h2, h3, h4, h5, p {
     color: white;
     font-family: Console, sans-serif;
-    margin: 0;
+    margin: 1em;
     padding: 0;
 }
-
 h1 {
     font-family: Console, monospace;
     font-size: 5vmax;
@@ -37,6 +36,7 @@ a {
     color: white;
     margin: 0em .1em;
     text-decoration: none;
+    transform: scale3d(.9,.9,.9);                                                        
 }
 a:hover {                                                                            
     transform: scale3d(1,1,1);                                                        
@@ -47,7 +47,6 @@ em {
     font-style: normal;
     color: #D20000;
 }
-
 div {
     display: inline-block;
     width: auto;
@@ -60,16 +59,6 @@ i {
     padding: 0em .25em;
     font-size: 1.5vmax;
 }
-
-#socials i { 
-    font-size: 3.25vmax;                                                                              
-    transform: scale3d(.7,.7,.7);                                                                 
-    transition: transform;                                                                    
-    transition-duration: .5s;                                                             
-}                                                                                             
-#socials i:hover {                                                                            
-    transform: scale3d(1,1,1);                                                        
-}                                                                                         
 
 @keyframes enter_top {                                                                    
     0% {                                                                          
@@ -102,32 +91,6 @@ i {
     transform: translateX(-100vw);
     animation-name: enter_left;
     animation-delay: .8s;
-    animation-duration: 1.2s;
-    animation-fill-mode: forwards;
-    animation-timing-function: ease-out;
-}
-#sub {        
-    position: relative;
-    transform: translateY(-10
-    0vh);
-    animation-name: enter
-    _top;
-    animation-delay:
-    .8s;
-    animation-dur
-    ation: 1.2s;
-    animation
-    -fill-mode: forwards;
-    anima
-    tion-timing-function: ease-out;
-}
-#info {
-    position: relative;
-    margin-top: .1em;
-    padding: 0em 1em;
-    transform: translateY(-100vh);
-    animation-name: enter_top;                                                                                                                                                                                                             
-    animation-delay: 2s;
     animation-duration: 1.2s;
     animation-fill-mode: forwards;
     animation-timing-function: ease-out;
