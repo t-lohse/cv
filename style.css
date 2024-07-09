@@ -39,6 +39,8 @@ ul {
 li::before {
     color: white;
     content: "HH";
+    display: inline-block;
+    width: 2em;
 }
 em {
     text-decoration: none;
