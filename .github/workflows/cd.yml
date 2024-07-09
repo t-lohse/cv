@@ -1,10 +1,7 @@
 name: "Release"
 
 on: push
-  #workflow_run:
-    #workflows: ["Tex format CI"]
-    #types: [completed]
-    #branches: "main"
+
 permissions:
   contents: read
   pages: write
@@ -24,7 +21,7 @@ jobs:
       run: |
         sudo apt update
         sudo apt upgrade
-        sudo apt install texlive-latex-base texlive-fonts-recommended texlive-fonts-extra texlive-latex-extra
+        sudo apt install util-linux texlive-latex-base texlive-fonts-recommended texlive-fonts-extra texlive-latex-extra
     - name: Create directory
       run: |
         rm -rf .build
