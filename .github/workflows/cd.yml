@@ -31,8 +31,8 @@ jobs:
         mkdir .build
     - name: Build pdfs
       run: |
-        find src -name '*.tex' -exec pdflatex {} \;
-        mv *.pdf .build
+        find src -name 'cv_*.tex' -exec pdflatex {} \;
+        mv cv_*.pdf .build
     - name: Upload artifact
       uses: actions/upload-pages-artifact@v3
       with:
