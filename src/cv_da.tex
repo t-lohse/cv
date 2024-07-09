@@ -1,14 +1,15 @@
-\documentclass{article}
-\usepackage[margin=3cm]{geometry}
+\documentclass[a4paper]{report}
 \usepackage[utf8]{inputenc}
+\usepackage{anysize}
+\usepackage[a4paper,margin=7em]{geometry}
 \usepackage{float}
 \usepackage{graphicx} % Required for figures
-\usepackage{anysize}
 \usepackage{booktabs}
 \usepackage{hyperref}
 \usepackage{fontawesome5}
 \usepackage{multirow}
 \usepackage{array}
+\usepackage{lipsum}
 \usepackage[export]{adjustbox}
 \usepackage{marvosym}
 \usepackage{tabularx}
@@ -16,126 +17,189 @@
 \usepackage{tabu}
 \usepackage{longtable}[=v4.13]
 \usepackage{enumitem}
+\setitemize{itemsep=2pt, topsep=2pt, align=right, labelindent=\parindent, leftmargin=!, itemindent=!, labelsep=.5em, labelwidth=!}
 
+\def\secsep{\hrule width5cm}
+%\tabulinesep=0pt
+%\extrarowsep=-3pt
+%\def\secsep{\hrule}
 \title{\bfseries\Huge CV}
 \begin{document}
-\section*{\Huge CV}
-\subsection*{Thomas Krogh Lohse}
+%\section*{\Huge CV}\subsection*{Thomas Krogh Lohse}
+\section*{\centering \Huge CV}\subsection*{\centering Thomas Krogh Lohse}
 
-%\par\noindent\rule{\textwidth}{1pt}
 \begin{tabularx}{\textwidth}{lX}
     \toprule%\\[-10pt]
-    \href{https://goo.gl/maps/SZ6nwvdFf59X1VvR7}{\faIcon{map-marker-alt}~Sigrid Undsets Vej 156A, Aalborg Ø 9220} & 
-    \multirow[t]{7}{=}{Jeg er en 21 årig Software, Bachelor studerende på Aalborg Universitet (AAU) i Aalborg, hvor jeg også bor.
-    I min fritid interesserer jeg mig for at lære om nye software relateret emner/teknologier, enten ved at læse eller arbejde på egne små projekter eller på online lærings platforme som LeetCode.
-    Jeg har blandt andet arbejdet med keyboard firmware (QMK), samt med configuration på mit linux system (primært i form af shell scripts, og automatisering af opgaver).
-    Derudover bruger jeg også min fritid på at arbjede.
-    Jeg har programmeret siden jeg var 16 år.} \\\\[-4pt]%[8pt]
+    \href{https://maps.app.goo.gl/mtFWbUVz1f8x7saS8}{\faIcon{map-marker-alt}~Aalborg Øst 9220, Denmark}& 
+    \multirow[t]{7}{=}{
+        Jeg er en Software kandidatstuderende (MSc) ved Aalborg Universitet (AAU).
+        Min fascination af programmering har ført mig på en rejse af selvstændig læring siden jeg var 16 år gammel.
+        Mine interesser omfatter softwareudviklingsteori, og jeg har prøvet kræfter med backend, systemudvikling og firmwareudvikling.
+        Det, der virkelig fanger mig, er at udforske nuancerne og konstruktionerne i forskellige programmeringssprog, hvilket giver mig indsigt i, hvad der er bedst egnet til forskellige problemer (i øjeblikket elsker jeg funktionel programmering).
+        Denne blanding af teoretisk viden og praktiske færdigheder hjælper mig på min rejse i den dynamiske verden af software udvikling.
+    }\\\\[-4pt]
     \href{tel:+4551164199}{\faIcon{mobile-alt}~+45 51 16 41 99} \\\\[-4pt]%[8pt] 
-    \href{https://github.com/t-lohse}{\faIcon{github}~\footnotesize\faIcon{at}\normalsize\texttt{LohseBoi}} \\\\[-4pt]%[8pt]
+    \href{https://github.com/t-lohse}{\faIcon{github}~\footnotesize\faIcon{at}\normalsize\texttt{t-lohse}} \\\\[-4pt]%[8pt]
     \href{https://gitlab.com/tlohse}{\faIcon{gitlab}~\footnotesize\faIcon{at}\normalsize\texttt{tlohse}} \\\\[-4pt]%[8pt]
     \href{mailto:mail@tlohse.dk}{\faIcon{envelope}~mail\normalsize\MVAt tlohse.dk} \\\\[-4pt]%[8pt]
     \href{https://linkedin.com/in/thomas-lohse}{\faIcon{linkedin}~thomas-lohse}\\\\[-4pt]
-    \href{https://tlohse.dk}{\faIcon{link}~tlohse.dk}\\\\[-14pt]
+    \href{https://tlohse.dk}{\faIcon{link}~tlohse.dk}\\\\[-11pt]
     \bottomrule
 \end{tabularx}%\\[8pt]
-\section*{Tekniske Kompetencer}
-\hrule width5cm
-\setlength{\tabcolsep}{7pt}
-\begin{longtabu} to \textwidth {@{}llll}
+%\par\noindent\rule{\textwidth}{1pt}
+\section*{Tekniske Komptencer}
+\secsep
+\vspace{1em}
+%\setlength{\tabcolsep}{7pt}
+\newcolumntype{Y}{>{\centering\arraybackslash}X}
+\iffalse
+\begin{tabularx}{\textwidth}{YYY}
     \centering
-    \large\textbf{Software Udvikling} & \large\textbf{git} & \large\textbf{Projekt Udvikling} & \large\textbf{Linux Vedligeholdelse} \\
-    \normalsize 5+ års erfaring       & 4+ års erfaring    & 4+ års erfaring     & 2+ års erfaring \\\\
-    \multicolumn{4}{@{}p{\textwidth}}{\textbf{Kendte programmeringssporg:} Rust (1 år),
-    C\# (5+ år), C (2 år), Bash (2 år), Web (JavaScript, HTML, CSS --- 1 år), }\\[4pt]
-    \multicolumn{4}{@{}p{\textwidth}}{\textbf{Kendte værktøjer:} Cargo (1 år), \@.NET (5+ år),
-    Unity (5+ år), CMake (2 år), Node.js (1 år), Electron (1 år), Docker ($\sim\frac{1}{2}$ år),
-    QMK ($\sim1\frac{1}{2}$ år), GitHub (4+ år)}
-\end{longtabu}
-\setlength{\tabcolsep}{6pt}
+    \large\textbf{Software Development} & \textbf{git} & \textbf{Project Development} \\
+    \normalsize Since 2017              & Since 2018         & Since 2017                         
+\end{tabularx}%
+\fi
+
+%\vspace{1em}\hrule width2.5cm\vspace{1em}
+
+%\begin{tabularx}{\linewidth}{l|l|l}
+\begin{center}
+    \begin{tabular}{l|l|l}
+        %\textbf{Known Programming Languages:} & \textbf{Known Tools:} \\
+        {\begin{tabular}[t]{lll}
+            \textbf{Language} & \textbf{Since} & \textbf{Level} \\
+            Haskell & 2023 & 8/10 \\
+            Kotlin  & 2022 & 8/10 \\
+            Java    & 2022 & 8/10 \\
+            Rust    & 2021 & 9/10 \\
+            Bash    & 2020 & 7/10 \\
+            C/C++   & 2020 & 7/10 \\
+            C\#     & 2017 & 8/10
+        \end{tabular}}
+        &
+        {\begin{tabular}[t]{lll}
+            \textbf{Tool} & \textbf{Since} & \textbf{Level} \\
+            Cabal  & 2023 & 7/10 \\
+            Docker & 2021 & 7/10 \\
+            Cargo  & 2021 & 8/10 \\
+            Linux  & 2020 & 8/10 \\
+            GitHub & 2018 & 9/10 \\
+            Git    & 2018 & 9/10 \\
+            .NET   & 2018 & 7/10
+        \end{tabular}}
+        &
+        {\begin{tabularx}{\linewidth}[t]{lll}
+            \textbf{Additional} & \textbf{Since} & \textbf{Level} \\
+            CI/CD       & 2022 & 8/10 \\
+            SCRUM       & 2022 & 8/10 \\
+            REST API    & 2021 & 7/10 \\
+            Embedded    & 2019 & 7/10 \\
+            Projekter   & 2017 & 9/10 \\
+            Programming & 2017 & 9/10 \\ 
+            %BUZZWORD PLS
+        \end{tabularx}}
+    \end{tabular}          
+\end{center}
+
+\newcommand{\p}[1]{\textbf{#1}\mbox{}\newline}
+\def\n{\\\\}
 \section*{Uddannelse}
-\hrule width5cm
+\secsep
 \begin{longtabu} to \textwidth {r|X}
-%\begin{tabularx}{\textwidth}{r|X}
-2007--2016 & \textbf{Folkeskole}\\
-&   Elev på Vodskov Skole til og med ottende klasse.
-    \\\\
-2016--2017 & \textbf{Efterskole}\\
-&   Elev på Ingstrup Efterskole i niende klasse.
-    \\\\
-2017--2020 & \textbf{Gymnasium}\\
-&   Elev på Aalborg Techcollege (AATG), hvor jeg tog den tekniske studentereksamen (HTX),
-    med profilfagende \textit{Kommunikation \& IT} A og \textit{Programmering} B, samt teknikfag i \textit{Elektronisk Udvikling og Produktion} A.
-    \\\\
-2020--Nu & \textbf{Universitet}\\
-&   Software, Bachelor studerende på Aalborg Universitet. I min tid har jeg arbejdet
-    med følgende projekter:
-    \begin{itemize}\setlength\itemsep{0em}
-        \item[] \textbf{1. Semester --- } Udviklede et vagtplanlægningssystem for Siemens Gamesas
-            produktionsarbejderhold (Udviklet i C).
-        \item[] \textbf{2. Semester --- } Implementerede Signal Protokollen i et IoT-miljø
-            (Udviklet i JavaScript).
-        \item[] \textbf{3. Semester --- } Udviklede et program til bedre håndtering
-            af Siemens Gamesas vindturbinevingers lokation og produktion (Udviklet i C\#).
-        \item[] \textbf{4. Semester --- } Udviklede et programmingssprog som erstatning
-            af Bash shell scripting (Udviklet i C\#)
+    2023--Now & \p{Universitet (Master)}
+    Studenrende ved Aalborg Universitet på Software Kandidatuddannelsen. Det følgende beskriver projekterne på hvert semester (* er det nuværende):
+    \begin{itemize}[leftmargin=4em]
+        \item[\textbf{1.}] Udviklede en onling læringsplatform til programmingsintroduktion, bestående af flere forskellige services, som en REST API, frontend, og en separat service til at afvikle kode.
+            Projektet blev deployed med Docker Swarm, og skrevet i TypeScript.
+        \item[\textbf{2.}] Designede  og implementerede en protokol til ad-hoc dynamiske mesh netværk, og anvendte den til en app hvor brugere skal dele deres lokaiton med et delmængde ``venner" i dette netværk gennem Bluetooth advertisements med dataen. Projektet var udviklet til Android enheder, og det hele er skrevet i Kotlin.
+        \item[\textbf{*3.}] \textbf{(Kandidat forspeciale)} Skal arbejde med C++ of sikkerhed gennem statisk analyse.
     \end{itemize}
-%\end{tabularx}
+    \\
+    2020--2023 & \p{Universitet (Bachelor)}
+    Studenrende ved Aalborg Universitet på Software Bacheloruddannelsen. Det følgende beskriver projekterne på hvert semester:
+    \begin{itemize}[leftmargin=4em]
+        \item[\textbf{1.}] Udviklede et vagtplanlægningssystem for Siemens Gamesas produktionsarbejderhold (Skrevet i C).
+        \item[\textbf{2.}] Implementerede Signal Protokollen i et IoT-miljø (Skrevet i JavaScript).
+        \item[\textbf{3.}] Udviklede et program til bedre håndtering af Siemens Gamesas vindturbinevingers lokation og produktion (Skrevet i C\#).
+        \item[\textbf{4.}] Udviklede et programmingssprog som erstatning af Bash shell scripting (Skrevet i C\#)
+        \item[\textbf{5.}] Et multiproject, hvor seks grupper skulle samarbejde i den samme kodebase (Skrevet i Rust).
+        \item[\textbf{6.}] Udviklede et model learning værktøj til ar reverse engineer kildekoden fra PLCer i ladder logic (Skrevet i Java og C\#).
+    \end{itemize}
+    \\
+    2017--2020 & \p{Gymnaisum} 
+    Elev på Aalborg Techcollege (AATG), hvor jeg tog den tekniske studentereksamen (HTX),
+    med profilfagende \textit{Kommunikation \& IT} A og \textit{Programmering} B,
+    samt teknikfag i \textit{Elektronisk Udvikling og Produktion} A.
 \end{longtabu}
+    \iffalse%
+    \\\\
+    2016--2017 & \textbf{Continuation School}\\lign=right, labelindent=!, leftmargin=6em, itemindent=!, labelsep=1em, labelwidth=!]
+    &   Attendee at Ingstrup Efterskole in grade nine.
+    \\\\
+    2007--2016 & \textbf{Public School}\\
+    &   Attendee at the public school in 9310 Vodskov (Vodskov Skole) from grade one to grade eight.
+    \fi%
 
 \section*{Beskæftigelse}
-\hrule width5cm
-%\begin{tabular}{p{.1\textwidth}|p{.847\textwidth}}
+\secsep
 \begin{longtabu} to \textwidth {r|X}
-2018--2019 & \textbf{Føtex Nørresundby}\\
-&   I løbet af min ansættelse hos Føtex Nørresundby, havde jeg en mindre mængde af stillinger:
-    \begin{itemize}\setlength\itemsep{0em}
-        \item[] \textbf{Servicemedarbejder --- } Min første kontrakt var under stillingen 
+    Efterår 2023 & \p{Product Owner for 5. semester Software multiproject}
+    Jeg var product ownser for multiprojektet på 5. semester Software, bestående af seks grupper med cirka seks medlemmer i hver gruppe. Projektet var på 15 ECTS-point.
+    Mine ansvarsområder inkluderede at lave opgaver der skulle implementeres af dem, besvarelse af spørgsmål vedrørende kodebasen og opgaverne, samt generelt at fungere som vejleder i projektet og som product owner.
+    \n
+    Efterår 2022 & \p{Undervisningsassistent}
+    Jeg var undervisningsassistent på Imperativ Programmeringkurset på 1. semester af Software og Datalogi på AAU.
+    Dette er det første programmeringskursus, man har på uddannelserne. Jeg skulle hjælpe studerende under øvelsessessioner, give feedback på deres afleveringsopgaver og samarbejde med kursuslæreren vedrørende øvelserne, platformen og afleveringerne.
+    \n
+    2022--2024 & \p{Aalborg Universitet, DEIS}
+    Jeg arbejder som studentermedarbejder hos DEIS på \href{https://github.com/Ecdar}{Ecdar}-projektet, hvor jeg primært udvikler i Rust i backenden til model checking (\href{https://github.com/Ecdar/Reveaal}{Reveaal}), men bidrager også til de andre dele af projektet.
+    \n
+    2022 & \p{RTX A/S}
+    Jeg arbejdede som studentermedhjælper hos RTX A/S i Nørresundby med både hardware- og softwareopgaver, som omfattede lodning og samling af udstyr samt udvikling af platforme til overvågning og test af større enheder/komponenter.
+    \n
+    2018--2019 & \p{Føtex Nørresundby}
+    I løbet af min ansættelse hos Føtex Nørresundby havde jeg forskellige roller:
+    \begin{itemize}[leftmargin=11em]%\setlength\itemsep{0em}
+        \item[\textbf{Servicemedarbejder}] Min første kontrakt var under stillingen 
             Servicemedarbejder, som havde et udvalg af opgaver, hvor den primære var at
             opretholde pantflaskemaskinerne.
-        \item[] \textbf{Kasse Assistent --- } Omkring et halvt år efter min ansættelse, bliver
+        \item[\textbf{Kasseassistent}] Omkring et halvt år efter min ansættelse, bliver
             jeg tilbudt en oplæring og ny tilhørende stilling som Kasse Assistent.
-        \item[] \textbf{Bake-Off Sal --- } Da jeg fylder 18 år, og min kontrakt opsiges,
+        \item[\textbf{Bake-Off Sal}] Da jeg fylder 18 år, og min kontrakt opsiges,
             tilbyder de mig en ny kontrakt med stillingen Bake-Off Salsperson, som var min stilling
             op til min opsigelse.
-    \end{itemize} \\
-2022 & \textbf{RTX A/S}\\
-&   Arbejdede som Studenter Medhjælper ved RTX A/S, Nørresundby med både hardware og software
-    arbejdsopgaver som bestod i at lodde og samle udstyr, samt udvikle platforme til at
-    monitorere og teste diverse større komponenter. \\\\
-2022--Nu & \textbf{Aalborg Universitet, DEIS}\\
-    &   Jeg arbejder som Studenterudvikler for DEIS på \href{https://github.com/Ecdar}{Ecdar} projektet
-    hvor jeg primært udvikler i Rust på vores backend model checking engine,
-    \href{https://github.com/Ecdar/Reveaal}{Reveaal}, men bidrager også til andre dele af projektet.
-%\end{tabular}
+    \end{itemize}
 \end{longtabu}
 
-    \section*{Anden Erfaring}
-\hrule width5cm
+\section*{Anden Erfaring}
+\secsep
 \begin{longtabu} to \textwidth {r|X}
-%\begin{tabular}{p{.1\textwidth}|p{.847\textwidth}}
-2021--Nu & \textbf{UNF Game Development Camp}\\
-&   Jeg er frivillig medarbejder hos UNFs Game Development Camp, hvor jeg har haft de følgende roller:
-    \begin{itemize}\setlength\itemsep{0em}
-        \item[2021] \textbf{Programmingsassistent ---} Assisterer programmeringslæreren, samt
-            hjælp med deltagernes programmeringsrelateret problemer.
-        \item[2021] \textbf{Logistisk Ansvarlig ---} Ansvarlig for håndtering af logistiken
-            vedrørende de frivilliges anmodninger om varer, samt anskaffelsen.
-        \item[2022] \textbf{Teknisk Ansvarlig ---} Ansvarlig for opsætningen af alt det teknsike
-            udstyrtil campen, samt introduktionen af \texttt{git} for deltagerne, og håndtering
+Efterår 2023 & \p{Tutorkoordinator}
+Jeg arbejdede som Tutorkoordinator for nye studerende i 2023, der startede på Software-studiet på Aalborg Universitet.
+Jeg var ansvarlig for at planlægge og organisere tutorplanerne og sikre, at de var på rette spor med planlægning, fundraising og afvikling af deres arrangementer, sammen med nogle arrangementer, jeg også skulle planlægge.
+Jeg var også ansvarlig for at håndtere organisationens økonomi, hvilket inkluderede afsendelse og betaling af fakturaer samt budgettering.
+\n
+Efterår 2022 & \p{Tutorplanlægger}
+Jeg arbejdede som Tutorplanlægger for nye studerende i 2022, der startede på Software-studiet på Aalborg Universitet.
+Jeg var ansvarlig for at planlægge, indsamle midler og afvikle arrangementet, hvor jeg skulle koordinere en håndfuld tutorer for at gennemføre arrangementet korrekt.
+\n
+Efterår 2021 & \p{Tutor}
+Jeg arbejdede frivilligt som tutor for nye studerende i 2021, der startede på Software-studiet på Aalborg Universitet.
+\n
+2021--nu & \p{UNF Spiludviklingslejr}
+Jeg er frivillig ved UNFs Spiludviklingslejr, hvor jeg har haft følgende roller:
+\begin{itemize}[leftmargin=4em]
+    \item[2024] \p{Fordreagshjælper} Assisterede med at finde og skaffe foredragsholdere til at præsentere for lejrdeltagerne samt dommere til at evaluere de spil, der bliver lavet i løbet af lejren.
+    \item[2024] \p{Tryk- og Dagsseddelhjælper} Assisterede med at skaffe tilladelser fra spilstudier til kunstværkdisplays og skabte morgenavisen for lejrdeltagerne.
+    \item[2023] \p{Tillidsperson} En af de få kontaktpersoner vedrørende lejrdeltagernes velfærd.
+    \item[2022] \p{Teknisk Ansvarlig} Ansvarlig for opsætningen af alt det teknsike
+            udstyrtil campen, samt introduktionen af git for deltagerne, og håndtering
             af alle problemer de måtte have med al det tekniske.
-    \end{itemize}\\
-2021 & \textbf{Tutor}\\
-&   Jeg var frivillig Tutor for de nye Software, Bachelor studerende på Aalborg Universitet.\\\\
-2022 & \textbf{Tutorplanlægger}\\
-&   Jeg er frivillig tutorplanlægger for de nye Software, Bachelor studerende på Aalborg Universitet.
-%\end{tabular}
+    \item[2021] \p{Programmingsassistent} Assisterer programmeringslæreren, samt
+            hjælp med deltagernes programmeringsrelateret problemer.
+    \item[2021] \p{Logistisk Ansvarlig} Ansvarlig for håndtering af logistiken
+            vedrørende de frivilliges anmodninger om varer, samt anskaffelsen.
+\end{itemize}
 \end{longtabu}
-
-\section*{Referencer}
-\hrule width5cm \ \\
-Fremsendes efter anmodning.
-
 \end{document}
-
 

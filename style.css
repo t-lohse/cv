@@ -1,0 +1,96 @@
+html, body {
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+body {
+    background-color: #1a1a1a;
+    margin: 0;
+    padding: 0;
+    text-align: left;
+}
+h1, h2, h3, h4, h5, p {
+    color: white;
+    font-family: Console, sans-serif;
+    margin-left: 1em;
+    margin-top: 1em;
+    padding: 0;
+}
+h1 {
+    font-family: Console, monospace;
+    font-size: 5vmax;
+}
+h2 {
+    font-size: 2.5vmax;
+    padding-left: .25em;
+    padding-bottom: -.5em;
+}
+h3 {
+    font-size: 1.75vmax;
+}
+h4 {
+    font-size: 1.25vmax;
+}
+ul {
+    margin-left: 1em;
+    margin-top: -.75em;
+    color: white;
+    font-size: 1.75vmax;
+    list-style: none;
+    display: inline-block;
+}
+li::before {
+    color: white;
+    content: "\27A4";
+    width: 2em;
+}
+li {
+    color: white;
+    content: "\27A4";
+    display: list-item;
+    transition: transform 0.3s ease-out;
+}
+a {
+    font-family: Console, monospace;
+    font-size: 1.75vmax;
+    width: auto;
+    font-weight: bold;
+    color: white;
+    margin: 0em .1em;
+    text-decoration: none;
+}
+a:hover {                                                                            
+    text-decoration: underline;
+}                                                                             
+li:hover {
+    transform: scale(1.2) translateX(.5em);
+}
+
+@keyframes enter_left {                                                                    
+    0% {                                                                          
+        transform: translateX(-100vw);  
+    }                                                         
+    100% {                                                
+        transform: initial;                   
+    }                                 
+}                             
+
+#title {                                  
+    position: relative;           
+    transform: translateX(-100vw);
+    animation-name: enter_left;
+    animation-delay: 0s;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-out;
+}             
+#list {        
+    position: relative;
+    transform: translateX(-100vw);
+    animation-name: enter_left;
+    animation-delay: .8s;
+    animation-duration: 1.2s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-out;
+}
+

@@ -1,0 +1,52 @@
+name: "Deploy"
+
+on:
+  push:
+    branches:
+      - main
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+jobs:
+  deploy:
+    runs-on: "ubuntu-latest"
+    steps:
+    - name: Checkout
+      uses: actions/checkout@v4
+    - name: Setup Pages
+      uses: actions/configure-pages@v5
+    - name: Install deps
+      run: |
+        sudo apt update
+        sudo apt upgrade
+        sudo apt install rename texlive-latex-base texlive-fonts-recommended texlive-fonts-extra texlive-latex-extra
+    - name: Create directory
+      run: |
+        rm -rf .build
+        mkdir .build
+    - name: Build pdfs
+      run: |
+        find src -name 'cv_*.tex' -exec pdflatex {} \;
+        mv cv_*.pdf .build
+        mv index.html .build
+        mv style.css .build
+        cd .build
+        rename 's/cv_//' cv_*
+        echo "<ul id=\"list\">" >> index.html
+        find . -name '*.pdf' -exec echo "<li><a href=\"{}\">{}</a></li>" \; >> index.html
+        echo "</ul>" >> index.html
+        echo "</body>" >> index.html
+        echo "</html>" >> index.html
+        cat index.html
+        ls
+    - name: Upload artifact
+      uses: actions/upload-pages-artifact@v3
+      with:
+        path: '.build'
+    - name: Deploy to GitHub Pages
+      id: deployment
+      uses: actions/deploy-pages@v4
+
