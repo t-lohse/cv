@@ -16,7 +16,11 @@ jobs:
     name: "Release"
     runs-on: "ubuntu-latest"
     steps:
-    - uses: actions/checkout@v3
+      #- uses: actions/checkout@v3
+    - name: Checkout
+      uses: actions/checkout@v4
+    - name: Setup Pages
+      uses: actions/configure-pages@v5
     - name: Install deps
       run: |
         sudo apt update
@@ -30,6 +34,11 @@ jobs:
       run: |
         find src -name '*.tex' -exec pdflatex {} \;
         mv *.pdf .build
+    - name: Upload artifact
+      uses: actions/upload-pages-artifact@v3
+      with:
+        # Upload entire repository
+        path: '.build'
     - name: Deploy to GitHub Pages
       id: deployment
       uses: actions/deploy-pages@v4
