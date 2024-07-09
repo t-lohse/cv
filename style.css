@@ -37,17 +37,17 @@ ul {
     color: white;
     font-size: 1.75vmax;
     list-style: none;
+    display: inline-block;
 }
 li::before {
     color: white;
     content: "\27A4";
-    display: inline-block;
     width: 2em;
 }
 li {
     color: white;
     content: "\27A4";
-    display: inline-block;
+    display: list-item;
     transition: transform 0.3s ease-out;
 }
 em {
@@ -81,7 +81,7 @@ a:hover {
     text-decoration: underline;
 }                                                                             
 li:hover {
-    transform: scale(1.2) translate(1em, 0);
+    transform: scale(1.2) translateX(.5em);
 }
 
 @keyframes enter_top {                                                                    
