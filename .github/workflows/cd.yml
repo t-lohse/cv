@@ -29,8 +29,8 @@ jobs:
         mkdir .build
     - name: Build pdfs
       run: |
-        find src -name 'cv_*.tex' -exec pdflatex {} \;
-        mv cv_*.pdf .build
+        find src -name '*.tex' -exec pdflatex {} \;
+        mv *.pdf .build
         mv index.html .build
         mv style.css .build
         cd .build
