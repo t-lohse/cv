@@ -36,7 +36,7 @@ jobs:
         cd .build
         rename 's/cv_//' cv_*
         echo "<ul id=\"list\">" >> index.html
-        find . -name '*.pdf' -exec echo "<li><a href=\"{}\">{}</a></li>" \; >> index.html
+        find * -name '*.pdf' -exec echo "<li><a href=\"{}\">{}</a></li>" \; >> index.html
         echo "</ul>" >> index.html
         echo "</body>" >> index.html
         echo "</html>" >> index.html
