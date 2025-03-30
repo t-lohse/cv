@@ -13,214 +13,156 @@
 \usepackage[export]{adjustbox}
 \usepackage{marvosym}
 \usepackage{tabularx}
-%\usepackage{ltablex}
+\usepackage{multicol}
 \usepackage{tabu}
 \usepackage{longtable}[=v4.13]
 \usepackage{enumitem}
 \setitemize{itemsep=2pt, topsep=2pt, align=right, labelindent=\parindent, leftmargin=!, itemindent=!, labelsep=.5em, labelwidth=!}
 
 \def\secsep{\hrule width5cm}
-%\tabulinesep=0pt
-%\extrarowsep=-3pt
-%\def\secsep{\hrule}
 \title{\bfseries\Huge CV}
 \begin{document}
-%\section*{\Huge CV}\subsection*{Thomas Krogh Lohse}
 \section*{\centering \Huge CV}\subsection*{\centering Thomas Krogh Lohse}
 
 \begin{tabularx}{\textwidth}{lX}
     \toprule%\\[-10pt]
-    \href{https://maps.app.goo.gl/mtFWbUVz1f8x7saS8}{\faIcon{map-marker-alt}~Aalborg Øst 9220, Denmark}& 
-    \multirow[t]{7}{=}{
-        I am a Software Engineering Master (MSc) student at Aalborg University (AAU)% with a fervor for backend and system development.
-        %Since the age of 16, my journey in programming has been marked by a commitment to independent learning, particularly in the realms of software development theory.
-        %I specialize in backend development, with practical experience in firmware development and task automation using shell-scripts.
-        %Beyond this, my passion extends to exploring various programming languages and their intricacies.
-        %This blend of theoretical knowledge and hands-on skills positions me to excel in the intricate landscape of software engineering.
-        , where my fascination with programming has taken me, on my journey of independent learning since the age of 16.
-        My interests span software development theory, and I've dabbled in backend and system development, gaining hands-on experience in firmware development and task automation using shell-scripts.
-        What truly captivates me is exploring the nuances and constructs of different programming languages, giving me insight in what is best suitable for different problems (Currently love functional programming).
-        This mix of theoretical knowledge and practical skills aids my journey in the dynamic world of software engineering.
-        %This mix of theoretical knowledge and practical skills sets the stage for my journey in the dynamic world of software engineering.
-        %I am a Software Engineering Master's student at Aalborg University (AAU), with a passion for theoretical and practical aspects of programming.
-        %Since the age of 16, I've actively engaged in independent learning, focusing on software development theory.
-        %My expertise lies in backend and/or system development, with hands-on experience in firmware development, task automation using shell-scripts, and language parsing.
+    \href{https://maps.app.goo.gl/mtFWbUVz1f8x7saS8}{\faIcon{map-marker-alt}~Aalborg Øst, Denmark}& 
+    \multirow[t]{6}{=}{
+    I'm a Master's student in Software Engineering (MSc) at Aalborg University (AAU).
+    My programming journey began at 16, and I've since gained hands-on experience in many areas, from firmware development to REST APIs and programming language theory.
+    I love programming language theory, especially type systems and static analysis, and enjoy exploring how different paradigms influence software design (currently love functional programming).
+    I'm eager to use my technical skills, theoretical knowledge, and passion to solve real-world software challenges.
     }\\\\[-4pt]
-    \href{tel:+4551164199}{\faIcon{mobile-alt}~+45 51 16 41 99} \\\\[-4pt]%[8pt] 
-    \href{https://github.com/t-lohse}{\faIcon{github}~\footnotesize\faIcon{at}\normalsize\texttt{t-lohse}} \\\\[-4pt]%[8pt]
-    \href{https://gitlab.com/tlohse}{\faIcon{gitlab}~\footnotesize\faIcon{at}\normalsize\texttt{tlohse}} \\\\[-4pt]%[8pt]
-    \href{mailto:mail@tlohse.dk}{\faIcon{envelope}~mail\normalsize\MVAt tlohse.dk} \\\\[-4pt]%[8pt]
-    \href{https://linkedin.com/in/thomas-lohse}{\faIcon{linkedin}~thomas-lohse}\\\\[-4pt]
-    \href{https://tlohse.dk}{\faIcon{link}~tlohse.dk}\\\\[-11pt]
+    \href{tel:+4551164199}{\faIcon{mobile-alt}~+45 51 16 41 99} \\\\[-5pt]%[8pt] 
+    \href{https://github.com/t-lohse}{\faIcon{github}~\footnotesize\faIcon{at}\normalsize\texttt{t-lohse}} \\\\[-5pt]%[7pt]
+    \href{mailto:mail@tlohse.dk}{\faIcon{envelope}~mail\normalsize\MVAt tlohse.dk} \\\\[-5pt]%[8pt]
+    \href{https://linkedin.com/in/thomas-lohse}{\faIcon{linkedin}~thomas-lohse}\\\\[-5pt]
+    \href{https://tlohse.dk}{\faIcon{link}~\texttt{https://tlohse.dk}}\\\\[-12pt]
     \bottomrule
 \end{tabularx}%\\[8pt]
-%\par\noindent\rule{\textwidth}{1pt}
-\section*{Technical Competencies}
+\subsection*{Selected Competencies}
 \secsep
-\vspace{1em}
-%\setlength{\tabcolsep}{7pt}
+\vspace{-1em}
 \newcolumntype{Y}{>{\centering\arraybackslash}X}
-\iffalse
-\begin{tabularx}{\textwidth}{YYY}
+\newcommand{\subpart}[1]{\begin{itemize}[leftmargin=-2em, topsep=-.9em, parsep=0em]
+    \item[]  {\scriptsize #1}
+\end{itemize}}
+
+\begin{multicols}{3}
     \centering
-    \large\textbf{Software Development} & \textbf{git} & \textbf{Project Development} \\
-    \normalsize Since 2017              & Since 2018         & Since 2017                         
-\end{tabularx}%
-\fi
-
-%\vspace{1em}\hrule width2.5cm\vspace{1em}
-
-%\begin{tabularx}{\linewidth}{l|l|l}
-\begin{center}
-    \begin{tabular}{l|l|l}
-        %\textbf{Known Programming Languages:} & \textbf{Known Tools:} \\
-        {\begin{tabular}[t]{lll}
-            \textbf{Language} & \textbf{Since} & \textbf{Level} \\
-            Haskell & 2023 & 8/10 \\
-            Kotlin  & 2022 & 8/10 \\
-            Java    & 2022 & 8/10 \\
-            Rust    & 2021 & 9/10 \\
-            Bash    & 2020 & 7/10 \\
-            C/C++   & 2020 & 7/10 \\
-            C\#     & 2017 & 8/10
-        \end{tabular}}
-        &
-        {\begin{tabular}[t]{lll}
-            \textbf{Tool} & \textbf{Since} & \textbf{Level} \\
-            Cabal  & 2023 & 7/10 \\
-            Docker & 2021 & 7/10 \\
-            Cargo  & 2021 & 8/10 \\
-            Linux  & 2020 & 8/10 \\
-            GitHub & 2018 & 9/10 \\
-            Git    & 2018 & 9/10 \\
-            .NET   & 2018 & 7/10
-        \end{tabular}}
-        &
-        {\begin{tabularx}{\linewidth}[t]{lll}
-            \textbf{Additional} & \textbf{Since} & \textbf{Level} \\
-            CI/CD       & 2022 & 8/10 \\
-            SCRUM       & 2022 & 8/10 \\
-            REST API    & 2021 & 7/10 \\
-            Embedded    & 2019 & 7/10 \\
-            Projects    & 2017 & 9/10 \\
-            Programming & 2017 & 9/10 \\ 
-            %BUZZWORD PLS
-        \end{tabularx}}
-    \end{tabular}          
-\end{center}
+    \begin{itemize}[leftmargin=2em, topsep=-.5em, parsep=0em]
+        \item Systems programming
+            \subpart{Rust, C/C++}
+        \item Functional Programming
+            \subpart{Haskell, OCaml, Rust}
+        \item Desktop Linux
+            \subpart{Bash, Systemd, SSH}
+        \item Deployment
+            \subpart{Docker (Swarm), Docker Compose}
+        \item CI/CD
+            \subpart{Github Actions, Gitlab workflows}
+        \item Embedded programming
+            \subpart{C/C++, Arduino, firmware}
+        \item Project management
+            \subpart{Scrum, Git}
+        \item MicroServices \& SOA
+            \subpart{REST API, Docker Swarm}
+        \item Language theory
+            \subpart{Static analysis, type systems}
+    \end{itemize}
+\end{multicols}
 
 \newcommand{\p}[1]{\textbf{#1}\mbox{}\newline}
 \def\n{\\\\}
-\section*{Education}
+\subsection*{Education}
 \secsep
 \begin{longtabu} to \textwidth {r|X}
-    2023--Now & \p{University (Master)}
-    Attendee at Aalborg University, studying Software Engineer, Master. The following describes the project from each semester (* is the current):
-    \begin{itemize}[leftmargin=4em]
-        \item[\textbf{1st}] Engineered an online learning platform for introductionary programming, with multiple services, for example a REST API, frontend, and a seperate service for executing code. The project was deployed with Docker Swarm, and written in TypeScript.
-        \item[\textbf{2nd}] Designed and implemented a protocol for ad-hoc dynamic mesh networks, and utilized it in an app for sharing users' location with selected ``friend users" in this network, by sending Bluetooth advertisements with the data. The project was developed for Android devices, and written in Kotlin.
-        \item[\textbf{*3rd}] \textbf{(Master's preliminary thesis)} Will work with safety in C++ through static analysis.
+    2023--Now & \p{\href{https://studieordninger.aau.dk/2023/41/4304}{Master of Science (MSc) in Engineering (Software), Aalborg University (AAU)}}
+    \vspace{-1em}
+    \begin{itemize}[leftmargin=2em, topsep=-.5em, parsep=0em]
+        \item Designed, develped, and deployed larger, multi-service architectured systems.
+        \item Low-level comunication protocl design and implementation for ad-hoc dynamic mesh networks.
+        \item Language safety and static analysis research and implementation.
     \end{itemize}
+    \vspace{-.1em}
     \\
-    2020--2023 & \p{University (Bachelor)}
-    Attendee at Aalborg University, studying Software, Bachelor. The following describes the project from each semester:
-    \begin{itemize}[leftmargin=4em]
-        \item[\textbf{1st}] Developed a workscheduling system for the production teams at Siemens Gamesa (Written in C).
-        \item[\textbf{2nd}] Implemented the Signal Protocol in an IoT environment (Written in JavaScript).
-        \item[\textbf{3rd}] Developed a program for better handling of Siemens Gamesas turbine blades' location and production (Written in C\#).
-        \item[\textbf{4th}] Developed a programming language as a replacement to the shell scripting language Bash (Written in C\#).
-        \item[\textbf{5th}] A multiproject, where six groups collaborated on the same code base (Written in Rust).
-        \item[\textbf{6th}] Developed a model learning tool to reverse engineer the source code from PLCs in ladder logic (Written in Java and C\#).
+        &  \textbf{Master's thesis:} \textit{No title yet}%Safety in C++
+        \begin{itemize}[leftmargin=2em, topsep=-.5em, parsep=0em]
+            \item Implementing static analysis for C++ to track runtime ownership and aliasing, at compile time.
+            \item Analysis implemented as a Clang plugin in C++.
+        \end{itemize}
+    \\
+    2020--2023 & \p{\href{https://studieordninger.aau.dk/2023/38/3925}{Bachelor of Science (BSc) in Engineering (Software), Aalborg University (AAU)}}
+    \vspace{-1em}
+    \begin{itemize}[leftmargin=2em, topsep=-.5em, parsep=0em]
+        \item Advanced design and development of software systems.
+        \item Engagement in several projects, including multi-team collaborations, using various agile development methods.
+        \item Semester projects in various areas of software engineering, from web development to firmware to language implementation.
+        \item Gained theoretical knowledge and practical use of it through exercises and the semester project.
     \end{itemize}
+    \vspace{-.1em}
     \\
-    2017--2020 & \p{High School} 
-    High school attendee for three years at Aalborg Techcollege (AATG), and recieved the Higher
-    Techincal Exam (HTX), with a specialised Study Area in \textit{Communication \& IT} A,
-    \textit{Programming} B, and tecnical study in \textit{Technical Science} A.
+        %&  \href{https://github.com/cs-23-sw-6-12}{\textbf{Bacelor's thesis:} \textit{``Reverse Engineering PLCs into Ladder Programs: A Model Learning Approach''}}
+        &  \textbf{Bacelor's thesis:} \textit{``Reverse Engineering PLCs into Ladder Programs: A Model Learning Approach''}
+        \begin{itemize}[leftmargin=2em, topsep=-.5em,  parsep=0em]
+            \item Develped a system that, using model learning, can reverse engineer (and potentially optimize) the running code on PLCs in ladder logic.
+            \item Tested and benchmarked on different alogrithms on real hardware, determining the best suited algorithm for the task.
+            \item Project consists of multiple services, written in Java and C\#.
+        \end{itemize}
 \end{longtabu}
-    \iffalse%
-    \\\\
-    2016--2017 & \textbf{Continuation School}\\lign=right, labelindent=!, leftmargin=6em, itemindent=!, labelsep=1em, labelwidth=!]
-    &   Attendee at Ingstrup Efterskole in grade nine.
-    \\\\
-    2007--2016 & \textbf{Public School}\\
-    &   Attendee at the public school in 9310 Vodskov (Vodskov Skole) from grade one to grade eight.
-    \fi%
 
-\section*{Employment}
+\pagebreak
+\subsection*{Work Experience}
 \secsep
 \begin{longtabu} to \textwidth {r|X}
-    Fall 2022 & \p{Teaching Assistant}
-    I am a Teaching Assistant in the Programming Paradigms course on the 1st semester of the Masters in Software, Computer Science, and Data Science at AAU.
-    The course primarily deals with functional programming in Haskell, where I help with teaching and the exercises.
+    2025-Now & \p{Trifork}
+    Student developer at \href{https://trifork.com/}{Trifork}, working with real-time programming and data processing.
+    \n
+    2024-Now & \p{Aalborg University}
+    Student developer at Aalborg University, working on a tool written in Haskell to parse, interpret, and analyze RISC-V assembler code.
+    \n
+    Fall 2024 & \p{Teaching Assistant}
+    Teaching Assistant in the Programming Paradigms course on the 1st semester of the Master's program. % in Software, Computer Science, and Data Science at AAU.
     \n
     Fall 2023 & \p{Product Owner for 5th semester Software multiproject}
-    I was the overall product owner for the multiproject on 5th semester Software, consisting of six groups with about six members in each group. The project was 15 ECTS points.
-    My responsibility included creating the tasks that should be implemented by them, answering questions regarding the code base and tasks, and generally acting as a guidance on the project, and as a PO.
+    Product owner for the multiproject on 5th semester Software, consisting of six groups with about six members in each group. %The project was 15 ECTS points.
     \n
     Fall 2022 & \p{Teaching Assistant}
-    I was a Teaching Assistant in the Imperative Programming course on the 1st semester of Software and Computer Science at AAU.
-    This is the first programming course you have on the educations. I had to help students during exercise sessions, provide feedback on their hand-in assignments, and collaborate with the course lecturer regarding the exercises, platform, and hand-ins.
+    Teaching Assistant in the Imperative Programming course on the 1st semester of the Bachelor's prgram. %  Software and Computer Science at AAU.
     \n
     2022--2024 & \p{Aalborg University, DEIS}
-    I worked as a Student Software developer at DEIS on the \href{https://github.com/Ecdar}{Ecdar} project
-    where I developed mainly in Rust in the backend engine for model checking
-    (\href{https://github.com/Ecdar/Reveaal}{Reveaal}), but also contributed to the other parts of the project.
+    Student Software developer at DEIS on the \href{https://github.com/Ecdar}{Ecdar} project.
+    Developed mainly in Rust in the backend model checking engine (\href{https://github.com/Ecdar/Reveaal}{Reveaal}), but also contributed to the other parts of the project.
     \n
     2022 & \p{RTX A/S}
-    I worked as a student assistant at RTX A/S in Nørresundby, with both hardware and software tasks,
-    consisting of soldering og assembling equipment, along with developing platforms for monitoring and testing of larger devices/components.
+    Student assistant at RTX A/S in Nørresundby, with both hardware and software tasks.
 \end{longtabu}
-\iffalse
-    \n
-    2018--2019 & \p{Føtex Nørresundby}
-    Over the time of my employment at Føtex Nørresundby, I had a selection of roles:
-    \begin{itemize}[leftmargin=11em]%\setlength\itemsep{0em}
-        \item[\textbf{Service employee}] My first contract was as a Service employee,
-            with a variety of tasks, primarily the operation of the bottle recycle machine.
-        \item[\textbf{Cashier Assistant}] About a half year after my employment,
-            I was asked to be trained and reloacated to a new position, Cahsier Assistant.
-        \item[\textbf{Bake-Off Sale}] When I turned 18 years old, and my contract
-            terminated, I was offered a new position as Bake-Off Salesperson, which was my
-            position up until my resignation.%
-    \end{itemize}
-\fi
 
-\section*{Other Experience}
+\subsection*{Other Experience}
 \secsep
 \begin{longtabu} to \textwidth {r|X}
-Fall 2023 & \p{Tutor Coordinator}
-I volunteered as a tutor coordinator for the students in 2023, studying Software at Aalborg University.
-I was responsible for planning and organizing the tutor planners, making sure that they were on track with planning, fundraising, and executing their events, along with a few events I had to plan as well.
-I was also responsible for handling the finances of the orginazation, which included sending and paying invoices and budgetting.
-\n
-Fall 2022, 2024 & \p{Tutor Planner}
-I volunteered as a tutor planner for the students in 2022 and 2024, studying Software at Aalborg University.
-I was responsible for planning, fundraise, and execute the event, where I had to coordinate a handful of tutors to execute the event properly.
-\n
-    Fall 2021 & \p{Tutor}
-        I volunteered as a tutor for the students in 2021, studying Software at Aalborg University.
+2021-2024 & \p{Tutor at AAU}
+    I've participated in the tutor corps for the Software bachelor program throughout my studies, every year.
+    In 2021, I was a normal tutor.
+    In 2022 and 2024, I was a tutor planner, where I planned, fundraised, and executed social events for the new students.
+    In 2023, I was the tutor coordinator, managing the corps and its funds, along with the same responsibility as a planner.
 \n
     2021--2024 & \p{UNF Game Development Camp}
-    I have been a volunteer at UNFs Game Development Camp, where I have had the following (relevant) roles:
-    \begin{itemize}[leftmargin=4em]
-        %\item[2024] \p{Lecture Assistant} Asisting in finding and acquiring lecturers to present for the campers, along with the judges for evaluating the games that are made throughout the camp.
-        %\item[2024] \p{Printing and Morning Paper Assistant} Assisting in acquiring permissions from game studios for artwork desiplys, and creating the morning paper for the campers.
-        %\item[2023] \p{Trustee} One of the few contact persons regarding the weathfare of campers.
-        \item[2022] \p{Technical Manager} In charge of making sure the campers'
-            technical equipment is operational and set up correctly,
-            along with introducing them to \texttt{git}, and managing
-            the problems they might have with the technalities.
-        \item[2021] \p{Programmings Assistant} Assisting the programming teacher, and
-            helping the campers with any programming related issues they might have.
-        %\item[2021] \p{Logistics Responsible} In charge of handling the logistical
-        %    requests of the other volunteers, and acquiring said logistics.
-\end{itemize}
+    I've volunteered at UNFs Game Development Camp.
+    During these camps, I've had a few different responsibilities, such as teaching assistant for programming, and technical manager.
 \end{longtabu}
-\iffalse
-\section*{References}
-\hrule width5cm \ \\
-Provided upon request.
-\fi
+
+\subsection*{About me}
+\secsep
+\setlength{\parskip}{1ex}
+In my sparetime, I enjoy staying active through lifting weights or bike cycling, which helps me clear my mind and stay focused, fit, and calm.
+It’s a great way to challenge myself and set new goals, both physically and mentally.\par
+
+\noindent
+I also love watching different movies, series, or playing story-driven games, it’s a great way to relax and get lost and invested in different stories.
+
+\noindent
+Additionally, I enjoy discovering and trying different programming language concepts, primarily in the functional programming realm.
+I like to do small coding exercises, and the occasional side project, it helps me stay active development-wise
 \end{document}
 
