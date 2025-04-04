@@ -29,7 +29,7 @@
     \href{https://maps.app.goo.gl/mtFWbUVz1f8x7saS8}{\faIcon{map-marker-alt}~Aalborg Øst, Denmark}& 
     \multirow[t]{6}{=}{
     I'm a Master's student in Software Engineering (MSc) at Aalborg University (AAU).
-    My programming journey began at 16, and I've since gained hands-on experience in many areas, from firmware development to REST APIs and programming language theory.
+    My programming journey began at 16, and I've since gained hands-on experience in many areas, from firmware development to web developmet to programming language theory.
     I love programming language theory, especially type systems and static analysis, and enjoy exploring how different paradigms influence software design (currently love functional programming).
     I'm eager to use my technical skills, theoretical knowledge, and passion to solve real-world software challenges.
     }\\\\[-4pt]
@@ -44,8 +44,8 @@
 \secsep
 \vspace{-1em}
 \newcolumntype{Y}{>{\centering\arraybackslash}X}
-\newcommand{\subpart}[1]{\begin{itemize}[leftmargin=-2em, topsep=-.9em, parsep=0em]
-    \item[]  {\scriptsize #1}
+\newcommand{\subpart}[2][\scriptsize]{\begin{itemize}[leftmargin=-2em, topsep=-.9em, parsep=0em]
+    \item[]  {#1 #2}
 \end{itemize}}
 
 \begin{multicols}{3}
@@ -73,7 +73,7 @@
 \end{multicols}
 
 \newcommand{\p}[1]{\textbf{#1}\mbox{}\newline}
-\def\n{\\\\}
+\def\n{\\}
 \subsection*{Education}
 \secsep
 \begin{longtabu} to \textwidth {r|X}
@@ -115,41 +115,48 @@
 \subsection*{Work Experience}
 \secsep
 \begin{longtabu} to \textwidth {r|X}
-    2025-Now & \p{Trifork}
-    Student developer at \href{https://trifork.com/}{Trifork}, working with real-time programming and data processing.
+    2025-Now & \p{Trifork A/S}
+    Student developer at {Trifork A/S} in Aalborg, working with real-time programming and data processing.
+    \subpart[\footnotesize]{Flink, Kafka, Spring Boot, Elasticsearch, teamwork}
     \n
     2024-Now & \p{Aalborg University}
     Student developer at Aalborg University, working on a tool written in Haskell to parse, interpret, and analyze RISC-V assembler code.
+    \subpart[\footnotesize]{Haskell, parsec, RISC-V, solo development}
     \n
     Fall 2024 & \p{Teaching Assistant}
     Teaching Assistant in the Programming Paradigms course on the 1st semester of the Master's program. % in Software, Computer Science, and Data Science at AAU.
+    \subpart[\footnotesize]{Haskell, teaching}
     \n
     Fall 2023 & \p{Product Owner for 5th semester Software multiproject}
     Product owner for the multiproject on 5th semester Software, consisting of six groups with about six members in each group. %The project was 15 ECTS points.
+    \subpart[\footnotesize]{Scrum, manager}
     \n
     Fall 2022 & \p{Teaching Assistant}
     Teaching Assistant in the Imperative Programming course on the 1st semester of the Bachelor's prgram. %  Software and Computer Science at AAU.
+    \subpart[\footnotesize]{C, teaching}
     \n
     2022--2024 & \p{Aalborg University, DEIS}
     Student Software developer at DEIS on the \href{https://github.com/Ecdar}{Ecdar} project.
-    Developed mainly in Rust in the backend model checking engine (\href{https://github.com/Ecdar/Reveaal}{Reveaal}), but also contributed to the other parts of the project.
+    Primarily workning in Rust in the backend model checking engine (\href{https://github.com/Ecdar/Reveaal}{Reveaal}), but also contributed to the other parts of the project.
+    \subpart[\footnotesize]{Rust, model checking, teamwork}
     \n
     2022 & \p{RTX A/S}
     Student assistant at RTX A/S in Nørresundby, with both hardware and software tasks.
+    \subpart[\footnotesize]{C\#, WPF, soldering}
 \end{longtabu}
 
 \subsection*{Other Experience}
 \secsep
 \begin{longtabu} to \textwidth {r|X}
 2021-2024 & \p{Tutor at AAU}
-    I've participated in the tutor corps for the Software bachelor program throughout my studies, every year.
+    I've participated in the tutor corps for the Software bachelor program every year throughout my studies.
     In 2021, I was a normal tutor.
     In 2022 and 2024, I was a tutor planner, where I planned, fundraised, and executed social events for the new students.
     In 2023, I was the tutor coordinator, managing the corps and its funds, along with the same responsibility as a planner.
 \n
     2021--2024 & \p{UNF Game Development Camp}
     I've volunteered at UNFs Game Development Camp.
-    During these camps, I've had a few different responsibilities, such as teaching assistant for programming, and technical manager.
+    During these camps, I've had a few different responsibilities, such as programming teaching assistant, and technical manager.
 \end{longtabu}
 
 \subsection*{About me}
