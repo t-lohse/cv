@@ -17,7 +17,13 @@
 \usepackage{tabu}
 \usepackage{longtable}[=v4.13]
 \usepackage{enumitem}
+\usepackage{fancyhdr}
 \setitemize{itemsep=2pt, topsep=2pt, align=right, labelindent=\parindent, leftmargin=!, itemindent=!, labelsep=.5em, labelwidth=!}
+
+\pagestyle{fancy}
+\renewcommand{\headrulewidth}{0.0pt}
+\fancyfoot[L]{\scriptsize Source code: \url{https://github.com/t-lohse/cv}}
+\fancyfoot[R]{\scriptsize Most up-to-date version: \url{https://cv.tlohse.dk}}
 
 \def\secsep{\hrule width5cm}
 \title{\bfseries\Huge CV}
@@ -28,7 +34,7 @@
     \toprule%\\[-10pt]
     \href{https://maps.app.goo.gl/mtFWbUVz1f8x7saS8}{\faIcon{map-marker-alt}~Aalborg Øst, Denmark}& 
     \multirow[t]{6}{=}{
-    I'm a Master's student in Software Engineering (MSc) at Aalborg University (AAU).
+    I'm a Master's graduate in Software Engineering (MSc) at Aalborg University (AAU).
     My programming journey began at 16, and I've since gained hands-on experience in many areas, from firmware development to web developmet to programming language theory.
     I love programming language theory, especially type systems and static analysis, and enjoy exploring how different paradigms influence software design (currently love functional programming).
     I'm eager to use my technical skills, theoretical knowledge, and passion to solve real-world software challenges.
@@ -76,8 +82,8 @@
 \def\n{\\}
 \subsection*{Education}
 \secsep
-\begin{longtabu} to \textwidth {r|X}
-    2023--Now & \p{\href{https://studieordninger.aau.dk/2023/41/4304}{Master of Science (MSc) in Engineering (Software), Aalborg University (AAU)}}
+\begin{longtabu} to \textwidth {>{\footnotesize\raggedright\arraybackslash}X[2,1]|X[27,1]}
+    Sep 2023 -- Jun 2025 & \p{\href{https://studieordninger.aau.dk/2023/41/4304}{Master of Science (MSc) in Engineering (Software), Aalborg University (AAU)}}
     \vspace{-1em}
     \begin{itemize}[leftmargin=2em, topsep=-.5em, parsep=0em]
         \item Designed, developed, and deployed larger, multi-service architectured systems.
@@ -86,13 +92,14 @@
     \end{itemize}
     \vspace{-.1em}
     \\
-        &  \textbf{Master's thesis:} \textit{No title yet}%Safety in C++
+        &  \textbf{Master's thesis:} \href{https://kbdk-aub.primo.exlibrisgroup.com/permalink/45KBDK_AUB/a7me0f/alma9922083817005762}{\textit{``Enforcing Memory Safety in Modern C++ Through a Safe Subset and Static Analysis''}}
         \begin{itemize}[leftmargin=2em, topsep=-.5em, parsep=0em]
-            \item Implementing static analysis for C++ to track runtime ownership and aliasing, at compile time.
+            \item Defined a modern, conservative, and safe subset of the C++ language.
+            \item Implemented Rust-like static analysis for the subset, to ensure safety at compile time.
             \item Analysis implemented as a Clang plugin in C++.
         \end{itemize}
     \\
-    2020--2023 & \p{\href{https://studieordninger.aau.dk/2023/38/3925}{Bachelor of Science (BSc) in Engineering (Software), Aalborg University (AAU)}}
+    Sep 2020 -- Jun 2023 & \p{\href{https://studieordninger.aau.dk/2023/38/3925}{Bachelor of Science (BSc) in Engineering (Software), Aalborg University (AAU)}}
     \vspace{-1em}
     \begin{itemize}[leftmargin=2em, topsep=-.5em, parsep=0em]
         \item Advanced design and development of software systems.
@@ -114,41 +121,43 @@
 \pagebreak
 \subsection*{Work Experience}
 \secsep
-\begin{longtabu} to \textwidth {r|X}
-    2025-Now & \p{Trifork A/S}
+\begin{longtabu} to \textwidth {>{\footnotesize\raggedright\arraybackslash}X[2,1]|X[27,1]}
+    Jan 2025 -- Jun 2025& \p{Trifork A/S}
     Student developer at {Trifork A/S} in Aalborg, working with real-time programming and data processing.
     \subpart[\footnotesize]{Flink, Kafka, Spring Boot, Elasticsearch, teamwork}
+    %\subpart{Jan 2025 - Jun 2025}
     \n
-    2024-Now & \p{Aalborg University}
+    Nov 2024 -- Jun 2025 & \p{Aalborg University}
+    %\subpart{Nov 2024 - June 2025}
     Student developer at Aalborg University, working on a tool written in Haskell to parse, interpret, and analyze RISC-V assembler code.
     \subpart[\footnotesize]{Haskell, parsec, RISC-V, solo development}
     \n
-    Fall 2024 & \p{Teaching Assistant}
+    Sep 2024 -- Dec 2024 & \p{Teaching Assistant}
     Teaching Assistant in the Programming Paradigms course on the 1st semester of the Master's program. % in Software, Computer Science, and Data Science at AAU.
     \subpart[\footnotesize]{Haskell, teaching}
     \n
-    Fall 2023 & \p{Product Owner for 5th semester Software multiproject}
+    Sep 2023 -- Dec 2023 & \p{Product Owner for 5th semester Software multiproject}
     Product owner for the multiproject on 5th semester Software, consisting of six groups with about six members in each group. %The project was 15 ECTS points.
     \subpart[\footnotesize]{Scrum, manager}
     \n
-    Fall 2022 & \p{Teaching Assistant}
+    Sep 2022 -- Dec 2022& \p{Teaching Assistant}
     Teaching Assistant in the Imperative Programming course on the 1st semester of the Bachelor's prgram. %  Software and Computer Science at AAU.
     \subpart[\footnotesize]{C, teaching}
     \n
-    2022--2024 & \p{Aalborg University, DEIS}
+    Jun 2022 -- Mar 2024 & \p{Aalborg University, DEIS}
     Student Software developer at DEIS on the \href{https://github.com/Ecdar}{Ecdar} project.
-    Primarily workning in Rust in the backend model checking engine (\href{https://github.com/Ecdar/Reveaal}{Reveaal}), but also contributed to the other parts of the project.
+    Primarily working in Rust in the backend model checking engine (\href{https://github.com/Ecdar/Reveaal}{Reveaal}), but also contributed to the other parts of the project.
     \subpart[\footnotesize]{Rust, model checking, teamwork}
     \n
-    2022 & \p{RTX A/S}
+    Jan 2022 -- Jun 2022 & \p{RTX A/S}
     Student assistant at RTX A/S in Nørresundby, with both hardware and software tasks.
     \subpart[\footnotesize]{C\#, WPF, soldering}
 \end{longtabu}
 
 \subsection*{Other Experience}
 \secsep
-\begin{longtabu} to \textwidth {r|X}
-2021-2024 & \p{Tutor at AAU}
+\begin{longtabu} to \textwidth {>{\footnotesize\raggedright\arraybackslash}X[2,1]|X[27,1]}
+2021--2024 & \p{Tutor at AAU}
     I've participated in the tutor corps for the Software bachelor program every year throughout my studies.
     In 2021, I was a normal tutor.
     In 2022 and 2024, I was a tutor planner, where I planned, fundraised, and executed social events for the new students.
