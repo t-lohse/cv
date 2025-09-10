@@ -18,12 +18,19 @@
 \usepackage{longtable}[=v4.13]
 \usepackage{enumitem}
 \usepackage{fancyhdr}
+%\usepackage[yyyymmdd,hhmm]{datetime}
+%\usepackage{babel}
+%\usepackage[useregional]{datetime2}
+\usepackage{datetime}
+
+\newdateformat{mydate}{\shortmonthname[\THEMONTH] \THEDAY, \THEYEAR}
 \setitemize{itemsep=2pt, topsep=2pt, align=right, labelindent=\parindent, leftmargin=!, itemindent=!, labelsep=.5em, labelwidth=!}
 
 \pagestyle{fancy}
 \renewcommand{\headrulewidth}{0.0pt}
-\fancyfoot[L]{\scriptsize Source code: \url{https://github.com/t-lohse/cv}}
-\fancyfoot[R]{\scriptsize Most up-to-date version: \url{https://cv.tlohse.dk}}
+\fancyfoot[L]{\scriptsize Source code: \url{https://github.com/t-lohse/cv}.}
+\fancyfoot[R]{\scriptsize Most up-to-date version: \url{https://cv.tlohse.dk}.\\ This version was compiled on \mydate\today~at \currenttime.}
+%\fancyfoot[R]{\scriptsize Compiled on \mydate\today~at \currenttime.}
 
 \def\secsep{\hrule width5cm}
 \title{\bfseries\Huge CV}
