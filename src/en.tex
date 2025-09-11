@@ -29,8 +29,11 @@
 \pagestyle{fancy}
 \renewcommand{\headrulewidth}{0.0pt}
 \fancyfoot[L]{\scriptsize Source code: \url{https://github.com/t-lohse/cv}.}
-\fancyfoot[R]{\scriptsize Most up-to-date version: \url{https://cv.tlohse.dk}.\\ This version was compiled on \mydate\today~at \currenttime.}
+\def\ver{ Most up-to-date version: \url{https://cv.tlohse.dk}.}%~at \currenttime.
+\def\compdate{This version was compiled on \mydate\today.}%~at \currenttime.
+\fancyfoot[R]{\scriptsize \compdate\\\ver}
 %\fancyfoot[R]{\scriptsize Compiled on \mydate\today~at \currenttime.}
+\pagenumbering{gobble}
 
 \def\secsep{\hrule width5cm}
 \title{\bfseries\Huge CV}
