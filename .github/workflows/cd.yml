@@ -22,7 +22,7 @@ jobs:
       run: |
         sudo apt update
         sudo apt upgrade
-        sudo apt install rename latexmk
+        sudo apt install rename latexmk texlive-latex-extra texlive-fonts-extra texlive-latex-base texlive-fonts-recommended texlive-full
     - name: Create directory
       run: |
         rm -rf .build
