@@ -29,7 +29,8 @@ jobs:
         mkdir .build
     - name: Build pdfs
       run: |
-        latexmk --pdf 'src/*.tex'
+        pwd
+        latexmk --pdf src/*.tex
         mv *.pdf .build
         mv index.html .build
         mv style.css .build
