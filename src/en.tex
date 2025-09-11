@@ -18,11 +18,7 @@
 \usepackage{longtable}[=v4.13]
 \usepackage{enumitem}
 \usepackage{fancyhdr}
-\usepackage{lmodern}
-\usepackage{microtype}
-%\usepackage[yyyymmdd,hhmm]{datetime}
-%\usepackage{babel}
-%\usepackage[useregional]{datetime2}
+\setitemize{itemsep=2pt, topsep=2pt, align=right, labelindent=\parindent, leftmargin=!, itemindent=!, labelsep=.5em, labelwidth=!}
 \usepackage{datetime}
 
 \newdateformat{mydate}{\shortmonthname[\THEMONTH] \THEDAY, \THEYEAR}
@@ -91,7 +87,7 @@
 \end{multicols}
 
 \newcommand{\p}[1]{\textbf{#1}\mbox{}\newline}
-\def\n{\\[-1ex]}
+\def\n{\\}
 \subsection*{Education}
 \secsep
 \vspace{-1em}
@@ -182,7 +178,7 @@
     In 2021, I was a normal tutor.
     In 2022 and 2024, I was a tutor planner, where I planned, fundraised, and executed social events for the new students.
     In 2023, I was the tutor coordinator, managing the corps and its funds, along with the same responsibility as a planner.
-\\
+\n
     2021--2024 & \p{UNF Game Development Camp}
     I've volunteered at UNFs Game Development Camp.
     During these camps, I've had a few different responsibilities, such as programming teaching assistant, and technical manager.
@@ -202,4 +198,3 @@ I also love watching different movies, series, or playing story-driven games, it
 Additionally, I enjoy discovering and trying different programming language concepts, primarily in the functional programming realm.
 I like to do small coding exercises, and the occasional side project, it helps me stay active development-wise
 \end{document}
-
