@@ -2,3 +2,5 @@
 **/*.out
 **/*.aux
 **/*.pdf
+**/*.fdb_latexmk
+**/*.fls

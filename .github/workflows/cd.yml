@@ -22,14 +22,14 @@ jobs:
       run: |
         sudo apt update
         sudo apt upgrade
-        sudo apt install rename texlive-latex-base texlive-fonts-recommended texlive-fonts-extra texlive-latex-extra
+        sudo apt install rename latexmk
     - name: Create directory
       run: |
         rm -rf .build
         mkdir .build
     - name: Build pdfs
       run: |
-        find src -name '*.tex' -exec pdflatex {} \;
+        latexmk --pdf '*.tex'
         mv *.pdf .build
         mv index.html .build
         mv style.css .build
